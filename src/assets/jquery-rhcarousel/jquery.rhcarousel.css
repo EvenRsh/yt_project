@@ -1,0 +1,25 @@
+.rhcarousel{position:relative;overflow: hidden;}
+.rhcarousel img{display: block;}
+.rhcarousel ul{position:relative;list-style: none;padding:0;margin:0;}
+.rhcarousel .big-wrap{position:relative;overflow:hidden;}
+.rhcarousel .fade li{position:absolute;left:0;top:0;opacity:0;}
+.rhcarousel .fade li:first-child{opacity:1;}
+
+.rhcarousel .small{margin-top:10px;overflow:hidden;}
+.rhcarousel .small li{float:left;width:150px;}
+.rhcarousel .small img{width:140px;}
+.rhcarousel .small li{opacity: 0.5}
+
+
+.rhcarousel .page{position:absolute;right:0;bottom:0;padding:10px;}
+.rhcarousel .page span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
+.rhcarousel .page span.active{background-color: rgba(255,0,0,.8)}
+
+.rhcarousel .page.page-center{
+	left:0;text-align:center;
+}
+.rhcarousel .page.page-center span{width:12px;height:12px;line-height: 12px;text-indent:-100px;overflow:hidden;}
+
+.rhcarousel .btn-next,.rhcarousel .btn-prev{position:absolute;left:0;top:50%;margin-top:-30px;width:30px;height:60px;line-height: 60px;text-align:center;background-color: rgba(0,0,0,.5);color:#fff;}
+.rhcarousel .btn-next:hover,.rhcarousel .btn-prev:hover{background-color: #f60;}
+.rhcarousel .btn-next{left:auto;right:0;}

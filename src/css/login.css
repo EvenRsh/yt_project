@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+
+body { color: #666; font: normal 12px/1.5 Verdana,simsun,Sans-Serif; }
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+.clearfix::after, header .hdWrap::after, footer .ftWrap::after, section .bdWrap::after { content: ''; display: block; clear: both; }
+
+.left, header .hdWrap .logo, header .hdWrap .itips span, header .hdWrap .login, section .bdWrap .bdLeft { float: left; }
+
+.right, header .hdWrap .itips, section .bdWrap .bdRight { float: right; }
+
+.center, footer .ftWrap .links, footer .ftWrap .versions { text-align: center; }
+
+input { font-size: 100%; vertical-align: middle; }
+
+/*  ================== header ==================	 */
+header .hdWrap { width: 1190px; margin: 0 auto; }
+
+header .hdWrap .logo a { display: block; background: #eee url(img/header-20160223.gif) 0 0 no-repeat; overflow: hidden; width: 215px; height: 76px; text-indent: -999px; }
+
+header .hdWrap .itips { height: 76px; }
+
+header .hdWrap .itips span { height: 41px; margin-top: 35px; font-family: "微软雅黑"; }
+
+header .hdWrap .itips span strong { display: block; font-size: 16px; font-weight: 400; color: #000; }
+
+header .hdWrap .itips span strong i { font-style: normal; color: #e5004f; }
+
+header .hdWrap .itips span b { font-weight: 400; color: #888; }
+
+header .hdWrap .itips span.exChange { width: 145px; padding: 0 0 0 45px; background: url(img/footer-01.png) 0 -80px no-repeat; }
+
+header .hdWrap .itips span.quality { width: 130px; padding: 0 0 0 48px; background: url(img/footer-01.png) 0 -154px no-repeat; }
+
+header .hdWrap .itips span.carry { width: 110px; border-right: none; padding: 0 0 0 60px; background: url(img/footer-01.png) 0 -225px no-repeat; }
+
+/*  ================== footer ==================	 */
+footer { padding-top: 30px; }
+
+footer .ftWrap { min-width: 1190px; width: 100%; margin: 0 auto; }
+
+footer .ftWrap .links { margin-bottom: 25px; }
+
+footer .ftWrap .links a { margin: 0 10px; color: #757575; }
+
+footer .ftWrap .versions p { line-height: 22px; color: #b2b2b2; }
+
+footer .ftWrap .versions p a { margin: 0 6px; color: #b2b2b2; }
+
+footer .ftWrap .footer { padding: 10px 0 20px; text-align: center; }
+
+footer .ftWrap .footer a { color: #b2b2b2; line-height: 22px; margin: 0 12px; display: inline-block; }
+
+footer .ftWrap .footer a img { display: inline-block; }
+
+footer .ftWrap .footer a img.cnnic { width: 104px; height: 40px; }
+
+header .hdWrap .login { width: 124px; height: 24px; margin-top: 52px; background: url(img/header-login.png) 0 0 no-repeat; }
+
+section { width: auto; background-color: #f9f9f9; padding: 60px 0 50px; }
+
+section .bdWrap { width: 1190px; margin: 0 auto; }
+
+section .bdWrap .bdLeft { width: 780px; height: 460px; overflow: hidden; background-color: #fff; }
+
+section .bdWrap .bdRight { position: relative; background: #fff; max-width: 640px; min-width: 320px; margin: 0 auto; height: 460px; }

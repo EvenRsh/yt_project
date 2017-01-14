@@ -1,0 +1,134 @@
+.clearfix::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+.left{float: left;}
+.right{float: right;}
+.center{text-align: center}
+
+$mainColor:#f60;
+input{
+	font-size: 100%;
+    vertical-align: middle;
+}
+/* 
+==================
+header
+==================	
+ */
+header{
+	.hdWrap{
+		@extend .clearfix;
+		// width:100%;
+		width:1190px;
+	    margin: 0 auto;
+		.logo{
+				@extend .left;
+				a{
+					display: block;
+					background: #eee url(img/header-20160223.gif) 0 0 no-repeat;
+					overflow: hidden;
+				    width: 215px;
+	   				height: 76px;
+				    text-indent: -999px;
+				}
+		}
+
+		.itips{
+			@extend .right;
+		    height: 76px;
+		    span{
+		    	@extend .left;
+			    height: 41px;
+			    margin-top: 35px;
+			    font-family: "微软雅黑";
+			    strong{
+		    	    display: block;
+				    font-size: 16px;
+				    font-weight: 400;
+				    color: #000;
+				    i{
+				    	font-style: normal;
+    					color: #e5004f;
+				    }
+			    }
+			    b{
+			    	font-weight: 400;
+					color: #888;
+				    }
+			    &.exChange{
+			    	width: 145px;
+				    padding: 0 0 0 45px;
+				    background: url(img/footer-01.png) 0 -80px no-repeat;
+		    	}
+		    	&.quality{
+			    	width: 130px;
+				    padding: 0 0 0 48px;
+				    background: url(img/footer-01.png) 0 -154px no-repeat;
+		    	}
+		    	&.carry{
+			    	width: 110px;
+				    border-right: none;
+				    padding: 0 0 0 60px;
+				    background: url(img/footer-01.png) 0 -225px no-repeat;
+		    	}
+		    }
+		    
+		}
+	}
+}
+
+ /* 
+==================
+footer
+==================	
+ */
+
+footer{
+	padding-top: 30px;
+	.ftWrap{
+		@extend .clearfix;
+		min-width:1190px;
+		width:100%;
+	    margin: 0 auto;
+	    .links{
+	    	@extend .center;
+   			margin-bottom: 25px;
+   			a{
+   				margin: 0 10px;
+    			color: #757575;
+   			}
+	    }
+	    .versions{
+	    	@extend .center;
+	    	p{
+    		    line-height: 22px;
+				color: #b2b2b2;
+				a{
+	    			margin: 0 6px;
+	    			color: #b2b2b2;
+	    		}
+	    	}
+	    	
+	    }
+	    .footer{
+	    	padding: 10px 0 20px;
+    		text-align: center;
+    		a{
+    			color: #b2b2b2;
+    			line-height: 22px;
+			    margin: 0 12px;
+			    display: inline-block;
+				img{
+					display: inline-block;
+					&.cnnic{
+						width:104px;
+					height: 40px;
+					}
+				}
+    			
+    		}
+	    }
+	}
+}
