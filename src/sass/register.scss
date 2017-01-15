@@ -16,10 +16,9 @@ body{
 		}
 	}
 }
-/* 阿萨弗拉 */
 //正文
 section{
-	width: auto;
+	width: 100%;
     background-color: #f9f9f9;
     padding: 60px 0 50px;
 	.bdWrap{
@@ -94,7 +93,7 @@ section{
 				    color: #666;
 				    font-size: 12px;
 		    	}
-		    	.button{
+		    	#submitButton{
 		    		display: block;
 				    width: 80%;
 				    height: 35px;
