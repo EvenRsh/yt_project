@@ -18,9 +18,9 @@ $(function(){
 				},function(response){
 					var data = eval('('+response+')');
 		            if(data.state){
-		            	alert(data.message);
+		            	console.log(data.message);
 	            	}else{
-	            		alert(data.message);
+	            		console.log(data.message);
 	            	}
 			});
 		}
