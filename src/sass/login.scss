@@ -33,12 +33,7 @@ section{
 		}
 		.bdRight{
 			@extend .right;
-			position: relative;
-			background: #fff;
-		    max-width: 640px;
-		    min-width: 320px;
-		    margin: 0 auto;
-		    height: 460px;
+			
 		}
 	}
 }
