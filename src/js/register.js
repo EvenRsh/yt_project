@@ -13,8 +13,11 @@ $(function() {
     var $repassword = $('#repassword');
    
     //手机号码输入判断是否存在
+    $('form').validate();
+    var index ;
     $('form').on('input', ':input#cellPhone', function() {
         if ($phone.val().length == 11 ) {
+            index=$phone.val();
             //检测数据库是否存在该手机
             $.post('../php/register.php', {
                 cellPhone: $phone.val(),
@@ -22,6 +25,7 @@ $(function() {
             }, function(response) {
                 var data = eval('(' + response + ')');
                 if (data.state) {
+
                     console.log(data.message);
                     //验证码按钮点击生成随机验证码
                     $("#getCode").on('click', function() {
@@ -49,6 +53,7 @@ $(function() {
                     //判断提交按钮是否高亮
                     $('#submitButton').on('click', function() {
                         console.log("点击")
+                        
                         if ($('#submitButton').hasClass('active')) {
                            
                             if (/^\w{6,12}$/.test($password.val())) {
@@ -68,10 +73,10 @@ $(function() {
                                         }
                                     })
                                 } else {
-                                    alert('密码不一致');
+                                    console.log('密码不一致');
                                 }
                             } else {
-                                alert('密码格式不对');
+                                console.log('密码格式不对');
                             }
                         }
 
@@ -80,8 +85,8 @@ $(function() {
                     console.log(data.message);
                 }
             });
-        }else{
-            $phone.attr({maxlength:"11"});
+        }else if($phone.val().length > 11){
+            $phone.val(index);
         }
     });
 

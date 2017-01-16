@@ -4,7 +4,11 @@ $().ready(function() {
 
         rules: {
 
-            cellPhone: "required",
+            cellPhone: {
+                required: true,
+                minlength:11
+
+            },
 
             password: {
 
@@ -14,11 +18,9 @@ $().ready(function() {
 
             },
 
-            rePassword: {
+            repassword: {
 
                 required: true,
-
-                rangelength:[6,12],
 
                 equalTo: "#password"
 
@@ -28,23 +30,22 @@ $().ready(function() {
 
         messages: {
 
-            cellPhone: "请输入手机号码",
-
-
+            cellPhone: {
+                 required: "请输入手机号码",
+                 minlength: "手机号码长度为11"
+            },
 
             password: {
 
                 required: "请输入密码",
 
-                minlength: jQuery.format("6到12位，英文+数字")
+                minlength: "6到12位，英文+数字"
 
             },
 
-            rePassword: {
+            repassword: {
 
                 required: "请输入确认密码",
-
-                minlength: "确认密码不能小于5个字符",
 
                 equalTo: "两次输入密码不一致"
 

@@ -1,0 +1,29 @@
+{
+  "name": "搭建名为银泰网的电商网站",
+  "version": "1.0.0",
+  "description": "*仅供学习",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.coding.net:EvenRH/Project.git"
+  },
+  "keywords": [
+    "git",
+    "guyintai",
+    "webyintai"
+  ],
+  "author": "EvenRH",
+  "license": "ISC"
+}

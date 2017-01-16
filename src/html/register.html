@@ -1,101 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>register</title>
-	<link rel="stylesheet" href="../css/register.css">
-	<script src="../assets/jQuery/jquery-3.1.1.js"></script>
-	
-	<script src="../js/register.js"></script>
 
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../assets/jQuery/jquery-3.1.1.js"></script>
+    <script src="../assets/jquery-validate/jquery.validate.js"></script>
+    <script src="../assets/jquery-validate/jquery.validate.rulesMessage.js"></script>
+    <script src="../assets/jquery-validate/messages_zh.js"></script>
+    <script src="../js/register.js"></script>
 </head>
+
 <body>
-	<div data-name='login'>
-		<!-- 页头 -->
-		<header>
-			<div class="hdWrap">
-				<h1 class="logo">
-					<a href="javascript:">银泰网</a>
-				</h1>
-				<div class="register"></div>
-				<div class="itips">
-					<span class="exChange">
-                        <strong><i>15天</i>无忧退换货</strong>
-                        <b>为您提供售后无忧保证</b>
-                    </span>
-                    <span class="quality">
-                        <strong><i>100%</i>正品保证</strong>
-                        <b>品质护航 购物无忧</b>
-                    </span>
-                    <span class="carry">
-                        <strong><i>满199元</i>免运费</strong>
-                        <b>为您提供便利物流</b>
-                    </span>
-				</div>				
-			</div>
-		</header>
-		<!-- 正文 -->
-		<section>
-			<div class="bdWrap">
-				<div class="bdLeft">
-					<img src="../img/a106cd06-2a41-483d-a4a2-9babbfc5f3ac.jpg" alt="">
-				</div>
-				<div class="bdRight">
-					<h1 class="title">注册护照</h1>
-					<div class="registerTip">
-						已注册可<a href="javascript:void(0);" id="login">直接登录</a>
-					</div>
-					<form >
-			            <p>
-			                <input id="cellPhone" type="tel" name="cellPhone" value="" placeholder="请输入手机号" >
-			            </p>
-			            <p>
-			                <input id="setCode" type="text" placeholder="请输入验证码">
-			                <input id="getCode" type="button" class="getCode" value="获取验证码">
-			            </p>
-			            <p>
-			            	<input id="password" type="password" name="password"  placeholder="请设置银泰护照密码" maxlength="12">
-			            	</p>
-			            <p>
-			            	<input id="repassword" type="password" 
-			            	name="repassword" placeholder="请再次确认银泰护照密码" maxlength="12">
-			            </p>
-			            <div class="useExplain">
-			            	请为护照设置密码（6到12位，英文+数字）
-			            </div>
-			            <div class="useExplain">
-			            	注册关联银泰护照后您可使用护照直接登录银泰网。银泰护照即银泰百货会员，注册后，在银泰百货商场可享受会员待遇，并可共享积分等。
-		            	</div>
-			            <input id="submitButton" class="button" type="button" value="创建银泰护照">
-					</form>
-				</div>
-			</div>	
-		</section>
-		<!-- 页脚 -->
-		<footer>
-			<div class="ftWrap">
-	            <div class="links">
-	                <a  href="" target="_blank">关于银泰</a>|<a href="javascript:void(0)" target="_blank">帮助中心</a>|<a href="javascript:void(0)" target="_blank">网站地图</a>|<a  href="javascript:void(0)">企业客户</a>|<a  href="javascript:void(0)" >代理合作</a>|<a  href="javascript:void(0)" ">品牌招商</a>|<a  href="javascript:void(0)" >商务合作</a>|<a href="javascript:void(0)">网站联盟</a>|<a  href="javascript:void(0)">联系我们</a>|<a  href="javascript:void(0)">加入银泰</a>|<a  href="javascript:void(0)">版权声明</a>|<a  href="javascript:void(0)">法律声明</a>
-	            </div>
-	            <div class="versions">
-	                <p>
-	                    <a href="javascript:void(0)">浙ICP备10200233号</a><a href="javascript:void(0)">京公网安备110105019085</a><a href="javascript:void(0)">增值电信业务经营许可证：浙B2-20110005</a>
-	                </p>
-	                <p>Yintai © 2014, 银泰电子商务有限公司.</p>
-	            </div>
-	            <div class="footer">
-	                <a href="javascript:void(0)">
-	                    <img class="m-integrity" src = "../css/img/yt-ntegrity.png">
-	                </a>
-	                <a   href="javascript:void(0)">
-	                    <img class="cnnic" src = "../css/img/cnnic.png">
-	                </a>
-	                <a   href="javascript:void(0)">
-	                    <img class="commerce" src = "../css/img/commerce.gif">
-	                </a>
-	            </div>
-        	</div>
-		</footer>
+    <div id='doc'>
+      <!-- 页头 -->
+      <header id="hd" class="ytSecure">
+          <div id="hdmain">
+              <div class="ytWrap topMain">
+                  <h1 class="logo">
+										<a href="javascript:"></a>
+									</h1>
+                  <div class="register"></div>
+                  <div class="itips">
+                      <span class="exChange">
+			                  <strong><i>15天</i>无忧退换货</strong>
+			                  <b>为您提供售后无忧保证</b>
+			              </span>
+			                        <span class="quality">
+			                  <strong><i>100%</i>正品保证</strong>
+			                  <b>品质护航 购物无忧</b>
+			              </span>
+			                        <span class="carry">
+			                  <strong><i>满199元</i>免运费</strong>
+			                  <b>为您提供便利物流</b>
+			              </span>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <!-- 正文 -->
+      <section>
+          <div class="bdWrap">
+              <div class="bdLeft">
+                  <img src="../img/a106cd06-2a41-483d-a4a2-9babbfc5f3ac.jpg" alt="">
+              </div>
+              <div class="bdRight">
+                  <h1 class="title">注册护照</h1>
+                  <div class="loginTip">
+                      已注册可<a href="javascript:void(0);" id="login">直接登录</a>
+                  </div>
+                  <form>
+                      <p>
+                          <input id="cellPhone" type="tel" name="cellPhone" value="" placeholder="请输入手机号">
+                      </p>
+                      <p>
+                          <input id="setCode" type="text" placeholder="请输入验证码">
+                          <input id="getCode" type="button" class="getCode" value="获取验证码">
+                      </p>
+                      <p>
+                          <input id="password" type="password" name="password" placeholder="请设置银泰护照密码" maxlength="12">
+                      </p>
+                      <p>
+                          <input id="repassword" type="password" name="repassword" placeholder="请再次确认银泰护照密码" maxlength="12">
+                      </p>
+                      <div class="useExplain">
+                          请为护照设置密码（6到12位，英文+数字）
+                      </div>
+                      <div class="useExplain">
+                          注册关联银泰护照后您可使用护照直接登录银泰网。银泰护照即银泰百货会员，注册后，在银泰百货商场可享受会员待遇，并可共享积分等。
+                      </div>
+                      <input id="submitButton" class="button" type="submit" value="创建银泰护照">
+                  </form>
+              </div>
+          </div>
+      </section>
+      <!-- 页脚 -->
+      <footer id = "ft">
+        <div class="ytWrap links">
+            <a href="" target="_blank">关于银泰</a>|<a href="javascript:void(0)" target="_blank">帮助中心</a>|<a href="javascript:void(0)" target="_blank">网站地图</a>|<a href="javascript:void(0)">企业客户</a>|<a href="javascript:void(0)">代理合作</a>|<a href="javascript:void(0)" ">品牌招商</a>|<a  href="javascript:void(0) " >商务合作</a>|<a href="javascript:void(0) ">网站联盟</a>|<a  href="javascript:void(0) ">联系我们</a>|<a  href="javascript:void(0) ">加入银泰</a>|<a  href="javascript:void(0) ">版权声明</a>|<a  href="javascript:void(0) ">法律声明</a>
+        </div>
+      	<div class="ytWrap versions ">
+          <p>
+            <a href="javascript:void(0) ">浙ICP备10200233号</a><a href="javascript:void(0) ">京公网安备110105019085</a><a href="javascript:void(0) ">增值电信业务经营许可证：浙B2-20110005</a>
+          </p>
+          <p>Yintai © 2014, 银泰电子商务有限公司.</p>
+        </div>
+        <div class="ytWrap lastTubiao ">
+          <a href="javascript:void(0) ">
+              <img class="m-integrity " src = "../css/img/yt-ntegrity.png ">
+          </a>
+          <a   href="javascript:void(0) ">
+              <img class="cnnic " src = "../css/img/cnnic.png ">
+          </a>
+          <a   href="javascript:void(0) ">
+              <img class="commerce " src = "../css/img/commerce.gif ">
+          </a>
+        </div>
+			</footer>
 	</div>
 </body>
 </html>

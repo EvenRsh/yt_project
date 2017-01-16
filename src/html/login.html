@@ -1,97 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>login</title>
-	<link rel="stylesheet" href="../css/login.css">
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../assets/jQuery/jquery-3.1.1.js"></script>
+    <script src="../js/login.js"></script>
 </head>
+
 <body>
-	<div data-name='login'>
-		<!-- 页头 -->
-		<header>
-			<div class="hdWrap">
-				<h1 class="logo">
-					<a href="javascript:">银泰网</a>
-				</h1>
-				<div class="login"></div>
-				<div class="itips">
-					<span class="exChange">
-                        <strong><i>15天</i>无忧退换货</strong>
-                        <b>为您提供售后无忧保证</b>
-                    </span>
-                    <span class="quality">
-                        <strong><i>100%</i>正品保证</strong>
-                        <b>品质护航 购物无忧</b>
-                    </span>
-                    <span class="carry">
-                        <strong><i>满199元</i>免运费</strong>
-                        <b>为您提供便利物流</b>
-                    </span>
-				</div>				
-			</div>
-		</header>
-		<section>
-			<div class="bdWrap">
-				<div class="bdLeft">
-					<img src="../img/a106cd06-2a41-483d-a4a2-9babbfc5f3ac.jpg" alt="">
-				</div>
-				<div class="bdRight">
-					<header>
-						<ul>
-							<li>银泰护照<b></b></li>
-							<li>银泰网账号<b></b></li>
-							<li>APP扫码登录</li>
-						</ul>
-					</header>
-					<div class="mainLogin">
-						<p>
-							<span></span>
-							<input type="text" placeholder="请输入银泰护照号(手机号)" id="passportname">
-						</p>
-						<p>
-							<span></span>
-							<input type="password" placeholder="请输入密码" id="passportword">
-						</p>
-						<p>
-							<input id="passportLogin" class="login-button" value="登&nbsp;录">
-						</p>
-						<p>
-							<a class="forget-password">忘记密码？</a>
-							<a class="register">注册</a>
-						</p>
-					</div>
-					<div class="loginThird">
-						<div class="cooperate-ui">
-                    		<h3 class="cooperate-title">您可以使用合作网站账号登录</h3><p></p>
-		                </div>
-		                <div class="cooperate-list">
-		                    <a href="" title="QQ登录" class="tencent-ico">QQ</a> | <a href="" title="支付宝登录" class="alipay-ico">支付宝</a> | <a href="" title="新浪微博登录" class="sina-ico">微博</a> 
-		                </div>
-					</div>
-				</div>
-			</div>	
-		</section>
-		
-		<footer>
-			<div class="ftWrap">
-	            <div class="links">
-	                <a  href="" target="_blank">关于银泰</a>|<a href="javascript:void(0)" target="_blank">帮助中心</a>|<a href="javascript:void(0)" target="_blank">网站地图</a>|<a  href="javascript:void(0)">企业客户</a>|<a  href="javascript:void(0)" >代理合作</a>|<a  href="javascript:void(0)" ">品牌招商</a>|<a  href="javascript:void(0)" >商务合作</a>|<a href="javascript:void(0)">网站联盟</a>|<a  href="javascript:void(0)">联系我们</a>|<a  href="javascript:void(0)">加入银泰</a>|<a  href="javascript:void(0)">版权声明</a>|<a  href="javascript:void(0)">法律声明</a>
+    <div id='doc'>
+        <!-- 页头 -->
+        <header id="hd" class="ytSecure">
+            <div id="hdmain">
+                <div class="ytWrap topMain">
+                    <h1 class="logo">
+						<a href="javascript:"></a>
+					</h1>
+                    <div class="login"></div>
+                    <div class="itips">
+                        <span class="exChange">
+			                  <strong><i>15天</i>无忧退换货</strong>
+			                  <b>为您提供售后无忧保证</b>
+			              </span>
+                        <span class="quality">
+			                  <strong><i>100%</i>正品保证</strong>
+			                  <b>品质护航 购物无忧</b>
+			              </span>
+                        <span class="carry">
+			                  <strong><i>满199元</i>免运费</strong>
+			                  <b>为您提供便利物流</b>
+			              </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="bdWrap">
+                <div class="bdLeft">
+                    <img src="../img/a106cd06-2a41-483d-a4a2-9babbfc5f3ac.jpg" alt="">
+                </div>
+                <div class="bdRight">
+                    <header>
+                        <ul>
+                            <li class="active">银泰护照<b></b></li>
+                            <li>银泰网账号<b></b></li>
+                            <li>APP扫码登录</li>
+                        </ul>
+                    </header>
+                    <div class="mainLogin">
+                        <p>
+                            <img src="../css/img/ueser-img-75da284743.png">
+                            <input type="text" placeholder="请输入银泰护照号(手机号)" id="cellPhone" maxlength="11">
+                        </p>
+                        <p>
+                            <img src="../css/img/pass-img-c8ba68915f.png">
+                            <input type="password" placeholder="请输入密码" id="password" maxlength="12">
+                        </p>
+                        <p class="login-button">
+                            <input id="passportLogin" class="login-button" value="登&nbsp;录" type="submit">
+                        </p>
+                        <p>
+                            <a class="forget-password">忘记密码？</a>
+                            <a class="register">注册</a>
+                        </p>
+                    </div>
+                    <div class="loginThird">
+                        <div class="cooperate-ui">
+                            <h3 class="cooperate-title">您可以使用合作网站账号登录</h3>
+                            <p></p>
+                        </div>
+                        <div class="cooperate-list">
+                            <a href="" title="QQ登录" class="tencent-ico">QQ</a> | <a href="" title="支付宝登录" class="alipay-ico">支付宝</a> | <a href="" title="新浪微博登录" class="sina-ico">微博</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="ftWrap">
+                <div class="links">
+                    <a href="" target="_blank">关于银泰</a>|<a href="javascript:void(0)" target="_blank">帮助中心</a>|<a href="javascript:void(0)" target="_blank">网站地图</a>|<a href="javascript:void(0)">企业客户</a>|<a href="javascript:void(0)">代理合作</a>|<a href="javascript:void(0)" ">品牌招商</a>|<a  href="javascript:void(0) " >商务合作</a>|<a href="javascript:void(0) ">网站联盟</a>|<a  href="javascript:void(0) ">联系我们</a>|<a  href="javascript:void(0) ">加入银泰</a>|<a  href="javascript:void(0) ">版权声明</a>|<a  href="javascript:void(0) ">法律声明</a>
 	            </div>
-	            <div class="versions">
+	            <div class="versions ">
 	                <p>
-	                    <a href="javascript:void(0)">浙ICP备10200233号</a><a href="javascript:void(0)">京公网安备110105019085</a><a href="javascript:void(0)">增值电信业务经营许可证：浙B2-20110005</a>
+	                    <a href="javascript:void(0) ">浙ICP备10200233号</a><a href="javascript:void(0) ">京公网安备110105019085</a><a href="javascript:void(0) ">增值电信业务经营许可证：浙B2-20110005</a>
 	                </p>
 	                <p>Yintai © 2014, 银泰电子商务有限公司.</p>
 	            </div>
-	            <div class="footer">
-	                <a href="javascript:void(0)">
-	                    <img class="m-integrity" src = "../css/img/yt-ntegrity.png">
+	            <div class="footer ">
+	                <a href="javascript:void(0) ">
+	                    <img class="m-integrity " src = "../css/img/yt-ntegrity.png ">
 	                </a>
-	                <a   href="javascript:void(0)">
-	                    <img class="cnnic" src = "../css/img/cnnic.png">
+	                <a   href="javascript:void(0) ">
+	                    <img class="cnnic " src = "../css/img/cnnic.png ">
 	                </a>
-	                <a   href="javascript:void(0)">
-	                    <img class="commerce" src = "../css/img/commerce.gif">
+	                <a   href="javascript:void(0) ">
+	                    <img class="commerce " src = "../css/img/commerce.gif ">
 	                </a>
 	            </div>
         	</div>
