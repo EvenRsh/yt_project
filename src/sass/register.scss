@@ -71,8 +71,8 @@ body {
                             }
                         }
                         form {
-                            background: #fff;
                             p {
+                            background: #fff;
                                 height: 44px;
                                 line-height: 44px;
                                 border-bottom: 1px solid #d2d2d2;
@@ -107,22 +107,22 @@ body {
                             	}
                             }
                             input{
-                                height: 35px;
-                                line-height: 35px;
-                                color: #fff;
-                            	&#submitButton {
-                            		@extend %center;
+                                &#submitButton {
+                                    @extend %center;
+                                    height: 35px;
+                                    line-height: 35px;
+                                    color: #fff;
 	                                display: block;
 	                                width: 80%;
 	                                margin: 0 auto 15px;
 	                                font-size: 14px;
 	                                background: #ccc;
 	                                border: 1px solid #ccc;
-                            	}
-                            	&.active {
-                                    border: 1px solid #e8004c;
-                                    background: #f1f1f1;
-                                    color: #e8004c;
+                                	&.active {
+                                        border: 1px solid #e8004c;
+                                        background: #f1f1f1;
+                                        color: #e8004c;
+                                    }
                                 }
                             }
                             

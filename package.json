@@ -1,5 +1,5 @@
 {
-  "name": "搭建名为银泰网的电商网站",
+  "name": "yintai",
   "version": "1.0.0",
   "description": "*仅供学习",
   "main": "gulpfile.js",
@@ -7,9 +7,9 @@
     "doc": "doc"
   },
   "dependencies": {
-    "browser-sync": "^2.18.6",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.3.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -20,9 +20,10 @@
     "url": "git@git.coding.net:EvenRH/Project.git"
   },
   "keywords": [
+    "gulp",
     "git",
-    "guyintai",
-    "webyintai"
+    "sass",
+    "yintai"
   ],
   "author": "EvenRH",
   "license": "ISC"
