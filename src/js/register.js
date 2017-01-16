@@ -4,25 +4,21 @@
 ==============  
 */
 //页面加载
+
 $(function() {
     // console.log($('form'));
     var $phone = $('#cellPhone');
     var $code = $('#setCode');
-    var $pssword = $('#password');
-    var $repssword = $('#repassword');
-    var $phone.val();
-    var _valcode;
-    var _valpssword;
-    var _valrepssword;
+    var $password = $('#password');
+    var $repassword = $('#repassword');
+   
     //手机号码输入判断是否存在
     $('form').on('input', ':input#cellPhone', function() {
-        $phone.val() = $phone.val();
-        if ($phone.val().length == 11) {
+        if ($phone.val().length == 11 ) {
             //检测数据库是否存在该手机
-            console.log($phone.val());
             $.post('../php/register.php', {
                 cellPhone: $phone.val(),
-                password: $('#password').val(),
+                password: $password.val(),
             }, function(response) {
                 var data = eval('(' + response + ')');
                 if (data.state) {
@@ -41,12 +37,9 @@ $(function() {
                     });
                     //判断所有的信息是否已经填写完成
                     $('form').on('input', function() {
-                        $phone.val() = $phone.val();
-                        _valcode = $('#setCode').val();
-                        _valpssword = $('#password').val();
-                        _valrepssword = $('#repassword').val();
+                        
                         if ($phone.val().length == 11) {
-                            if (_valcode && _valpssword && _valrepssword) {
+                            if ($code.val() && $password.val() && $repassword.val()) {
                                 //提交按钮高亮
                                 $('#submitButton').addClass('active')
                             }
@@ -55,16 +48,16 @@ $(function() {
                     //后提交数据到服务器再保存到数据库
                     //判断提交按钮是否高亮
                     $('#submitButton').on('click', function() {
+                        console.log("点击")
                         if ($('#submitButton').hasClass('active')) {
-                            _valpssword = $('#password').val();
-                            _valrepssword = $('#repassword').val();
-                            if (/^\w{6,12}$/.test(_valpssword)) {
+                           
+                            if (/^\w{6,12}$/.test($password.val())) {
 
-                                if (_valpssword == _valrepssword) {
-                                    console.log('可以提交数据');
+                                if ($password.val() == $repassword.val()) {
+                                    // console.log('可以提交数据');
                                     $.post('../php/register.php', {
                                         cellPhone: $phone.val(),
-                                        password: $('#password').val(),
+                                        password: $password.val(),
                                     }, function(response) {
                                         var data = eval('(' + response + ')');
                                         if (data.state) {
@@ -87,6 +80,8 @@ $(function() {
                     console.log(data.message);
                 }
             });
+        }else{
+            $phone.attr({maxlength:"11"});
         }
     });
 
