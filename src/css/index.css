@@ -1,68 +1,57 @@
-@charset "UTF-8";
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
 
 ul { list-style: none; }
 
-a { text-decoration: none; }
+a { text-decoration: none; color: #666; }
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-body div header div div.ytWrap::after { content: ''; display: block; clear: both; }
-
-body div header div div h1.logo, body div header div div div span { float: left; }
-
-body div header div div div.itips { float: right; }
-
-body div footer div { text-align: center; }
-
-body div header.ytSecure, body div header div#hdmain, body div footer#ft { background-color: #fff; }
+#doc, #hd { width: 100%; min-width: 1190px; }
 
 body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
-body div#doc { width: 100%; min-width: 1190px; }
+.ytSecure { background-color: #fff; padding: 20px 0; }
 
-body div header.ytSecure { padding: 20px 0; }
+.ytWrap { width: 1190px; margin: 0 auto; }
 
-body div header div div.ytWrap { width: 1190px; margin: 0 auto; }
+#ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
 
-body div header div div.topMain { height: 76px; }
+#ft div { text-align: center; }
 
-body div header div div h1.logo { margin: 0 5px 0 0; }
+.itips { width: 1188px; height: 88px; margin-bottom: 35px; border: 1px solid #eee; background-color: #f7f7f7; }
 
-body div header div div h1 a { display: block; background: #eee url(img/header-20160223.gif) 0 0 no-repeat; overflow: hidden; width: 215px; height: 76px; }
+span { float: left; border-right: 1px solid #eee; height: 65px; }
 
-body div header div div div.itips { height: 76px; }
+span strong { display: block; font-size: 16px; font-weight: 400; color: #000; }
 
-body div header div div div span { height: 41px; margin-top: 35px; font-family: "微软雅黑"; }
+span strong i { font-style: normal; color: #e5004f; }
 
-body div header div div div span.exChange { width: 145px; padding: 0 0 0 45px; background: url(img/footer-01.png) 0 -80px no-repeat; }
+span b { font-weight: 400; color: #888; }
 
-body div header div div div span.quality { width: 130px; padding: 0 0 0 48px; background: url(img/footer-01.png) 0 -154px no-repeat; }
+.service { width: 282px; height: 68px; padding: 20px 0 0 45px; }
 
-body div header div div div span.carry { width: 110px; border-right: none; padding: 0 0 0 60px; background: url(img/footer-01.png) 0 -225px no-repeat; }
+.service strong { display: inline-block; padding: 0 20px 0 24px; font-size: 20px; font-family: Arial; color: #e5004f; background: url(./img/footer-01.png) 2px 0 no-repeat; }
 
-body div header div div div span strong { display: block; font-size: 16px; font-weight: 400; color: #000; }
+.service b { padding-left: 24px; font-size: 14px; font-family: Arial; background: url(./img/footer-01.png) 0 -28px no-repeat; }
 
-body div header div div div span strong i { font-style: normal; color: #e5004f; }
+.exChange { width: 186px; padding: 23px 0 0 100px; background: url(./img/footer-01.png) 52px -56px no-repeat; }
 
-body div header div div div span b { font-weight: 400; color: #888; }
+.quality { width: 182px; padding: 23px 0 0 104px; background: url(./img/footer-01.png) 52px -132px no-repeat; }
 
-body div footer#ft { width: 100%; min-width: 1190px; padding-top: 30px; }
+.carry { width: 140px; border-right: none; padding: 23px 0 0 115px; background: url(./img/footer-01.png) 52px -203px no-repeat; }
 
-body div footer div.ytWrap { width: 1190px; margin: 0 auto; }
+.links { margin-bottom: 25px; }
 
-body div footer div.links { margin-bottom: 25px; }
+.links a { margin: 0 10px; color: #757575; }
 
-body div footer div.links a { margin: 0 10px; color: #757575; }
+.versions p { line-height: 22px; color: #b2b2b2; }
 
-body div footer div.versions p { line-height: 22px; color: #b2b2b2; }
+.versions p a { margin: 0 6px; color: #b2b2b2; }
 
-body div footer div.versions p a { margin: 0 6px; color: #b2b2b2; }
+.lastTubiao { padding: 10px 0 20px; }
 
-body div footer div.lastTubiao { padding: 10px 0 20px; }
+.lastTubiao a { display: inline-block; margin: 0 12px; }
 
-body div footer div.lastTubiao a { display: inline-block; margin: 0 12px; }
+.cnnic { width: 112px; height: 40px; }
 
-body div footer div.lastTubiao a img.cnnic { width: 112px; height: 40px; }
-
-body { background-color: #f9f9f9; /* 	header{ background-color: #fff; .hdWrap{ background-color: #fff; .login{ @extend .left; width: 124px; height: 24px; margin-top: 52px; background: url(img/header-login.png) 0 0 no-repeat; }; } } //正文 section{ width: auto; background-color: #f9f9f9; padding: 60px 0 50px; } footer{ .ftWrap{ .itips{ } } } */ }
+body { background-color: #f9f9f9; }

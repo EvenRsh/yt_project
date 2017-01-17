@@ -1,0 +1,69 @@
+//主属性
+.itips {
+    width: 1188px;
+    height: 88px;
+    margin-bottom: 35px;
+    border: 1px solid #eee;
+    background-color: #f7f7f7;
+}
+//共有样式
+span {
+    float: left;
+    border-right: 1px solid #eee;
+    height: 65px;
+    strong {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        i {
+            font-style: normal;
+            color: #e5004f;
+        }
+    }
+    b {
+        font-weight: 400;
+        color: #888;
+    }
+
+}
+//电话服务
+.service {
+    width: 282px;
+    height: 68px;
+    padding: 20px 0 0 45px;
+    strong {
+        display: inline-block;
+        padding: 0 20px 0 24px;
+        font-size: 20px;
+        font-family: Arial;
+        color: #e5004f;
+        background: url(./img/footer-01.png) 2px 0 no-repeat;
+    }
+    b {
+        padding-left: 24px;
+        font-size: 14px;
+        font-family: Arial;
+        background: url(./img/footer-01.png) 0 -28px no-repeat;
+    }
+}
+//退货
+.exChange {
+    width: 186px;
+    padding: 23px 0 0 100px;
+    background: url(./img/footer-01.png) 52px -56px no-repeat;
+}
+//品质
+.quality {
+    width: 182px;
+    padding: 23px 0 0 104px;
+    background: url(./img/footer-01.png) 52px -132px no-repeat;
+}
+//运费
+.carry {
+    width: 140px;
+    border-right: none;
+    padding: 23px 0 0 115px;
+    background: url(./img/footer-01.png) 52px -203px no-repeat;
+}
+

@@ -1,0 +1,61 @@
+@import 'common.scss';
+
+#hdmain {
+    background-color: #fff;
+    height: 76px;
+}
+.logo {
+    float: left;
+    margin: 0 5px 0 0;
+    a {
+        display: block;
+        background: #eee url(./img/header-20160223.gif) 0 0 no-repeat;
+        width: 215px;
+        height: 76px;
+    }
+}
+.itips {
+    float: right;
+    height: 76px;
+}
+//共有样式
+span {
+    float: left;
+    height: 41px;
+    margin-top: 35px;
+    font-family: "微软雅黑";
+    strong {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        i {
+            font-style: normal;
+            color: #e5004f;
+        }
+    }
+    b {
+        font-weight: 400;
+        color: #888;
+    }
+
+}
+//退货
+.exChange {
+    width: 145px;
+    padding: 0 0 0 45px;
+    background: url(./img/footer-01.png) 0 -80px no-repeat;
+}
+//品质
+.quality {
+    width: 130px;
+    padding: 0 0 0 48px;
+    background: url(./img/footer-01.png) 0 -154px no-repeat;
+}
+//运费
+.carry {
+    width: 110px;
+    border-right: none;
+    padding: 0 0 0 60px;
+    background:  url(./img/footer-01.png) 0 -225px no-repeat;
+}

@@ -16,32 +16,34 @@
             <div id="hdmain">
                 <div class="ytWrap topMain">
                     <h1 class="logo">
-						<a href="javascript:"></a>
-					</h1>
+                        <a href="javascript:"></a>
+                    </h1>
                     <div class="login"></div>
                     <div class="itips">
                         <span class="exChange">
-			                  <strong><i>15天</i>无忧退换货</strong>
-			                  <b>为您提供售后无忧保证</b>
-			              </span>
+                              <strong><i>15天</i>无忧退换货</strong>
+                              <b>为您提供售后无忧保证</b>
+                          </span>
                         <span class="quality">
-			                  <strong><i>100%</i>正品保证</strong>
-			                  <b>品质护航 购物无忧</b>
-			              </span>
+                              <strong><i>100%</i>正品保证</strong>
+                              <b>品质护航 购物无忧</b>
+                          </span>
                         <span class="carry">
-			                  <strong><i>满199元</i>免运费</strong>
-			                  <b>为您提供便利物流</b>
-			              </span>
+                              <strong><i>满199元</i>免运费</strong>
+                              <b>为您提供便利物流</b>
+                          </span>
                     </div>
                 </div>
             </div>
         </header>
-        <section>
-            <div class="bdWrap">
-                <div class="bdLeft">
+        <!-- 正文 -->
+        <div id="bd">
+            <div class="ytWrap">
+                <div class="ytLeft">
                     <img src="../img/a106cd06-2a41-483d-a4a2-9babbfc5f3ac.jpg" alt="">
                 </div>
-                <div class="bdRight">
+                <!-- 登录框 -->
+                <div class="ytRight">
                     <header>
                         <ul>
                             <li class="active">银泰护照<b></b></li>
@@ -57,7 +59,7 @@
                         <p>
                             <img src="../css/img/pass-img-c8ba68915f.png">
                             <input type="password" placeholder="请输入密码" id="password" maxlength="12">
-                        </p> 
+                        </p>
                         <p class="login-button">
                             <input id="passportLogin" class="login-button" value="登&nbsp;录" type="submit">
                         </p>
@@ -65,7 +67,21 @@
                             <a class="forget-password">忘记密码？</a>
                             <a class="register">注册</a>
                         </p>
+                        <!-- 二维码 -->
+                        <div class="scancode-login">
+                            <div class="qrcode-login">
+                                <h3 class="qrcode-title">用银泰网APP 扫描二维码安全登录</h3>
+                                <div class="qrcode-img" id="J_QRCodeImg" style="left: 70px;">
+                                    <img src="../css/img/qrcode.jpg" id="qrcode">
+                                </div>
+                                <p class="qrcode-desc">
+                                    <a href="#k" class="light-link">下载银泰网APP</a> | <a href="#" class="light-link">使用帮助</a>
+                                </p>
+                                <p class="qrcode-tip">仅限4.1.1以上版本使用</p>
+                            </div>
+                        </div>
                     </div>
+                    <!-- 第三方 -->
                     <div class="loginThird">
                         <div class="cooperate-ui">
                             <h3 class="cooperate-title">您可以使用合作网站账号登录</h3>
@@ -77,10 +93,11 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <footer id = "ft">
+        </div>
+        <!-- 页脚 -->
+        <div id="ft">
             <div class="ytWrap links">
-                <a href="" target="_blank">关于银泰</a>|<a href="javascript:void(0)" target="_blank">帮助中心</a>|<a href="javascript:void(0)" target="_blank">网站地图</a>|<a href="javascript:void(0)">企业客户</a>|<a href="javascript:void(0)">代理合作</a>|<a href="javascript:void(0)" ">品牌招商</a>|<a  href="javascript:void(0) " >商务合作</a>|<a href="javascript:void(0) ">网站联盟</a>|<a  href="javascript:void(0) ">联系我们</a>|<a  href="javascript:void(0) ">加入银泰</a>|<a  href="javascript:void(0) ">版权声明</a>|<a  href="javascript:void(0) ">法律声明</a>
+                <a rel="nofollow" href="http://about.yintai.com/about/about.html" target="_blank">关于银泰</a>|<a href="http://www.yintai.com/help/index.html" target="_blank">帮助中心</a>|<a href="http://www.yintai.com/sitemap/onlinecategory.aspx" target="_blank">网站地图</a>|<a rel="nofollow" href="http://about.yintai.com/about/biz.html" target="_blank">企业客户</a>|<a rel="nofollow" href="http://agent.yintai.com" target="_blank">代理合作</a>|<a rel="nofollow" href="http://about.yintai.com/about/business.html" target="_blank">品牌招商</a>|<a rel="nofollow" href="http://about.yintai.com/partner/partner.html" target="_blank">商务合作</a>|<a href="http://cps.yintai.com" target="_blank">网站联盟</a>|<a rel="nofollow" href="http://about.yintai.com/about/contact.html" target="_blank">联系我们</a>|<a rel="nofollow" href="http://about.yintai.com/about/joinus.html" target="_blank">加入银泰</a>|<a rel="nofollow" href="http://about.yintai.com/about/copyright.html" target="_blank">版权声明</a>|<a rel="nofollow" href="http://about.yintai.com/about/law.html" class="last" target="_blank">法律声明</a>
             </div>
             <div class="ytWrap versions ">
               <p>
@@ -99,7 +116,7 @@
                   <img class="commerce " src = "../css/img/commerce.gif ">
               </a>
             </div>
-        </footer>
-	</div>
+        </div>
+    </div>
 </body>
 </html>

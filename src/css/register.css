@@ -3,100 +3,114 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 
 ul { list-style: none; }
 
-a { text-decoration: none; }
+a { text-decoration: none; color: #666; }
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-body div header div div.ytWrap::after, body div section div.bdWrap::after { content: ''; display: block; clear: both; }
+.ytWrap::after { content: ''; display: block; clear: both; }
 
-body div header div div h1.logo, body div header div div div span, body div header div div div.register, body div section div div.bdLeft { float: left; }
+.ytLeft { float: left; }
 
-body div header div div div.itips, body div section div div.bdRight, body div section div div.bdRight form p input.getCode { float: right; }
+.ytRight, .getCode { float: right; }
 
-body div footer div, body div section div div.bdRight h1, body div section div div.bdRight form p input.getCode, body div section div div.bdRight form input#submitButton { text-align: center; }
+.ytRight h1, .getCode, #submitButton { text-align: center; }
 
-body div header.ytSecure, body div header div#hdmain, body div footer#ft { background-color: #fff; }
+#doc, #hd { width: 100%; min-width: 1190px; }
 
 body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
-body div#doc { width: 100%; min-width: 1190px; }
+.ytSecure { background-color: #fff; padding: 20px 0; }
 
-body div header.ytSecure { padding: 20px 0; }
+.ytWrap { width: 1190px; margin: 0 auto; }
 
-body div header div div.ytWrap { width: 1190px; margin: 0 auto; }
+#ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
 
-body div header div div.topMain { height: 76px; }
+#ft div { text-align: center; }
 
-body div header div div h1.logo { margin: 0 5px 0 0; }
+input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-body div header div div h1 a { display: block; background: #eee url(img/header-20160223.gif) 0 0 no-repeat; overflow: hidden; width: 215px; height: 76px; }
+.ytWrap::after { content: ''; display: block; clear: both; }
 
-body div header div div div.itips { height: 76px; }
+.ytLeft { float: left; }
 
-body div header div div div span { height: 41px; margin-top: 35px; font-family: "微软雅黑"; }
+.ytRight, .getCode { float: right; }
 
-body div header div div div span.exChange { width: 145px; padding: 0 0 0 45px; background: url(img/footer-01.png) 0 -80px no-repeat; }
+.ytRight h1, .getCode, #submitButton { text-align: center; }
 
-body div header div div div span.quality { width: 130px; padding: 0 0 0 48px; background: url(img/footer-01.png) 0 -154px no-repeat; }
+#doc, #hd { width: 100%; min-width: 1190px; }
 
-body div header div div div span.carry { width: 110px; border-right: none; padding: 0 0 0 60px; background: url(img/footer-01.png) 0 -225px no-repeat; }
+body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
-body div header div div div span strong { display: block; font-size: 16px; font-weight: 400; color: #000; }
+.ytSecure { background-color: #fff; padding: 20px 0; }
 
-body div header div div div span strong i { font-style: normal; color: #e5004f; }
+.ytWrap { width: 1190px; margin: 0 auto; }
 
-body div header div div div span b { font-weight: 400; color: #888; }
+#ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
 
-body div footer#ft { width: 100%; min-width: 1190px; padding-top: 30px; }
+#ft div { text-align: center; }
 
-body div footer div.ytWrap { width: 1190px; margin: 0 auto; }
+#hdmain { background-color: #fff; height: 76px; }
 
-body div footer div.links { margin-bottom: 25px; }
+.logo { float: left; margin: 0 5px 0 0; }
 
-body div footer div.links a { margin: 0 10px; color: #757575; }
+.logo a { display: block; background: #eee url(./img/header-20160223.gif) 0 0 no-repeat; width: 215px; height: 76px; }
 
-body div footer div.versions p { line-height: 22px; color: #b2b2b2; }
+.itips { float: right; height: 76px; }
 
-body div footer div.versions p a { margin: 0 6px; color: #b2b2b2; }
+span { float: left; height: 41px; margin-top: 35px; font-family: "微软雅黑"; }
 
-body div footer div.lastTubiao { padding: 10px 0 20px; }
+span strong { display: block; font-size: 16px; font-weight: 400; color: #000; }
 
-body div footer div.lastTubiao a { display: inline-block; margin: 0 12px; }
+span strong i { font-style: normal; color: #e5004f; }
 
-body div footer div.lastTubiao a img.cnnic { width: 112px; height: 40px; }
+span b { font-weight: 400; color: #888; }
 
-body { background-color: #f9f9f9; }
+.exChange { width: 145px; padding: 0 0 0 45px; background: url(./img/footer-01.png) 0 -80px no-repeat; }
 
-body div header div div.ytWrap { background-color: #fff; }
+.quality { width: 130px; padding: 0 0 0 48px; background: url(./img/footer-01.png) 0 -154px no-repeat; }
 
-body div header div div div.register { width: 124px; height: 24px; margin-top: 52px; background: url(img/header-login.png) 0 -24px no-repeat; }
+.carry { width: 110px; border-right: none; padding: 0 0 0 60px; background: url(./img/footer-01.png) 0 -225px no-repeat; }
 
-body div section { width: 100%; padding: 60px 0 50px; }
+.links { margin-bottom: 25px; }
 
-body div section div { background-color: #f9f9f9; margin: 0 auto; }
+.links a { margin: 0 10px; color: #757575; }
 
-body div section div.bdWrap { height: 460px; }
+.versions p { line-height: 22px; color: #b2b2b2; }
 
-body div section div div { overflow: hidden; }
+.versions p a { margin: 0 6px; color: #b2b2b2; }
 
-body div section div div.bdLeft { width: 780px; }
+.lastTubiao { padding: 10px 0 20px; }
 
-body div section div div.bdRight { position: relative; width: 385px; margin: 0 auto; }
+.lastTubiao a { display: inline-block; margin: 0 12px; }
 
-body div section div div.bdRight h1.title { background: #fff; height: 40px; line-height: 39px; font-size: 14px; border-bottom: 3px solid #e5004f; color: #333; }
+.cnnic { width: 112px; height: 40px; }
 
-body div section div div.bdRight div.loginTip { box-sizing: border-box; padding: 10px 20px; text-align: right; font-size: 14px; color: #000; }
+.register { float: left; width: 124px; height: 24px; margin-top: 52px; background: url(img/header-login.png) 0 -24px no-repeat; }
 
-body div section div div.bdRight div a { color: red; }
+#bd { width: 100%; padding: 60px 0 50px; background-color: #f9f9f9; margin: 0 auto; }
 
-body div section div div.bdRight form p { background: #fff; height: 44px; line-height: 44px; border-bottom: 1px solid #d2d2d2; padding-left: 20px; }
+#bd div div { overflow: hidden; }
 
-body div section div div.bdRight form p input { height: 20px; width: 50%; color: #333; }
+.ytLeft { width: 780px; }
 
-body div section div div.bdRight form p input.getCode { margin-right: 20px; margin-top: 8px; width: 90px; height: 28px; line-height: 26px; border: 1px solid #999; border-radius: 3px; font-size: 12px; color: #666; background: #fff; }
+.ytRight { position: relative; width: 385px; margin: 0 auto; }
 
-body div section div div.bdRight form div.useExplain { line-height: 16px; padding: 10px; color: #666; font-size: 12px; }
+.ytRight div a { color: red; }
 
-body div section div div.bdRight form input#submitButton { height: 35px; line-height: 35px; color: #fff; display: block; width: 80%; margin: 0 auto 15px; font-size: 14px; background: #ccc; border: 1px solid #ccc; }
+.title { background: #fff; height: 40px; line-height: 39px; font-size: 14px; border-bottom: 3px solid #e5004f; color: #333; }
 
-body div section div div.bdRight form input#submitButton.active { border: 1px solid #e8004c; background: #f1f1f1; color: #e8004c; }
+.loginTip { box-sizing: border-box; padding: 10px 20px; text-align: right; font-size: 14px; color: #000; }
+
+form p { background: #fff; height: 44px; line-height: 44px; border-bottom: 1px solid #d2d2d2; padding-left: 20px; }
+
+form p input { height: 20px; width: 50%; color: #333; }
+
+form p b { color: red; }
+
+.getCode { margin-right: 20px; margin-top: 8px; width: 90px; height: 28px; line-height: 26px; border: 1px solid #999; border-radius: 3px; font-size: 12px; color: #666; background: #fff; }
+
+.useExplain { line-height: 16px; padding: 10px; color: #666; font-size: 12px; }
+
+#submitButton { height: 35px; line-height: 35px; color: #fff; display: block; width: 80%; margin: 0 auto 15px; font-size: 14px; background: #ccc; border: 1px solid #ccc; }
+
+#submitButton.active { cursor: pointer; border: 1px solid #e8004c; background: #f1f1f1; color: #e8004c; }

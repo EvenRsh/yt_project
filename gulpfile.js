@@ -11,7 +11,7 @@ gulp.task('buildSass', function() {
   	//编译.scss文件
   	.pipe(sass({outputStyle:'compact'}))
   	.pipe(gulp.dest('./src/css'))
-
+//.on('error',sass.logError)
   	//编译成功后,
   	.pipe(browserSync.reload({stream:true}))
 });

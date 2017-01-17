@@ -3,124 +3,151 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 
 ul { list-style: none; }
 
-a { text-decoration: none; }
+a { text-decoration: none; color: #666; }
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-body div header div div.ytWrap::after, body div section div.bdWrap::after, body div section div div.bdRight header ul::after, body div section div div.bdRight div.mainLogin p::after { content: ''; display: block; clear: both; }
+.ytWrap::after, .ytRight header ul::after, .mainLogin p::after { content: ''; display: block; clear: both; }
 
-body div header div div h1.logo, body div header div div div span, body div header div div div.login, body div section div div.bdLeft, body div section div div.bdRight header ul li, body div section div div.bdRight div.mainLogin p a.forget-password { float: left; }
-
-body div header div div div.itips, body div section div div.bdRight, body div section div div.bdRight header ul li b, body div section div div.bdRight div.mainLogin p a.register { float: right; }
-
-body div footer div { text-align: center; }
-
-body div header.ytSecure, body div header div#hdmain, body div footer#ft { background-color: #fff; }
+#doc, #hd { width: 100%; min-width: 1190px; }
 
 body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
-body div#doc { width: 100%; min-width: 1190px; }
+.ytSecure { background-color: #fff; padding: 20px 0; }
 
-body div header.ytSecure { padding: 20px 0; }
+.ytWrap { width: 1190px; margin: 0 auto; }
 
-body div header div div.ytWrap { width: 1190px; margin: 0 auto; }
+#ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
 
-body div header div div.topMain { height: 76px; }
+#ft div { text-align: center; }
 
-body div header div div h1.logo { margin: 0 5px 0 0; }
+input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-body div header div div h1 a { display: block; background: #eee url(img/header-20160223.gif) 0 0 no-repeat; overflow: hidden; width: 215px; height: 76px; }
+.ytWrap::after, .ytRight header ul::after, .mainLogin p::after { content: ''; display: block; clear: both; }
 
-body div header div div div.itips { height: 76px; }
+#doc, #hd { width: 100%; min-width: 1190px; }
 
-body div header div div div span { height: 41px; margin-top: 35px; font-family: "微软雅黑"; }
+body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
-body div header div div div span.exChange { width: 145px; padding: 0 0 0 45px; background: url(img/footer-01.png) 0 -80px no-repeat; }
+.ytSecure { background-color: #fff; padding: 20px 0; }
 
-body div header div div div span.quality { width: 130px; padding: 0 0 0 48px; background: url(img/footer-01.png) 0 -154px no-repeat; }
+.ytWrap { width: 1190px; margin: 0 auto; }
 
-body div header div div div span.carry { width: 110px; border-right: none; padding: 0 0 0 60px; background: url(img/footer-01.png) 0 -225px no-repeat; }
+#ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
 
-body div header div div div span strong { display: block; font-size: 16px; font-weight: 400; color: #000; }
+#ft div { text-align: center; }
 
-body div header div div div span strong i { font-style: normal; color: #e5004f; }
+#hdmain { background-color: #fff; height: 76px; }
 
-body div header div div div span b { font-weight: 400; color: #888; }
+.logo { float: left; margin: 0 5px 0 0; }
 
-body div footer#ft { width: 100%; min-width: 1190px; padding-top: 30px; }
+.logo a { display: block; background: #eee url(./img/header-20160223.gif) 0 0 no-repeat; width: 215px; height: 76px; }
 
-body div footer div.ytWrap { width: 1190px; margin: 0 auto; }
+.itips { float: right; height: 76px; }
 
-body div footer div.links { margin-bottom: 25px; }
+span { float: left; height: 41px; margin-top: 35px; font-family: "微软雅黑"; }
 
-body div footer div.links a { margin: 0 10px; color: #757575; }
+span strong { display: block; font-size: 16px; font-weight: 400; color: #000; }
 
-body div footer div.versions p { line-height: 22px; color: #b2b2b2; }
+span strong i { font-style: normal; color: #e5004f; }
 
-body div footer div.versions p a { margin: 0 6px; color: #b2b2b2; }
+span b { font-weight: 400; color: #888; }
 
-body div footer div.lastTubiao { padding: 10px 0 20px; }
+.exChange { width: 145px; padding: 0 0 0 45px; background: url(./img/footer-01.png) 0 -80px no-repeat; }
 
-body div footer div.lastTubiao a { display: inline-block; margin: 0 12px; }
+.quality { width: 130px; padding: 0 0 0 48px; background: url(./img/footer-01.png) 0 -154px no-repeat; }
 
-body div footer div.lastTubiao a img.cnnic { width: 112px; height: 40px; }
+.carry { width: 110px; border-right: none; padding: 0 0 0 60px; background: url(./img/footer-01.png) 0 -225px no-repeat; }
 
-body { background-color: #f9f9f9; }
+.links { margin-bottom: 25px; }
 
-body div header { background-color: #fff; }
+.links a { margin: 0 10px; color: #757575; }
 
-body div header div div div.login { width: 124px; height: 24px; margin-top: 52px; background: url(img/header-login.png) 0 0 no-repeat; }
+.versions p { line-height: 22px; color: #b2b2b2; }
 
-body div section { width: auto; padding: 60px 0 50px; }
+.versions p a { margin: 0 6px; color: #b2b2b2; }
 
-body div section div { height: 460px; }
+.lastTubiao { padding: 10px 0 20px; }
 
-body div section div.bdWrap { width: 1190px; margin: 0 auto; }
+.lastTubiao a { display: inline-block; margin: 0 12px; }
 
-body div section div div.bdLeft { width: 780px; overflow: hidden; background-color: #fff; }
+.cnnic { width: 112px; height: 40px; }
 
-body div section div div.bdRight { background-color: #fff; width: 385px; height: 460px; }
+#bd { width: 100%; padding: 60px 0 50px; background-color: #f9f9f9; margin: 0 auto; }
 
-body div section div div.bdRight header { width: 100%; height: 40px; border-bottom: 1px solid #d5d5d5; }
+#bd div div { overflow: hidden; }
 
-body div section div div.bdRight header ul { height: 40px; line-height: 40px; cursor: pointer; }
+.login { float: left; width: 124px; height: 24px; margin-top: 52px; background: url(img/header-login.png) 0 0 no-repeat; }
 
-body div section div div.bdRight header ul li { display: block; box-sizing: border-box; width: 33%; text-align: center; font-size: 16px; }
+.ytWrap { width: 1190px; margin: 0 auto; }
 
-body div section div div.bdRight header ul li.active { border-bottom: 3px solid #e5004f; color: #333; }
+.ytLeft { float: left; width: 780px; overflow: hidden; background-color: #fff; }
 
-body div section div div.bdRight header ul li b { display: block; margin-top: 12px; width: 0px; height: 16px; border: 1px solid #ddd; }
+.ytRight { float: right; background-color: #fff; width: 385px; height: 460px; box-sizing: border-box; }
 
-body div section div div.bdRight div.mainLogin { background-color: #f9f9f9; padding-top: 20px; width: 386px; height: 320px; box-sizing: border-box; }
+.ytRight header { width: 100%; height: 40px; border-bottom: 1px solid #d5d5d5; }
 
-body div section div div.bdRight div.mainLogin p { box-sizing: border-box; position: relative; height: 61px; line-height: 39px; background: #fff; padding: 10px 18px; border-top: 1px solid #d5d5d5; }
+.ytRight header ul { height: 40px; line-height: 40px; cursor: pointer; }
 
-body div section div div.bdRight div.mainLogin p:last-child { border-top: none; background-color: #f9f9f9; }
+.ytRight header ul li { float: left; display: block; box-sizing: border-box; width: 33%; text-align: center; font-size: 16px; }
 
-body div section div div.bdRight div.mainLogin p.login-button { background-color: #f9f9f9; padding: 5px 18px; }
+.ytRight header ul li.active { border-bottom: 3px solid #e5004f; color: #333; }
 
-body div section div div.bdRight div.mainLogin p input { margin-left: 40px; height: 30px; line-height: 30px; width: 80%; font-size: 16px; color: #666; }
+.ytRight header ul li b { float: right; display: block; margin-top: 12px; width: 0px; height: 16px; border: 1px solid #ddd; }
 
-body div section div div.bdRight div.mainLogin p input.login-button { margin-left: 0; text-align: center; height: 50px; line-height: 50px; width: 100%; font-size: 18px; font-weight: 500; border-radius: 5px; background-color: #e5004f; color: #fff; cursor: pointer; }
+.mainLogin { background-color: #f9f9f9; padding-top: 20px; width: 386px; height: 320px; box-sizing: border-box; }
 
-body div section div div.bdRight div.mainLogin p img { display: inline-block; width: 25px; height: 25px; border-radius: 50%; position: absolute; top: 15px; left: 15px; }
+.mainLogin p { box-sizing: border-box; position: relative; height: 61px; line-height: 39px; background: #fff; padding: 10px 18px; border-top: 1px solid #d5d5d5; }
 
-body div section div div.bdRight div.mainLogin p:nth-of-type(2) img { border-radius: 0; }
+.mainLogin p:last-child { border-top: none; background-color: #f9f9f9; }
 
-body div section div div.bdRight div.mainLogin p a { height: 30px; line-height: 30px; cursor: pointer; }
+.mainLogin p.login-button { background-color: #f9f9f9; padding: 5px 18px; }
 
-body div section div div.bdRight div.mainLogin p a.forget-password { font-size: 16px; color: #999; padding-left: 10px; padding-right: 2px; }
+.mainLogin p input { margin-left: 40px; height: 30px; line-height: 30px; width: 80%; font-size: 16px; color: #666; }
 
-body div section div div.bdRight div.mainLogin p a.register { font-size: 14px; display: block; padding-right: 2px; color: #e5004f; }
+.mainLogin p input.login-button { margin-left: 0; text-align: center; height: 50px; line-height: 50px; width: 100%; font-size: 18px; font-weight: 500; border-radius: 5px; background-color: #e5004f; color: #fff; cursor: pointer; }
 
-body div section div div.bdRight div.loginThird { padding: 18px 0; }
+.mainLogin p img { display: inline-block; width: 25px; height: 25px; border-radius: 50%; position: absolute; top: 15px; left: 15px; }
 
-body div section div div.bdRight div.loginThird div.cooperate-ui, body div section div div.bdRight div.loginThird div.cooperate-list { position: relative; height: 24px; text-align: center; margin: 0 20px; }
+.mainLogin p:nth-of-type(2) img { border-radius: 0; }
 
-body div section div div.bdRight div.loginThird div.cooperate-ui h3.cooperate-title, body div section div div.bdRight div.loginThird div.cooperate-list h3.cooperate-title { position: relative; z-index: 2; display: inline-block; height: 24px; padding: 0 5px; font-weight: 400; font-size: 12px; text-align: center; background-color: #fff; color: #999; }
+.mainLogin p a { height: 30px; line-height: 30px; cursor: pointer; }
 
-body div section div div.bdRight div.loginThird div.cooperate-ui p, body div section div div.bdRight div.loginThird div.cooperate-list p { width: 100%; position: absolute; z-index: 1; top: 10px; height: 1px; overflow: hidden; background-color: #ccc; }
+.forget-password { float: left; font-size: 16px; color: #999; padding-left: 10px; padding-right: 2px; }
 
-body div section div div.bdRight div.loginThird div.cooperate-list { margin-top: 10px; }
+.register { float: right; font-size: 14px; display: block; padding-right: 2px; color: #e5004f; }
 
-body div section div div.bdRight div.loginThird div.cooperate-list a { color: #999; }
+.scancode-login { display: none; width: 280px; height: 220px; margin: 0 auto; }
+
+.qrcode-login { height: 220px; }
+
+.qrcode-login h3 { margin-left: 30px; color: #999; }
+
+.qrcode-login div { height: 130px; padding-top: 20px; padding-left: 80px; }
+
+.qrcode-login p { text-indent: 4em; }
+
+.qrcode-desc { padding-top: 0; height: 40px; background: #F9f9f9; }
+
+.qrcode-desc a { color: #999; }
+
+.loginThird { padding: 18px 0; height: 70px; }
+
+.cooperate-ui, .cooperate-list { position: relative; height: 24px; text-align: center; margin: 0 20px; }
+
+.cooperate-title { position: relative; z-index: 2; display: inline-block; height: 24px; padding: 0 5px; font-weight: 400; font-size: 12px; text-align: center; background-color: #fff; color: #999; }
+
+/* p {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    height: 1px;
+    overflow: hidden;
+    background-color: #ccc;
+} */
+.cooperate-list { margin-top: 10px; }
+
+.cooperate-list a { color: #999; }
+
+.qrcode-tip { padding-top: 0; }
