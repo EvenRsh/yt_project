@@ -9,13 +9,90 @@
     height: 39px;
     position: relative;
     .menu{
+			float: left;
+			width: 210px;
+		    height: 39px;
+		    position: relative;
+	    .menuTitle{
+	    	width: 210px;
+		    height: 39px;
+		    position: relative;
+		    .mTitle{
+		    	position: absolute;
+			    z-index: 2;
+			    width: 210px;
+			    height: 39px;
+			    display: block;
+			    float: left;
+			    font: 400 18px/39px "微软雅黑";
+			    color: #fff;
+			    text-align: center;
+			    cursor: pointer;
+			    background-color: #222;
+		    }
+	    }
+	    .menuList{
+	    	@extend %clearfix;
+			dl{
+			    float: left;
+			    margin-bottom: 1px;
+			    color: #666;
+			    dt{
+			    	float: left;
+				    width: 210px;
+				    height: 30px;
+				    padding-top: 16px;
+				    background-color: #333;
+			    }
+			    &:hover{
+			    	dt{
+			    		background-color: #e5004f;
+			    	}
+			    }
+			}
+	    }
+	}
+	.navHr{
 		float: left;
-		width: 210px;
-	    height: 39px;
-	    position: relative;
+		li{
+		    float: left;
+		    height: 39px;
+		    padding: 0 15px;
+		    position: relative;
+		    a{
+	    	    height: 39px;
+			    overflow: hidden;
+			    font: 400 16px/20px "微软雅黑";
+			    color: #323333;
+			    text-align: center;
+				span{
+				    height: 26px;
+				    position: relative;
+				    padding: 10px 10px 0;
+				    border-bottom: 3px solid #fff;
+				}
+				&:hover{
+		    		color:#e5004f;
+		    		span{
+		    			border-bottom: 3px solid #e5004f;
+		    		}
+				}
+		    }
+		}
+	}
+	.navRr{
+		float: right;
+	    height: 38px;
+		padding-top: 1px;
+		color: #cbcbcb;
+		a{
+		    margin: 0 8px;
+    		font: 400 14px/38px "微软雅黑";
+    		&:hover{
+	    		color:#e5004f;
+			}
+		}
 	}
 }
 
-.navHr{
-	float: left;
-}
+

@@ -28,7 +28,7 @@ $(function() {
         window.location.href = 'login.html';
     })
     //手机号码输入判断是否存在数据库
-    .on('change',':input#cellPhone', function(){
+    .on('change','#cellPhone', function(){
     	var len = $phone.val().length;
     	if(!/^1[3-578]\d{9}$/.test($phone.val())){
     		$phone.siblings().remove();
