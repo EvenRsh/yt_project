@@ -19,27 +19,41 @@
 
 .topLeft {
     @extend %left;
-    padding-left: 4px;
+    padding-left:4px;
     color: #d4d4d4;
-    li:nth-of-type(2) {
-        width: 40px;
-    }
     li:nth-of-type(3) {
-        width: 72px;
+        width: 80px;
+    }
+    li:nth-of-type(5) {
+        width: 140px;
     }
     a {
-        padding-left: 27px;
-        margin: 0 6px;
+        padding-left: 32px;
+        display: inline-block;
     }
+    
+}
+.ytIndex{
     s {
         background-position: -225px 0;
     }
 }
-
-.topRight {
-    @extend %right;
+.ytWeiXin{
+    s {
+        background-position: -225px -57px;
+    }
+   
 }
-
+.ytPhone{
+    s{
+        height: 20px;
+        background: url(./img/phone.png) center 0 no-repeat;
+    }
+     b{
+        left: 85px;
+        top: 16px;
+    }
+}
 .separator {
     width: 0;
     height: 14px;
@@ -50,7 +64,6 @@
     border-left: 1px solid #ccc;
     margin: 0 4px;
 }
-
 li {
     @extend %left;
     line-height: 34px;
@@ -78,6 +91,30 @@ li {
             height: 5px;
             overflow: hidden;
             background: url(./img/header-02.png) -175px -111px no-repeat;
+            -webkit-transition: -webkit-transform .2s ease-in 0s;            
         }
+    }
+}
+.topRight {
+    @extend %right;
+    a{
+        padding: 0 10px 0;
+    }
+    .ytLogin,.ytRegister{
+        padding: 0;
+    }
+}
+.ytUser{
+    padding-right: 10px;
+    span{
+        border-right: 0;
+        height: 34px;
+        line-height: 34px;
+    }
+}
+
+.myYt{
+    a{
+      width: 52px;
     }
 }

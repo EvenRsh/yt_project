@@ -1,0 +1,21 @@
+@import 'common.scss';
+
+#hdmenu{
+	border-bottom: 1px solid #2d2e2e;
+    background-color: #fff;
+}
+.topMenu{
+	@extend %clearfix;
+    height: 39px;
+    position: relative;
+    .menu{
+		float: left;
+		width: 210px;
+	    height: 39px;
+	    position: relative;
+	}
+}
+
+.navHr{
+	float: left;
+}

@@ -5,12 +5,14 @@
     margin-bottom: 35px;
     border: 1px solid #eee;
     background-color: #f7f7f7;
+    span{
+        border-right: 1px solid #eee;
+        height: 65px;
+    }
 }
 //共有样式
 span {
     float: left;
-    border-right: 1px solid #eee;
-    height: 65px;
     strong {
         display: block;
         font-size: 16px;

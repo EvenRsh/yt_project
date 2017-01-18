@@ -1,9 +1,20 @@
 //引入外部文件
 @import 'reset.scss';
 @import 'common.scss';
+@import 'headTop.scss';
+@import 'headBanner.scss';
+@import 'headLogo.scss';
+@import 'navList.scss';
 @import 'footTop.scss';
 @import 'foot.scss';
 body{
 	background-color: #f9f9f9;
 }
-
+.ytSecure{
+	padding: 0;
+}
+#hdmain{
+	.logo{
+	    margin-top: 21px;
+	}
+}

@@ -9,7 +9,7 @@ gulp.task('buildSass', function() {
   gulp.src('./src/sass/*.scss')
 
   	//编译.scss文件
-  	.pipe(sass({outputStyle:'compact'}))
+  	.pipe(sass({outputStyle:'compact'}).on('error',sass.logError))
   	.pipe(gulp.dest('./src/css'))
 //.on('error',sass.logError)
   	//编译成功后,

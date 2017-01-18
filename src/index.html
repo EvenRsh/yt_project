@@ -1,93 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>首页</title>
-	<link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-	<div id='doc'>
-		<!-- 页头 -->
-		<div id="hd" class="ytSecure">
-			<div id="hdtop">
-		        <div class="ytWrap topSide cf">
-		          	<ul class="topLeft">
-		          		<li><a href="index.html"><s></s>银泰首页</a></li>
-		          		<li class="separator"></li>
-		          		<li><a href="#"><s></s>微信<b></b></a></li>
-		          		<li class="separator"></li>
-		          		<li><a href="#"><s></s>手机银泰<b></b></a></li>
-		          	</ul>
-		          	<ul class="topRight">
-		          		<li>Hi，欢迎来到银泰网!</li>
-		          		<li>
-		          			<a href="html/login.html">登录</a>
-		          			<a href="html/register.html">注册</a>
-		          		</li>
-		          		<li class="separator"></li>
-		          		<li><a href="#">我的订单</a></li>
-		          		<li class="separator"></li>
-		          		<li><a href="#">我的银泰<b></b></a></li>
-		          		<li class="separator"></li>
-		          		<li><a href="#">银泰卡</a></li>
-		          		<li class="separator"></li>
-		          		<li><a href="#">帮助中心</a></li>
-		          	</ul>
-		        </div>
 
-		    </div>
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id='doc'>
+        <!-- 页头 -->
+        <div id="hd" class="ytSecure">
+            <div id="hdtop">
+                <div class="ytWrap topSide cf">
+                    <ul class="topLeft">
+                        <li class="ytIndex">
+                            <a href="index.html">
+                                <s></s>银泰首页</a>
+                        </li>
+                        <li class="separator"></li>
+                        <li class="ytWeiXin">
+                            <a href="#">
+                                <s></s>微信<b></b></a>
+                        </li>
+                        <li class="separator"></li>
+                        <li class="ytPhone">
+                            <a href="#">
+                                <s></s>手机银泰<b></b></a>
+                        </li>
+                    </ul>
+                    <ul class="topRight">
+                        <li class="ytUser">
+                            <span>Hi，欢迎来到银泰网! &nbsp;</span>
+                            <a href="html/login.html" class="ytLogin">登录</a>
+                            <a href="html/register.html" class="ytRegister">注册</a>
+                        </li>
+                        <li class="separator"></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li class="separator"></li>
+                        <li class="myYt"><a href="#">我的银泰<b></b></a></li>
+                        <li class="separator"></li>
+                        <li><a href="#">银泰卡</a></li>
+                        <li class="separator"></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="hdbanner">
+                <a href="#">
+                </a>
+            </div>
             <div id="hdmain">
                 <div class="ytWrap topMain">
                     <h1 class="logo">
 						<a href="javascript:"></a>
 					</h1>
-                    <div class="login"></div>
+					<div id="miniCart" class="cart cur-icart" >
+		                <a target="_blank" href="./html/cartList.html" class="minishop J-MiniShop"  >
+		                    <i>购物袋<strong id="cartCount">0</strong>件</i>
+		                    <b></b>
+		                </a>
+		                <div class="yt-bags J-ShopCart" id="J-ShopCart"></div>
+		            </div>
+                    <div class="search">
+                        <div class="searchbox" >
+                            <input class="default-attr" type="text" value="雾霾无处藏身的秘密" >
+                            <button title="搜索" id="searchBtn"></button>
+                            
+                        </div>
+                        <div class="hotkeyword" id="hotKeyWord" >
+                            <a class="yt_hotword" target="_blank" href="http://promotion.yintai.com/20170113/mp/nhjyd0117/index.html">运动年终79元起</a>
+                            <a class="yt_hotword" target="_blank" href="http://promotion.yintai.com/20170113/mp/toppp/index.html ">旧衣不过年</a>
+                            <a target="_blank" href="http://www.yintai.com/store/store-50003467.html?supid=104519">婴幼儿服饰</a>
+                            <a target="_blank" href="http://www.yintai.com/mall/181040/index.shtml">轻复古重文艺</a>
+                            <a target="_blank" href="http://www.yintai.com/product/list-10001925.html">奢品斜挎包</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div id="hdmenu">
+            	<div class="ytWrap topMenu">
+            		<div class="menu"></div>
+            		<div class="navHr" style="padding-left:20px">
+            			<ul class="nav-hr" style="padding-left:20px">
+				            <li id="horiNavMpg">
+				            	<a target="_blank" href="//promotion.yintai.com/channels/mp/index.html?intcmp=GGW20141215_home_f_a2" data-clk="actwatch|navi|f2"><span>名品馆</span></a>
+			            	</li>
+				            <li id="horiNavTemai">
+			            		<a target="_blank" href="//temai.yintai.com/?intcmp=GGW20141215_home_f_a4" data-clk="actwatch|navi|f3"><span>特卖</span></a>
+				            </li>
+				            <li id="horiNavHaitao">
+				            	<a target="_blank" href="//channel.yintai.com/haitao/index.shtml?intcmp=GGW20141215_home_f_a5" data-clk="actwatch|navi|f4"><span>海淘馆</span></a>
+			            	</li>
+				        </ul>
+            		</div>
+            		<div class="navRr">
+			            <a target="_blank" href="//point.yintai.com/activitylist" >积分商城</a>|<a target="_blank" href="//channel.yintai.com/Brand/AllBrandsHotRecommand?intcmp=GGW20150528_home_f_a7" >全部品牌</a>
+			        </div>
+            	</div>
+            </div>
         </div>
-		<!-- 正文 -->
-		<div></div>
-		<!-- 页脚 -->
-		<div id = "ft">
-			<div class="ytWrap itips">
-				<span class="service">
+        <!-- 正文 -->
+        <div id='bd'></div>
+        <!-- 页脚 -->
+        <div id="ft">
+            <div class="ytWrap itips">
+                <span class="service">
 		            <strong>400-119-1111</strong><i>8:00-24:00</i>
 		            <b>service@yintai.com</b>
 		        </span>
-	            <span class="exChange">
+                <span class="exChange">
 	                  <strong><i>15天</i>无忧退换货</strong>
 	                  <b>为您提供售后无忧保证</b>
 	              </span>
-	            <span class="quality">
+                <span class="quality">
 	                  <strong><i>100%</i>正品保证</strong>
 	                  <b>品质护航 购物无忧</b>
 	              </span>
-	            <span class="carry">
+                <span class="carry">
 	                  <strong><i>满199元</i>免运费</strong>
 	                  <b>为您提供便利物流</b>
 	              </span>
-	        </div>
-	        <div class="ytWrap links">
-                <a rel="nofollow" href="http://about.yintai.com/about/about.html" target="_blank">关于银泰</a>|<a href="http://www.yintai.com/help/index.html" target="_blank">帮助中心</a>|<a href="http://www.yintai.com/sitemap/onlinecategory.aspx" target="_blank">网站地图</a>|<a rel="nofollow" href="http://about.yintai.com/about/biz.html" target="_blank">企业客户</a>|<a rel="nofollow" href="http://agent.yintai.com" target="_blank">代理合作</a>|<a rel="nofollow" href="http://about.yintai.com/about/business.html" target="_blank">品牌招商</a>|<a rel="nofollow" href="http://about.yintai.com/partner/partner.html" target="_blank">商务合作</a>|<a href="http://cps.yintai.com" target="_blank">网站联盟</a>|<a rel="nofollow" href="http://about.yintai.com/about/contact.html" target="_blank">联系我们</a>|<a rel="nofollow" href="http://about.yintai.com/about/joinus.html" target="_blank">加入银泰</a>|<a rel="nofollow" href="http://about.yintai.com/about/copyright.html" target="_blank">版权声明</a>|<a rel="nofollow" href="http://about.yintai.com/about/law.html" class="last" target="_blank">法律声明</a>
             </div>
-	      	<div class="ytWrap versions ">
-	          <p>
-	            <a href="javascript:void(0) ">浙ICP备10200233号</a><a href="javascript:void(0) ">京公网安备110105019085</a><a href="javascript:void(0) ">增值电信业务经营许可证：浙B2-20110005</a>
-	          </p>
-	          <p>Yintai © 2014, 银泰电子商务有限公司.</p>
-	        </div>
-	        <div class="ytWrap lastTubiao ">
-	          <a href="javascript:void(0) ">
-	              <img class="m-integrity " src = "./css/img/yt-ntegrity.png ">
-	          </a>
-	          <a   href="javascript:void(0) ">
-	              <img class="cnnic " src = "./css/img/cnnic.png ">
-	          </a>
-	          <a   href="javascript:void(0) ">
-	              <img class="commerce " src = "./css/img/commerce.gif ">
-	          </a>
-	        </div>
-		</div>
-	</div>
+            <div class="ytWrap links">
+                <a  href="http://about.yintai.com/about/about.html" target="_blank">关于银泰</a>|<a href="http://www.yintai.com/help/index.html" target="_blank">帮助中心</a>|<a href="http://www.yintai.com/sitemap/onlinecategory.aspx" target="_blank">网站地图</a>|<a  href="http://about.yintai.com/about/biz.html" target="_blank">企业客户</a>|<a  href="http://agent.yintai.com" target="_blank">代理合作</a>|<a  href="http://about.yintai.com/about/business.html" target="_blank">品牌招商</a>|<a  href="http://about.yintai.com/partner/partner.html" target="_blank">商务合作</a>|<a href="http://cps.yintai.com" target="_blank">网站联盟</a>|<a  href="http://about.yintai.com/about/contact.html" target="_blank">联系我们</a>|<a  href="http://about.yintai.com/about/joinus.html" target="_blank">加入银泰</a>|<a  href="http://about.yintai.com/about/copyright.html" target="_blank">版权声明</a>|<a  href="http://about.yintai.com/about/law.html" class="last" target="_blank">法律声明</a>
+            </div>
+            <div class="ytWrap versions ">
+                <p>
+                    <a href="javascript:void(0) ">浙ICP备10200233号</a><a href="javascript:void(0) ">京公网安备110105019085</a><a href="javascript:void(0) ">增值电信业务经营许可证：浙B2-20110005</a>
+                </p>
+                <p>Yintai © 2014, 银泰电子商务有限公司.</p>
+            </div>
+            <div class="ytWrap lastTubiao ">
+                <a href="javascript:void(0) ">
+                    <img class="m-integrity " src="./css/img/yt-ntegrity.png ">
+                </a>
+                <a href="javascript:void(0) ">
+                    <img class="cnnic " src="./css/img/cnnic.png ">
+                </a>
+                <a href="javascript:void(0) ">
+                    <img class="commerce " src="./css/img/commerce.gif ">
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
