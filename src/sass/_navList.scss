@@ -8,6 +8,7 @@
 	@extend %clearfix;
     height: 39px;
     position: relative;
+    //全部分类
     .menu{
 			float: left;
 			width: 210px;
@@ -33,25 +34,41 @@
 	    }
 	    .menuList{
 	    	@extend %clearfix;
-			dl{
+			.mList{
 			    float: left;
 			    margin-bottom: 1px;
 			    color: #666;
-			    dt{
+			    .menuListTitle{
 			    	float: left;
 				    width: 210px;
 				    height: 30px;
 				    padding-top: 16px;
 				    background-color: #333;
+				    .category{
+				    	display: inline-block;
+				    	em{
+				    		display: inline-block;
+				    		width: 20px;
+				    		height: 20px;
+				    		 background: url(./img/header-02.png) -189px 0px no-repeat;
+				    	}
+				    }
+				    div{
+				    	display: inline-block;
+				    }
 			    }
 			    &:hover{
-			    	dt{
+			    	.menuListTitle{
 			    		background-color: #e5004f;
 			    	}
+			    }
+			    .submenuList{
+			    	display: none;
 			    }
 			}
 	    }
 	}
+	//名品馆
 	.navHr{
 		float: left;
 		li{
@@ -80,6 +97,7 @@
 		    }
 		}
 	}
+	//积分商城
 	.navRr{
 		float: right;
 	    height: 38px;
