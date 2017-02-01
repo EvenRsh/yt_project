@@ -7,7 +7,7 @@ a { text-decoration: none; color: #666; }
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-.cf::after, .topSide::after, .cart .minishop::after, .topMenu::after, .topMenu .menu .menuList::after { content: ''; display: block; clear: both; }
+.cf::after, .topSide::after, .cart .minishop::after, .topMenu::after, .topMenu .menu .menuList::after, .topMenu .submenu::after { content: ''; display: block; clear: both; }
 
 .topLeft, li { float: left; }
 
@@ -27,7 +27,7 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-.cf::after, .topSide::after, .cart .minishop::after, .topMenu::after, .topMenu .menu .menuList::after { content: ''; display: block; clear: both; }
+.cf::after, .topSide::after, .cart .minishop::after, .topMenu::after, .topMenu .menu .menuList::after, .topMenu .submenu::after { content: ''; display: block; clear: both; }
 
 .topLeft, li { float: left; }
 
@@ -93,7 +93,7 @@ li a b { position: absolute; left: 62px; top: 16px; width: 9px; height: 5px; ove
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-.cf::after, .topSide::after, .cart .minishop::after, .topMenu::after, .topMenu .menu .menuList::after { content: ''; display: block; clear: both; }
+.cf::after, .topSide::after, .cart .minishop::after, .topMenu::after, .topMenu .menu .menuList::after, .topMenu .submenu::after { content: ''; display: block; clear: both; }
 
 .topLeft, li { float: left; }
 
@@ -115,7 +115,7 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-.cf::after, .topSide::after, .cart .minishop::after, .topMenu::after, .topMenu .menu .menuList::after { content: ''; display: block; clear: both; }
+.cf::after, .topSide::after, .cart .minishop::after, .topMenu::after, .topMenu .menu .menuList::after, .topMenu .submenu::after { content: ''; display: block; clear: both; }
 
 .topLeft, li { float: left; }
 
@@ -185,7 +185,7 @@ span b { font-weight: 400; color: #888; }
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-.cf::after, .topSide::after, .cart .minishop::after, .topMenu::after, .topMenu .menu .menuList::after { content: ''; display: block; clear: both; }
+.cf::after, .topSide::after, .cart .minishop::after, .topMenu::after, .topMenu .menu .menuList::after, .topMenu .submenu::after { content: ''; display: block; clear: both; }
 
 .topLeft, li { float: left; }
 
@@ -205,7 +205,7 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 #hdmenu { border-bottom: 1px solid #2d2e2e; background-color: #fff; }
 
-.topMenu { height: 39px; position: relative; }
+.topMenu { height: 39px; position: relative; /* {top-menu main} */ }
 
 .topMenu .menu { float: left; width: 210px; height: 39px; position: relative; }
 
@@ -213,7 +213,7 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 .topMenu .menu .menuTitle .mTitle { position: absolute; z-index: 2; width: 210px; height: 39px; display: block; float: left; font: 400 18px/39px "微软雅黑"; color: #fff; text-align: center; cursor: pointer; background-color: #222; }
 
-.topMenu .menu .menuList dl { float: left; margin-bottom: 1px; color: #666; }
+.topMenu .menu .menuList dl { float: left; position: relative; margin-bottom: 1px; color: #666; }
 
 .topMenu .menu .menuList dl dt { float: left; width: 210px; height: 30px; padding-top: 16px; background-color: #333; }
 
@@ -227,7 +227,9 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 .topMenu .menu .menuList dl dt div span { float: right; width: 6px; height: 11px; margin: 5px 15px 0 0; background: url(./img/header-02.png) -209px -111px no-repeat; }
 
-.topMenu .menu .menuList dl .submenuList { display: none; }
+.topMenu .menu .menuList dl .submenuList { visibility: visible; position: absolute; display: none; top: 0px; background-color: #333; }
+
+.topMenu .menu .menuList dl:hover .submenuList { display: block; }
 
 .topMenu .menuList dl dt a em { display: inline-block; width: 17px; height: 17px; margin-right: 7px; vertical-align: top; background: url(./img/header-02.png) no-repeat; }
 
@@ -274,6 +276,40 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 .topMenu .menuList dl dd { visibility: visible; position: absolute; z-index: 1000; top: 0px; left: 210px; }
 
 .topMenu .menuList dl dd.height-limit { height: 470px; overflow: hidden; zoom: 1; }
+
+.topMenu .submenu { width: 495px; padding-bottom: 10px; letter-spacing: 0; background: url(/rs/img/category-listings3.png) 0 0 repeat-y; }
+
+.topMenu .submenu .alphaBg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; float: left; z-index: -1; }
+
+.topMenu .submenu .sortsList { float: left; width: 295px; padding: 8px 20px 0; }
+
+.topMenu .submenu .sortsList a { color: #e5004f; }
+
+.topMenu .submenu .sortsRepeat { padding: 8px 0 7px 0; line-height: 20px; border-bottom: 1px dotted #666; }
+
+.topMenu .submenu .sortsRepeat h3 { width: 295px; text-align: left; font-size: 14px; font-weight: 400; }
+
+.topMenu .submenu .sortsRepeat h3 a { color: #fff; font-family: "\5fae\8f6f\96c5\9ed1"; }
+
+.topMenu .submenu .sortsRepeat h3 a:hover { color: #e5004f; }
+
+.topMenu .submenu .sortsRepeat p { width: 295px; }
+
+.topMenu .submenu .sortsRepeat p a { margin-right: 10px; color: #fff; float: left; display: inline; white-space: nowrap; }
+
+.topMenu .submenu .sortsRepeat p a:hover { color: #e5004f; }
+
+.topMenu .submenu .sortsBrand { float: left; width: 145px; padding: 15px 0 15px 15px; }
+
+.topMenu .submenu .sortsBrand a:hover { color: #e5004f; }
+
+.topMenu .submenu .sortsBrand h3 { width: 130px; height: 26px; margin-bottom: 5px; text-align: left; font-size: 14px; color: #fff; font-family: "\5fae\8f6f\96c5\9ed1"; border-bottom: 1px dotted #666; }
+
+.topMenu .submenu .sortsBrand h3:hover { color: #e5004f; }
+
+.topMenu .submenu .sortsBrand p { width: 130px; }
+
+.topMenu .submenu .sortsBrand p a { margin-right: 10px; color: #fff; float: left; display: inline; white-space: nowrap; height: 24px; line-height: 24px; }
 
 .topMenu .navHr { float: left; }
 
