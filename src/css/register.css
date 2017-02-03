@@ -7,7 +7,7 @@ a { text-decoration: none; color: #666; }
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-.cart .minishop::after, .ytWrap::after { content: ''; display: block; clear: both; }
+#ft::after, .cart .minishop::after, .ytWrap::after { content: ''; display: block; clear: both; }
 
 .ytLeft { float: left; }
 
@@ -29,7 +29,7 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
-.cart .minishop::after, .ytWrap::after { content: ''; display: block; clear: both; }
+#ft::after, .cart .minishop::after, .ytWrap::after { content: ''; display: block; clear: both; }
 
 .ytLeft { float: left; }
 
@@ -85,19 +85,19 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 .itips { float: right; height: 76px; }
 
-span { float: left; height: 41px; font-family: "微软雅黑"; }
+.itips span { float: left; height: 41px; font-family: "微软雅黑"; }
 
-span strong { display: block; font-size: 16px; font-weight: 400; color: #000; }
+.itips span strong { display: block; font-size: 16px; font-weight: 400; color: #000; }
 
-span strong i { font-style: normal; color: #e5004f; }
+.itips span strong i { font-style: normal; color: #e5004f; }
 
-span b { font-weight: 400; color: #888; }
+.itips span b { font-weight: 400; color: #888; }
 
-.exChange { width: 145px; padding: 0 0 0 45px; background: url(./img/footer-01.png) 0 -80px no-repeat; }
+.itips .exChange { width: 145px; padding: 0 0 0 45px; background: url(./img/footer-01.png) 0 -80px no-repeat; }
 
-.quality { width: 130px; padding: 0 0 0 48px; background: url(./img/footer-01.png) 0 -154px no-repeat; }
+.itips .quality { width: 130px; padding: 0 0 0 48px; background: url(./img/footer-01.png) 0 -154px no-repeat; }
 
-.carry { width: 110px; border-right: none; padding: 0 0 0 60px; background: url(./img/footer-01.png) 0 -225px no-repeat; }
+.itips .carry { width: 110px; border-right: none; padding: 0 0 0 60px; background: url(./img/footer-01.png) 0 -225px no-repeat; }
 
 .links { margin-bottom: 25px; }
 

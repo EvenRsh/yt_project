@@ -3,6 +3,10 @@
     height: 34px;
     border-bottom: 1px solid #fff;
     background-color: #eee;
+    li{
+        line-height: 34px;
+        @extend %left;
+    }
 }
 .topMain {
         height: 76px;
@@ -65,8 +69,6 @@
     margin: 0 4px;
 }
 li {
-    @extend %left;
-    line-height: 34px;
     a {
         display: inline-block;
         position: relative;

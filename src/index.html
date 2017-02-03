@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="assets/jquery-rhcarousel/jquery.rhcarousel.css">
+    <script src="assets/jQuery/jquery-3.1.1.js"></script>
+    <script src="assets/jquery-rhcarousel/jquery-rhcarousel.js"></script>
+    <script src="js/index.js"></script>
 </head>
-
 <body>
     <div id='doc'>
         <!-- 页头 -->
@@ -55,20 +58,19 @@
                     <h1 class="logo">
 						<a href="javascript:"></a>
 					</h1>
-					<div id="miniCart" class="cart cur-icart" >
-		                <a target="_blank" href="./html/cartList.html" class="minishop J-MiniShop"  >
-		                    <i>购物袋<strong id="cartCount">0</strong>件</i>
-		                    <b></b>
-		                </a>
-		                <div class="yt-bags J-ShopCart" id="J-ShopCart"></div>
-		            </div>
+                    <div id="miniCart" class="cart cur-icart">
+                        <a target="_blank" href="./html/cartList.html" class="minishop J-MiniShop">
+                            <i>购物袋<strong id="cartCount">0</strong>件</i>
+                            <b></b>
+                        </a>
+                        <div class="yt-bags J-ShopCart" id="J-ShopCart"></div>
+                    </div>
                     <div class="search">
-                        <div class="searchbox" >
-                            <input class="default-attr" type="text" value="雾霾无处藏身的秘密" >
+                        <div class="searchbox">
+                            <input class="default-attr" type="text" value="雾霾无处藏身的秘密">
                             <button title="搜索" id="searchBtn"></button>
-                            
                         </div>
-                        <div class="hotkeyword" id="hotKeyWord" >
+                        <div class="hotkeyword" id="hotKeyWord">
                             <a class="yt_hotword" target="_blank" href="http://promotion.yintai.com/20170113/mp/nhjyd0117/index.html">运动年终79元起</a>
                             <a class="yt_hotword" target="_blank" href="http://promotion.yintai.com/20170113/mp/toppp/index.html ">旧衣不过年</a>
                             <a target="_blank" href="http://www.yintai.com/store/store-50003467.html?supid=104519">婴幼儿服饰</a>
@@ -78,324 +80,1021 @@
                     </div>
                 </div>
             </div>
-            <div id="hdmenu"> 
-            	<div class="ytWrap topMenu">
-            		<div class="menu">
-            			<div class="menuTitle">
-            				<a class="mTitle" target="_blank" href="//channel.yintai.com/category/allcategorylistmap/index.html?intcmp=GGW20141215_home_f_a6" id="menu-cate-title" >全部分类</a>
-            			</div>
-            			<div class="menuList">
-            				<dl class="dl_1">
-            					<dt class="menuListTitle">
-                        			<a href="#" target="_blank" class="category" >
-                        				<em></em>名品
-                        			</a>
-                        			<i></i>
-			                        <div >
-										<a href="#" target="_blank">秋冬尚新</a>
-										<span></span>
-									</div>
-                    			</dt>
-                    			<dd class="submenuList">
-                    				<div class="submenu cf">
-                    					<div class="sortsList">
-                    						 <div class="sortsRepeat  cf" >
-                    						 	 <h3><a href="#">男装</a></h3>  <p> 
-                    						 	 	 <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  </p>  </div>  <div class="sortsRepeat  cf" > <h3><a href="#" title="女装" >女装</a></h3>  <p>  <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  <a href="#" title="裙装">裙装</a>  </p>  </div>  
-                    						 	 	 
-                						 </div>
-            						 	<div class="sortsBrand" >
-            						 	 	 <h3>品牌</h3>
-            						 	 	 <p>
-            						 	 	 	<a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
-        						 	 	 	</p>
-            						 	</div>
-                					</div>
-                    			</dd>
-            				</dl>
-            				<dl class="dl_2">
-            					<dt class="menuListTitle">
-                        			<a href="#" target="_blank" class="category" >
-                        				<em></em>名品
-                        			</a>
-                        			<i></i>
-			                        <div >
-										<a href="#" target="_blank">秋冬尚新</a>
-										<span></span>
-									</div>
-                    			</dt>
-                    			<dd class="submenuList">
-                    				<div class="submenu cf">
-                    					<div class="sortsList">
-                    						 <div class="sortsRepeat  cf" >
-                    						 	 <h3><a href="#">男装</a></h3>  <p> 
-                    						 	 	 <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  </p>  </div>  <div class="sortsRepeat  cf" > <h3><a href="#" title="女装" >女装</a></h3>  <p>  <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  <a href="#" title="裙装">裙装</a>  </p>  </div>  
-                    						 	 	 
-                						 </div>
-            						 	<div class="sortsBrand" >
-            						 	 	 <h3>品牌</h3>
-            						 	 	 <p>
-            						 	 	 	<a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
-        						 	 	 	</p>
-            						 	</div>
-                					</div>
-                    			</dd>
-            				</dl>
-            				<dl class="dl_3">
-            					<dt class="menuListTitle">
-                        			<a href="#" target="_blank" class="category" >
-                        				<em></em>名品
-                        			</a>
-                        			<i></i>
-			                        <div >
-										<a href="#" target="_blank">秋冬尚新</a>
-										<span></span>
-									</div>
-                    			</dt>
-                    			<dd class="submenuList">
-                    				<div class="submenu cf">
-                    					<div class="sortsList">
-                    						 <div class="sortsRepeat  cf" >
-                    						 	 <h3><a href="#">男装</a></h3>  <p> 
-                    						 	 	 <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  </p>  </div>  <div class="sortsRepeat  cf" > <h3><a href="#" title="女装" >女装</a></h3>  <p>  <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  <a href="#" title="裙装">裙装</a>  </p>  </div>  
-                    						 	 	 
-                						 </div>
-            						 	<div class="sortsBrand" >
-            						 	 	 <h3>品牌</h3>
-            						 	 	 <p>
-            						 	 	 	<a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
-        						 	 	 	</p>
-            						 	</div>
-                					</div>
-                    			</dd>
-            				</dl>
-            				<dl class="dl_4">
-            					<dt class="menuListTitle">
-                        			<a href="#" target="_blank" class="category" >
-                        				<em></em>名品
-                        			</a>
-                        			<i></i>
-			                        <div >
-										<a href="#" target="_blank">秋冬尚新</a>
-										<span></span>
-									</div>
-                    			</dt>
-                    			<dd class="submenuList">
-                    				<div class="submenu cf">
-                    					<div class="sortsList">
-                    						 <div class="sortsRepeat  cf" >
-                    						 	 <h3><a href="#">男装</a></h3>  <p> 
-                    						 	 	 <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  </p>  </div>  <div class="sortsRepeat  cf" > <h3><a href="#" title="女装" >女装</a></h3>  <p>  <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  <a href="#" title="裙装">裙装</a>  </p>  </div>  
-                    						 	 	 
-                						 </div>
-            						 	<div class="sortsBrand" >
-            						 	 	 <h3>品牌</h3>
-            						 	 	 <p>
-            						 	 	 	<a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
-        						 	 	 	</p>
-            						 	</div>
-                					</div>
-                    			</dd>
-            				</dl>
-            				<dl class="dl_5">
-            					<dt class="menuListTitle">
-                        			<a href="#" target="_blank" class="category" >
-                        				<em></em>名品
-                        			</a>
-                        			<i></i>
-			                        <div >
-										<a href="#" target="_blank">秋冬尚新</a>
-										<span></span>
-									</div>
-                    			</dt>
-                    			<dd class="submenuList">
-                    				<div class="submenu cf">
-                    					<div class="sortsList">
-                    						 <div class="sortsRepeat  cf" >
-                    						 	 <h3><a href="#">男装</a></h3>  <p> 
-                    						 	 	 <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  </p>  </div>  <div class="sortsRepeat  cf" > <h3><a href="#" title="女装" >女装</a></h3>  <p>  <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  <a href="#" title="裙装">裙装</a>  </p>  </div>  
-                    						 	 	 
-                						 </div>
-            						 	<div class="sortsBrand" >
-            						 	 	 <h3>品牌</h3>
-            						 	 	 <p>
-            						 	 	 	<a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
-        						 	 	 	</p>
-            						 	</div>
-                					</div>
-                    			</dd>
-            				</dl>
-            				<dl class="dl_6">
-            					<dt class="menuListTitle">
-                        			<a href="#" target="_blank" class="category" >
-                        				<em></em>名品
-                        			</a>
-                        			<i></i>
-			                        <div >
-										<a href="#" target="_blank">秋冬尚新</a>
-										<span></span>
-									</div>
-                    			</dt>
-                    			<dd class="submenuList">
-                    				<div class="submenu cf">
-                    					<div class="sortsList">
-                    						 <div class="sortsRepeat  cf" >
-                    						 	 <h3><a href="#">男装</a></h3>  <p> 
-                    						 	 	 <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  </p>  </div>  <div class="sortsRepeat  cf" > <h3><a href="#" title="女装" >女装</a></h3>  <p>  <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  <a href="#" title="裙装">裙装</a>  </p>  </div>  
-                    						 	 	 
-                						 </div>
-            						 	<div class="sortsBrand" >
-            						 	 	 <h3>品牌</h3>
-            						 	 	 <p>
-            						 	 	 	<a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
-        						 	 	 	</p>
-            						 	</div>
-                					</div>
-                    			</dd>
-            				</dl>
-            				<dl class="dl_7">
-            					<dt class="menuListTitle">
-                        			<a href="#" target="_blank" class="category" >
-                        				<em></em>名品
-                        			</a>
-                        			<i></i>
-			                        <div >
-										<a href="#" target="_blank">秋冬尚新</a>
-										<span></span>
-									</div>
-                    			</dt>
-                    			<dd class="submenuList">
-                    				<div class="submenu cf">
-                    					<div class="sortsList">
-                    						 <div class="sortsRepeat  cf" >
-                    						 	 <h3><a href="#">男装</a></h3>  <p> 
-                    						 	 	 <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  </p>  </div>  <div class="sortsRepeat  cf" > <h3><a href="#" title="女装" >女装</a></h3>  <p>  <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  <a href="#" title="裙装">裙装</a>  </p>  </div>  
-                    						 	 	 
-                						 </div>
-            						 	<div class="sortsBrand" >
-            						 	 	 <h3>品牌</h3>
-            						 	 	 <p>
-            						 	 	 	<a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
-        						 	 	 	</p>
-            						 	</div>
-                					</div>
-                    			</dd>
-            				</dl>
-            				<dl class="dl_8">
-            					<dt class="menuListTitle">
-                        			<a href="#" target="_blank" class="category" >
-                        				<em></em>名品
-                        			</a>
-                        			<i></i>
-			                        <div >
-										<a href="#" target="_blank">秋冬尚新</a>
-										<span></span>
-									</div>
-                    			</dt>
-                    			<dd class="submenuList">
-                    				<div class="submenu cf">
-                    					<div class="sortsList">
-                    						 <div class="sortsRepeat  cf" >
-                    						 	 <h3><a href="#">男装</a></h3>  <p> 
-                    						 	 	 <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  </p>  </div>  <div class="sortsRepeat  cf" > <h3><a href="#" title="女装" >女装</a></h3>  <p>  <a class="yt_hotword" href="#" title="新品">新品</a>  <a href="#" title="卫衣">卫衣</a>  <a class="yt_hotword" href="#" title="针织衫">针织衫</a>  <a href="#" title="裤装">裤装</a>  <a href="#" title="外套">外套</a>  <a href="#" title="裙装">裙装</a>  </p>  </div>  
-                    						 	 	 
-                						 </div>
-            						 	<div class="sortsBrand" >
-            						 	 	 <h3>品牌</h3>
-            						 	 	 <p>
-            						 	 	 	<a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
-        						 	 	 	</p>
-            						 	</div>
-                					</div>
-                    			</dd>
-            				</dl>
-            			</div>
-            		</div>
-            		<div class="navHr" style="padding-left:20px">
-            			<ul class="nav-hr" style="padding-left:20px">
-				            <li id="horiNavMpg">
-				            	<a target="_blank" href="//promotion.yintai.com/channels/mp/index.html?intcmp=GGW20141215_home_f_a2" data-clk="actwatch|navi|f2"><span>名品馆</span></a>
-			            	</li>
-				            <li id="horiNavTemai">
-			            		<a target="_blank" href="//temai.yintai.com/?intcmp=GGW20141215_home_f_a4" data-clk="actwatch|navi|f3"><span>特卖</span></a>
-				            </li>
-				            <li id="horiNavHaitao">
-				            	<a target="_blank" href="//channel.yintai.com/haitao/index.shtml?intcmp=GGW20141215_home_f_a5" data-clk="actwatch|navi|f4"><span>海淘馆</span></a>
-			            	</li>
-				        </ul>
-            		</div>
-            		<div class="navRr">
-			            <a target="_blank" href="//point.yintai.com/activistylist" >积分商城</a>|<a target="_blank" href="//channel.yintai.com/Brand/AllBrandsHotRecommand?intcmp=GGW20150528_home_f_a7" >全部品牌</a>
-			        </div>
-            	</div>
+            <div id="hdmenu">
+                <div class="ytWrap topMenu">
+                    <div class="menu">
+                        <div class="menuTitle">
+                            <a class="mTitle" target="_blank" href="//channel.yintai.com/category/allcategorylistmap/index.html?intcmp=GGW20141215_home_f_a6" id="menu-cate-title">全部分类</a>
+                        </div>
+                        <div class="menuList">
+                            <dl class="dl_1">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_2">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_3">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_4">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_5">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_6">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_7">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_8">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_9">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_10">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="navHr" style="padding-left:20px">
+                        <ul class="nav-hr" style="padding-left:20px">
+                            <li id="horiNavMpg">
+                                <a target="_blank" href="//promotion.yintai.com/channels/mp/index.html?intcmp=GGW20141215_home_f_a2" data-clk="actwatch|navi|f2"><span>名品馆</span></a>
+                            </li>
+                            <li id="horiNavTemai">
+                                <a target="_blank" href="//temai.yintai.com/?intcmp=GGW20141215_home_f_a4" data-clk="actwatch|navi|f3"><span>特卖</span></a>
+                            </li>
+                            <li id="horiNavHaitao">
+                                <a target="_blank" href="//channel.yintai.com/haitao/index.shtml?intcmp=GGW20141215_home_f_a5" data-clk="actwatch|navi|f4"><span>海淘馆</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navRr">
+                        <a target="_blank" href="//point.yintai.com/activistylist">积分商城</a>|<a target="_blank" href="//channel.yintai.com/Brand/AllBrandsHotRecommand?intcmp=GGW20150528_home_f_a7">全部品牌</a>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 正文 -->
         <div id='bd'>
-        	<!-- <div id="tab_nav" style="overflow: hidden;" > -->
-    			<div class="top_shadow" id="yui_3_13_0_1_1485935343203_2734"></div>
-    			<!-- <div class="pannels" style="overflow: visible; position: relative; z-index: 0;" > -->
-       
-					<div style="background-image: url(&quot;http://r.ytrss.com/rs/img/eccms/2017/1/23/99c24e52-de38-4e07-ab22-a9f61ba0b94b.jpg&quot;); background-color: rgb(255, 255, 255); display: block; opacity: 0; position: absolute; z-index: 1;" class="tab_pannel" id="yui_3_13_0_1_1485935343203_2673">
-					                <div class="content" id="yui_3_13_0_1_1485935343203_2672">
-					                    <a target="_blank" href="http://promotion.yintai.com/20170123/mp/chunjie/jimingxibao.html" data-clk="actwatch|activities|A_1_1" id="yui_3_13_0_1_1485935343203_2671">
-					                            <img width="1190" height="470" alt="" src="http://r.ytrss.com/rs/img/eccms/2017/1/23/8fcf3e58-3adf-48c2-9b3a-e6786291a1b3.jpg" id="yui_3_13_0_1_1485935343203_2670">
-					                    </a>
-					                    <div class="mask_layer" style="display: none;">
-					                    </div>
-					                </div>
-		            </div>
-					<div data-bg="http://r.ytrss.com/rs/img/eccms/2017/1/24/8e187e0f-d2f0-49a1-b6da-c535b2ee77e3.jpg" style="background-color: rgb(255, 255, 255); display: block; opacity: 0; position: absolute; z-index: 1; background-image: url(&quot;http://r.ytrss.com/rs/img/eccms/2017/1/24/8e187e0f-d2f0-49a1-b6da-c535b2ee77e3.jpg&quot;);" class="tab_pannel" id="yui_3_13_0_1_1485935343203_2665">
-					                <div class="content" id="yui_3_13_0_1_1485935343203_2679">
-					                    <a target="_blank" href="http://promotion.yintai.com/20170123/mp/sports0124/index.html" data-clk="actwatch|activities|A_2_1" id="yui_3_13_0_1_1485935343203_2678">
-					                            <img width="1190" height="470" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2017/1/24/107269b8-1478-4850-8320-21e6307bd3d1.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/24/107269b8-1478-4850-8320-21e6307bd3d1.jpg" id="yui_3_13_0_1_1485935343203_2677">
-					                    </a>
-					                    <div class="mask_layer" style="display: none;">
-					                    </div>
-					                </div>
-		            </div>
-					<div data-bg="http://r.ytrss.com/rs/img/eccms/2017/1/23/b7d2db10-8b33-4c38-947d-d386fd773d03.jpg" style="background-color: rgb(255, 255, 255); display: block; opacity: 1; position: absolute; z-index: 9; background-image: url(&quot;http://r.ytrss.com/rs/img/eccms/2017/1/23/b7d2db10-8b33-4c38-947d-d386fd773d03.jpg&quot;);" class="tab_pannel" id="yui_3_13_0_1_1485935343203_2726">
-					                <div class="content" id="yui_3_13_0_1_1485935343203_2750">
-					                    <a target="_blank" href="http://promotion.yintai.com/20170120/mp/xinnianxinhuo/index.html" data-clk="actwatch|activities|A_3_1" id="yui_3_13_0_1_1485935343203_2749">
-					                            <img width="1190" height="470" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2017/1/23/059c1b4b-94cd-4630-b04c-9a189b3a4285.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/23/059c1b4b-94cd-4630-b04c-9a189b3a4285.jpg" id="yui_3_13_0_1_1485935343203_2748">
-					                    </a>
-					                    <div class="mask_layer" style="display: none;">
-					                    </div>
-					                </div>
-		            </div>
-					<div data-bg="http://r.ytrss.com/rs/img/eccms/2017/1/24/6dd08239-71f2-4a57-a93e-f99d2d782cad.jpg" style="background-color: rgb(255, 255, 255); display: block; opacity: 0; position: absolute; z-index: 1; background-image: url(&quot;http://r.ytrss.com/rs/img/eccms/2017/1/24/6dd08239-71f2-4a57-a93e-f99d2d782cad.jpg&quot;);" class="tab_pannel" id="yui_3_13_0_1_1485935343203_2729">
-					                <div class="content" id="yui_3_13_0_1_1485935343203_2733">
-					                    <a target="_blank" href="http://promotion.yintai.com/20170123/mp/nqjju/index.html" data-clk="actwatch|activities|A_4_1" id="yui_3_13_0_1_1485935343203_2732">
-					                            <img width="1190" height="470" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2017/1/24/88b6dad4-b26a-4c4d-a53d-51c41add7be2.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/24/88b6dad4-b26a-4c4d-a53d-51c41add7be2.jpg" id="yui_3_13_0_1_1485935343203_2731">
-					                    </a>
-					                    <div class="mask_layer" style="display: none;">
-					                    </div>
-					                </div>
-		            </div>
-					<div data-bg="http://r.ytrss.com/rs/img/eccms/2017/1/23/187f2884-8318-4a0c-9a8c-a50fe556ce11.jpg" style="background-color: rgb(255, 255, 255); display: block; opacity: 0; position: absolute; z-index: 1; background-image: url(&quot;http://r.ytrss.com/rs/img/eccms/2017/1/23/187f2884-8318-4a0c-9a8c-a50fe556ce11.jpg&quot;);" class="tab_pannel" id="yui_3_13_0_1_1485935343203_2740">
-		                <div class="content" id="yui_3_13_0_1_1485935343203_2760">
-		                    <a target="_blank" href="http://promotion.yintai.com/20170123/mp/zrjkn/mengdongxinchun.html" data-clk="actwatch|activities|A_5_1" id="yui_3_13_0_1_1485935343203_2759">
-		                            <img width="1190" height="470" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2017/1/23/ca11e774-32ab-4149-bac2-da2918f4a592.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/23/ca11e774-32ab-4149-bac2-da2918f4a592.jpg" id="yui_3_13_0_1_1485935343203_2758">
-		                    </a>
-		                    <div class="mask_layer" style="display: none;">
-		                    </div>
-		                </div>
-		            </div>
-    <!-- </div> -->
-   				 <!-- <a class="eva-switchable-prev" style="opacity: 0;">prev</a><a class="eva-switchable-next" style="opacity: 0;">next</a> -->
-				    <div class="nav_trriger_warp" id="yui_3_13_0_1_1485935343203_3024">
-				        <ul class="nav_trriger" id="yui_3_13_0_1_1485935343203_583" style="left: 523.5px; display: block;">
-				                <li class=""><span></span></li>
-				                <li class="" id="yui_3_13_0_1_1485935343203_3023"><span></span></li>
-				                <li class="eva-switchable-active"><span></span></li>
-				                <li class=""><span></span></li>
-				                <li class=""><span></span></li>
-				        </ul>
-				    </div>
-<!-- </div> -->
+            <!-- banner -->
+            <div id="tab_nav" style="overflow: hidden;">
+                <div class="top_shadow"></div>
+                <div id="banner">
+                	
+                </div>
+                <!-- <div class="pannels" style="overflow: visible; position: relative; z-index: 0;">
+                    <div class="tab_pannel">
+                        <div class="content">
+                            <a target="_blank" href="#">
+                                <img width="1190" height="470" alt="" src="./img/059c1b4b-94cd-4630-b04c-9a189b3a4285.jpg">
+                            </a>
+                            <div class="mask_layer" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_pannel">
+                        <div class="content">
+                            <a target="_blank" href="#">
+                                <img width="1190" height="470" alt="" src="./img/88b6dad4-b26a-4c4d-a53d-51c41add7be2.jpg">
+                            </a>
+                            <div class="mask_layer" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_pannel">
+                        <div class="content">
+                            <a target="_blank" href="#">
+                                <img width="1190" height="470" alt="" src="./img/107269b8-1478-4850-8320-21e6307bd3d1.jpg">
+                            </a>
+                            <div class="mask_layer" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_pannel">
+                        <div class="content">
+                            <a target="_blank" href="#">
+                                <img width="1190" height="470" alt="" src="./img/8fcf3e58-3adf-48c2-9b3a-e6786291a1b3.jpg">
+                            </a>
+                            <div class="mask_layer" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_pannel">
+                        <div class="content">
+                            <a target="_blank" href="#">
+                                <img width="1190" height="470" alt="" src="./img/ca11e774-32ab-4149-bac2-da2918f4a592.jpg">
+                            </a>
+                            <div class="mask_layer" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <a class="eva-switchable-prev" style="opacity: 0;">prev</a><a class="eva-switchable-next" style="opacity: 0;">next</a> -->
+                <!-- <div class="nav_trriger_warp">
+                    <ul class="nav_trriger" style="left: 523.5px; display: block;">
+                        <li class=""><span></span></li>
+                        <li class=""><span></span></li>
+                        <li class="eva-switchable-active"><span></span></li>
+                        <li class=""><span></span></li>
+                        <li class=""><span></span></li>
+                    </ul>
+                </div> -->
+            </div>
+            <!-- 
+			============
+            右侧的图 
+			============
+        -->
+            <div class="focus_pic ytWrap">
+                <div class="f_pic">
+                    <a href="http://promotion.yintai.com/20151021/mp/aimer/aimer.html" target="_blank" style="width:200px;height:470px;background: url(./img/b94938b6-fac5-406f-b395-76009e5e1729.jpg) 0 0 no-repeat;  _background: none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='scale',src='./img/b94938b6-fac5-406f-b395-76009e5e1729.jpg');">
+                    </a>
+                </div>
+            </div>
+            <!-- 
+            =================
+            		品牌tab 
+			==================
+            -->
+            <div class="ytWrap brand_contentRec" id="yui_3_13_0_1_1486092303867_2719">
+                <div class="brand_content" id="yui_3_13_0_1_1486092303867_681">
+                    <ul class="eva-switchable-triggers cf" id="yui_3_13_0_1_1486092303867_2725">
+                        <li class="" id="yui_3_13_0_1_1486092303867_2724"><a href="javascript:;" class="last_w font_yahei" id="yui_3_13_0_1_1486092303867_2723">超值特卖</a><span></span></li>
+                        <li><a href="javascript:;" class="font_yahei">手机专享</a><span></span></li>
+                        <li class="eva-switchable-active"><a href="javascript:;" class="font_yahei">品牌活动</a><span></span></li>
+                    </ul>
+                    <div class="eva-switchable-panels" id="yui_3_13_0_1_1486092303867_2726">
+                        <div class="pr_list_t cf" data-clk="actwatch|reco|brand" style="display: none;">
+                            <div class="border_animation" id="yui_3_13_0_1_1486092303867_1713">
+                                <div class="border_top"></div>
+                                <div class="border_right"></div>
+                                <div class="border_bootom"></div>
+                                <div class="border_left"></div>
+                                <div>
+                                    <a target="_blank" href="http://temai.yintai.com/24541.html?intcmp=20170119_yx_home_a_qianggou-1">
+                                        <img width="220" height="260" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/26/58f1fa01-ea68-4e40-aeae-3aa922151383.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/26/58f1fa01-ea68-4e40-aeae-3aa922151383.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="border_animation" id="yui_3_13_0_1_1486092303867_1731">
+                                <div class="border_top"></div>
+                                <div class="border_right"></div>
+                                <div class="border_bootom"></div>
+                                <div class="border_left"></div>
+                                <div>
+                                    <a target="_blank" href="http://temai.yintai.com/24538.html?intcmp=20170119_yx_home_a_qianggou-2">
+                                        <img width="220" height="260" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/26/25957885-dc55-4c11-befd-7acbabc62dcd.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/26/25957885-dc55-4c11-befd-7acbabc62dcd.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="border_animation" id="yui_3_13_0_1_1486092303867_1749">
+                                <div class="border_top"></div>
+                                <div class="border_right"></div>
+                                <div class="border_bootom"></div>
+                                <div class="border_left"></div>
+                                <div>
+                                    <a target="_blank" href="http://temai.yintai.com/24540.html?intcmp=20170119_yx_home_a_qianggou-3">
+                                        <img width="220" height="260" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/26/135043f2-9107-4475-b466-da85e3bf0fc7.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/26/135043f2-9107-4475-b466-da85e3bf0fc7.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="border_animation" id="yui_3_13_0_1_1486092303867_1767">
+                                <div class="border_top"></div>
+                                <div class="border_right"></div>
+                                <div class="border_bootom"></div>
+                                <div class="border_left"></div>
+                                <div>
+                                    <a target="_blank" href="http://temai.yintai.com/24548.html?intcmp=20170119_yx_home_a_qianggou-4">
+                                        <img width="220" height="260" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/26/324106b2-7227-48fb-9821-e99c71113949.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/26/324106b2-7227-48fb-9821-e99c71113949.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: none" data-clk="actwatch|reco|commodity" class="pr_list_t">
+                            <ul class="pro_list cf">
+                                <li>
+                                    <div class="border_animation yt_pro_detail" id="yui_3_13_0_1_1486092303867_1785">
+                                        <div class="border_top"></div>
+                                        <div class="border_right"></div>
+                                        <div class="border_bootom"></div>
+                                        <div class="border_left"></div>
+                                        <div>
+                                            <div class="yt_pr_img">
+                                                <a target="_blank" href="http://item.yintai.com/21-365-9993c.html">
+                                                    <img width="150" height="200" alt="" data-src="http://p10.ytrss.com/product/21/365/9991/NormalImage/yintai_0c599477-28b8-438f-99dd-95a52676a52a.jpg">
+                                                </a>
+                                            </div>
+                                            <p><a class="yt_pr_brnand font_yahei" target="_blank" href="http://item.yintai.com/21-365-9993c.html" title="1月20日-2月4日只接单不发货Alicedudu茧型休闲中长款毛呢外套AL16C0132">1月20日-2月4日只接单不发货Alicedudu茧型休闲中长款毛呢外套AL16C0132</a></p>
+                                            <p><strong class="yt_pr_c font_yahei">银泰价：￥439</strong><span class="yt_pr_s font_yahei">参考价：￥699</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border_animation yt_pro_detail" id="yui_3_13_0_1_1486092303867_1803">
+                                        <div class="border_top"></div>
+                                        <div class="border_right"></div>
+                                        <div class="border_bootom"></div>
+                                        <div class="border_left"></div>
+                                        <div>
+                                            <div class="yt_pr_img">
+                                                <a target="_blank" href="http://item.yintai.com/21-083-5965c.html">
+                                                    <img width="150" height="200" alt="" data-src="http://p10.ytrss.com/product/21/083/5965/NormalImage/17799.jpg">
+                                                </a>
+                                            </div>
+                                            <p><a class="yt_pr_brnand font_yahei" target="_blank" href="http://item.yintai.com/21-083-5965c.html" title="(自营)LOREAL欧莱雅清润葡萄籽特润凝霜50ml">(自营)LOREAL欧莱雅清润葡萄籽特润凝霜50ml</a></p>
+                                            <p><strong class="yt_pr_c font_yahei">银泰价：￥129</strong><span class="yt_pr_s font_yahei">参考价：￥160</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border_animation yt_pro_detail" id="yui_3_13_0_1_1486092303867_1821">
+                                        <div class="border_top"></div>
+                                        <div class="border_right"></div>
+                                        <div class="border_bootom"></div>
+                                        <div class="border_left"></div>
+                                        <div>
+                                            <div class="yt_pr_img">
+                                                <a target="_blank" href="http://item.yintai.com/20-861-8334c.html">
+                                                    <img width="150" height="200" alt="" data-src="http://p10.ytrss.com/product/20/861/8334/NormalImage/10027620026_1.jpg">
+                                                </a>
+                                            </div>
+                                            <p><a class="yt_pr_brnand font_yahei" target="_blank" href="http://item.yintai.com/20-861-8334c.html" title="TUMI途明 男士多功能双肩背包电脑包40.5cm*26.5cm*3.75cmTM0222382NVY2">TUMI途明 男士多功能双肩背包电脑包40.5cm*26.5cm*3.75cmTM0222382NVY2</a></p>
+                                            <p><strong class="yt_pr_c font_yahei">银泰价：￥4990</strong><span class="yt_pr_s font_yahei">参考价：￥4990</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border_animation yt_pro_detail" id="yui_3_13_0_1_1486092303867_1839">
+                                        <div class="border_top"></div>
+                                        <div class="border_right"></div>
+                                        <div class="border_bootom"></div>
+                                        <div class="border_left"></div>
+                                        <div>
+                                            <div class="yt_pr_img">
+                                                <a target="_blank" href="http://item.yintai.com/21-225-5446c.html">
+                                                    <img width="150" height="200" alt="" data-src="http://p10.ytrss.com/product/21/225/5446/NormalImage/yintai_9903c64f-97e4-4e16-aaaf-66a5ffa3fc58.jpg">
+                                                </a>
+                                            </div>
+                                            <p><a class="yt_pr_brnand font_yahei" target="_blank" href="http://item.yintai.com/21-225-5446c.html" title="U.S.POLO.ASSN 美国马球协会男士长袖POLO衫欧版偏大T342041">U.S.POLO.ASSN 美国马球协会男士长袖POLO衫欧版偏大T342041</a></p>
+                                            <p><strong class="yt_pr_c font_yahei">银泰价：￥219</strong><span class="yt_pr_s font_yahei">参考价：￥1099</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="display: block;" class="pr_list_t cf" data-clk="actwatch|reco|sale" id="yui_3_13_0_1_1486092303867_736">
+                            <a class="pro_dpjp" target="_blank" href="http://www.yintai.com/product/list-50004509.html" id="yui_3_13_0_1_1486092303867_2728">
+                                <img width="220" height="260" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2017/1/24/f6a875ef-9544-46c7-a8a3-7a3d1dc135c9.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/24/f6a875ef-9544-46c7-a8a3-7a3d1dc135c9.jpg" id="yui_3_13_0_1_1486092303867_2727">
+                            </a>
+                            <a class="pro_dpjp" target="_blank" href="http://www.yintai.com/product/list-50003900.html?sort=17 ">
+                                <img width="220" height="260" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2017/1/24/c0f55ae7-6858-48ba-a2cf-34ab3cdf9c11.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/24/c0f55ae7-6858-48ba-a2cf-34ab3cdf9c11.jpg">
+                            </a>
+                            <a class="pro_dpjp" target="_blank" href="http://www.yintai.com/store/store-50002735.html">
+                                <img width="220" height="260" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2017/1/24/51993527-1cf4-4a0b-9785-d0e558a55c2b.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/24/51993527-1cf4-4a0b-9785-d0e558a55c2b.jpg">
+                            </a>
+                            <a class="pro_dpjp" target="_blank" href=" http://www.yintai.com/product/list-50000464-10000500.html?sort=1">
+                                <img width="220" height="260" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2017/1/24/d8f7d901-6f70-44d9-a44b-6cc1cecc0f15.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/24/d8f7d901-6f70-44d9-a44b-6cc1cecc0f15.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 跑马灯 -->
+                <div class="yt_notice">
+                    <div class="noctice-tips">
+                        <div class="noctice" data-clk="actwatch|announcemen|T" id="yui_3_13_0_1_1486092303867_2656">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="http://www.yintai.com/notice/index.shtml" title="技术升级公告"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="advert_section" data-clk="actwatch|advertisement|H">
+                        <div>
+                            <p>
+                                <a href="http://www.yintai.com/product/list-10000990.html?N=8010040" target="_blank"><img src="http://r.ytrss.com/rs/img/eccms/2017/1/24/548fe010-1809-468b-9fe9-852eed3c03ff.jpg" alt=""></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+            ================
+            	同款特卖
+        	================
+        	 -->
+            <div class="ytWrap yt_floor_zgtk" id="yui_3_13_0_1_1486092303867_2799">
+                <div class="floor_title" id="yui_3_13_0_1_1486092303867_2801">
+                    <h6 id="yui_3_13_0_1_1486092303867_3178">专柜同款</h6>
+                    <div class="tit_recommend">
+                        <!---预留区---->
+                    </div>
+                </div>
+                <div class="cf zgtk-content" id="yui_3_13_0_1_1486092303867_2798">
+                    <div class="floor_banner_slide floor_ad" id="yui_3_13_0_1_1486092303867_1328">
+                        <div class="floor_b_pannels" id="yui_3_13_0_1_1486092303867_2995">
+                            <div class="eva-switchable-panels" id="yui_3_13_0_1_1486092303867_2994">
+                                <a target="_blank" class="pro-a" href="http://www.yintai.com/store/store-50003300.html?supid=104035" data-clk="actwatch|floorwulin|wulinpp1" id="yui_3_13_0_1_1486092303867_2993">
+                                    <img width="340" height="555" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/22/89434600-5185-4b16-83c9-f7e2ecaf6107.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/22/89434600-5185-4b16-83c9-f7e2ecaf6107.jpg" id="yui_3_13_0_1_1486092303867_2992">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="floor_slide_trigger hidden" id="yui_3_13_0_1_1486092303867_1330">
+                            <li></li>
+                        </ul>
+                        <a class="eva-switchable-prev" href="javascript:;">pre</a>
+                        <a class="eva-switchable-next" href="javascript:;">next</a>
+                    </div>
+                    <div class="floor_tk_content" id="yui_3_13_0_1_1486092303867_740">
+                        <div class="tk_nav" id="yui_3_13_0_1_1486092303867_2805">
+                            <ul class="eva-switchable-triggers cf" id="yui_3_13_0_1_1486092303867_2804">
+                                <li class="" id="yui_3_13_0_1_1486092303867_2818"><a href="javascript:;" id="yui_3_13_0_1_1486092303867_2819">热门品牌</a><span></span></li>
+                                <li id="yui_3_13_0_1_1486092303867_2803" class="eva-switchable-active"><a href="javascript:;" id="yui_3_13_0_1_1486092303867_3267">本周推荐</a><span></span></li>
+                            </ul>
+                        </div>
+                        <div class="eva-switchable-panels" id="yui_3_13_0_1_1486092303867_2797">
+                            <div class="pro_list_rm" style="display: none;" id="yui_3_13_0_1_1486092303867_2796">
+                                <a target="_blank" href="http://www.yintai.com/store/store-50000609.html?supid=180779" class="pro_list_rm01" data-clk="actwatch|floorwulin|wulinpp2" id="yui_3_13_0_1_1486092303867_2815">
+                                    <img width="220" height="250" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/22/c877d73b-3f24-40b2-83cc-1371116c75f1.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/22/c877d73b-3f24-40b2-83cc-1371116c75f1.jpg" id="yui_3_13_0_1_1486092303867_2814">
+                                </a>
+                                <a target="_blank" href="http://www.yintai.com/store/store-50000229.html?supid=103942" class="pro_list_rm02" data-clk="actwatch|floorwulin|wulinpp3" id="yui_3_13_0_1_1486092303867_2811">
+                                    <img width="365" height="250" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/22/dd625173-cedd-4eae-be35-baa0f4c25634.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/22/dd625173-cedd-4eae-be35-baa0f4c25634.jpg" id="yui_3_13_0_1_1486092303867_2810">
+                                </a>
+                                <a target="_blank" href="http://www.yintai.com/store/store-50002056.html?supid=104065" class="pro_list_rm03" data-clk="actwatch|floorwulin|wulinpp4">
+                                    <img width="220" height="250" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/22/7f5e3fc8-e57a-4c28-b9f6-61aefaea9c97.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/22/7f5e3fc8-e57a-4c28-b9f6-61aefaea9c97.jpg">
+                                </a>
+                                <a target="_blank" href="http://www.yintai.com/product/list-50002161.html" class="pro_list_rm04" data-clk="actwatch|floorwulin|wulinpp5" id="yui_3_13_0_1_1486092303867_2795">
+                                    <img width="290" height="260" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/22/f86fb2b7-ebfa-4605-baf2-a3a1ed06eba5.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/22/f86fb2b7-ebfa-4605-baf2-a3a1ed06eba5.jpg" id="yui_3_13_0_1_1486092303867_2794">
+                                </a>
+                                <a target="_blank" href="http://www.yintai.com/store/store-50000320.html?supid=103871" class="pro_list_rm05" data-clk="actwatch|floorwulin|wulinpp6" id="yui_3_13_0_1_1486092303867_2813">
+                                    <img width="240" height="260" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/22/86df1ee8-21f6-4e5a-904c-d46d8249104a.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/22/86df1ee8-21f6-4e5a-904c-d46d8249104a.jpg" id="yui_3_13_0_1_1486092303867_2812">
+                                </a>
+                                <a target="_blank" href="http://www.yintai.com/product/list-50004625.html" class="pro_list_rm06" data-clk="actwatch|floorwulin|wulinpp7">
+                                    <img width="275" height="260" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/22/53b4cdb9-28fd-411b-812c-77f95fb20df0.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/22/53b4cdb9-28fd-411b-812c-77f95fb20df0.jpg">
+                                </a>
+                            </div>
+                            <div class="pro_list_xp" style="display: block;" id="yui_3_13_0_1_1486092303867_2824">
+                                <ul class="cf xp-pro" id="yui_3_13_0_1_1486092303867_2852">
+                                    <li class="border_animation" data-clk="actwatch|floorwulin|wulinxp0" id="yui_3_13_0_1_1486092303867_1857">
+                                        <div class="border_top" style="width: 0px;"></div>
+                                        <div class="border_right" style="height: 0px;" id="yui_3_13_0_1_1486092303867_3179"></div>
+                                        <div class="border_bootom" style="width: 0px;" id="yui_3_13_0_1_1486092303867_3227"></div>
+                                        <div class="border_left" style="height: 0px;"></div>
+                                        <div class="pro_list_xp_img" id="yui_3_13_0_1_1486092303867_3176">
+                                            <a target="_blank" href="http://item.yintai.com/21-296-0139c.html" id="yui_3_13_0_1_1486092303867_3175">
+                                                <img height="200" alt="" data-src="http://p10.ytrss.com/product/21/296/0139/NormalImage/10063483773_1.jpg" src="http://p10.ytrss.com/product/21/296/0139/NormalImage/10063483773_1.jpg" id="yui_3_13_0_1_1486092303867_3174">
+                                            </a>
+                                        </div>
+                                        <div class="pro_list_xp_content" id="yui_3_13_0_1_1486092303867_3200">
+                                            <p class="pro_list_xp_title" id="yui_3_13_0_1_1486092303867_3201"><a target="_blank" href="http://item.yintai.com/21-296-0139c.html" title="Five Plus5+套头衫2HM40307501.22日开始陆续停止发货，于2.11日恢复发货" id="yui_3_13_0_1_1486092303867_3226">Five Plus5+套头衫2HM40307501.22日开始陆续停止发货，于2.11日恢复发货</a></p>
+                                            <p class="cf" id="yui_3_13_0_1_1486092303867_3203"><span class="yintai-price" id="yui_3_13_0_1_1486092303867_3270">￥199.50</span><span class="shichang-price" id="yui_3_13_0_1_1486092303867_3202">参考价：￥399</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="border_animation" data-clk="actwatch|floorwulin|wulinxp1" id="yui_3_13_0_1_1486092303867_1875">
+                                        <div class="border_top" style="width: 0px;"></div>
+                                        <div class="border_right" style="height: 0px;" id="yui_3_13_0_1_1486092303867_3182"></div>
+                                        <div class="border_bootom" style="width: 0px;"></div>
+                                        <div class="border_left" style="height: 0px;" id="yui_3_13_0_1_1486092303867_3186"></div>
+                                        <div class="pro_list_xp_img" id="yui_3_13_0_1_1486092303867_2876">
+                                            <a target="_blank" href="http://item.yintai.com/21-360-1268c.html" id="yui_3_13_0_1_1486092303867_2875">
+                                                <img height="200" alt="" data-src="http://p10.ytrss.com/product/21/360/1266/NormalImage/yintai_372136c4-c429-44d6-8b09-ef1d8939e11c.jpg" src="http://p10.ytrss.com/product/21/360/1266/NormalImage/yintai_372136c4-c429-44d6-8b09-ef1d8939e11c.jpg" id="yui_3_13_0_1_1486092303867_3181">
+                                            </a>
+                                        </div>
+                                        <div class="pro_list_xp_content" id="yui_3_13_0_1_1486092303867_2880">
+                                            <p class="pro_list_xp_title" id="yui_3_13_0_1_1486092303867_2879"><a target="_blank" href="http://item.yintai.com/21-360-1268c.html" title="银泰百货武林店英国保罗男士纯棉格子长袖衬衫全棉时尚加绒加厚保暖衬衣(春节放假期间1.23-2.3的订单将在2.4上班后按时间先后安排发货)" id="yui_3_13_0_1_1486092303867_2878">银泰百货武林店英国保罗男士纯棉格子长袖衬衫全棉时尚加绒加厚保暖衬衣(春节放假期间1.23-2.3的订单将在2.4上班后按时间先后安排发货)</a></p>
+                                            <p class="cf" id="yui_3_13_0_1_1486092303867_3199"><span class="yintai-price">￥238</span><span class="shichang-price" id="yui_3_13_0_1_1486092303867_3198">参考价：￥1080</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="border_animation" data-clk="actwatch|floorwulin|wulinxp2" id="yui_3_13_0_1_1486092303867_1893">
+                                        <div class="border_top" style="width: 0px;"></div>
+                                        <div class="border_right" style="height: 0px;"></div>
+                                        <div class="border_bootom" style="width: 0px;"></div>
+                                        <div class="border_left" style="height: 0px;"></div>
+                                        <div class="pro_list_xp_img" id="yui_3_13_0_1_1486092303867_3184">
+                                            <a target="_blank" href="http://item.yintai.com/21-257-1078c.html" id="yui_3_13_0_1_1486092303867_3183">
+                                                <img height="200" alt="" data-src="http://p10.ytrss.com/product/21/257/1078/NormalImage/yintai_6849e7b4-5359-401a-8880-291f261f529d.jpg" src="http://p10.ytrss.com/product/21/257/1078/NormalImage/yintai_6849e7b4-5359-401a-8880-291f261f529d.jpg" id="yui_3_13_0_1_1486092303867_3216">
+                                            </a>
+                                        </div>
+                                        <div class="pro_list_xp_content" id="yui_3_13_0_1_1486092303867_3211">
+                                            <p class="pro_list_xp_title" id="yui_3_13_0_1_1486092303867_3214"><a target="_blank" href="http://item.yintai.com/21-257-1078c.html" title="KISSCAT接吻猫矮靴KA76512-11" id="yui_3_13_0_1_1486092303867_3215">KISSCAT接吻猫矮靴KA76512-11</a></p>
+                                            <p class="cf" id="yui_3_13_0_1_1486092303867_3213"><span class="yintai-price">￥611</span><span class="shichang-price">参考价：￥1199</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="border_animation" data-clk="actwatch|floorwulin|wulinxp3" id="yui_3_13_0_1_1486092303867_1911">
+                                        <div class="border_top" style="width: 0px;"></div>
+                                        <div class="border_right" style="height: 0px;"></div>
+                                        <div class="border_bootom" style="width: 0px;"></div>
+                                        <div class="border_left" style="height: 0px;" id="yui_3_13_0_1_1486092303867_3225"></div>
+                                        <div class="pro_list_xp_img" id="yui_3_13_0_1_1486092303867_3224">
+                                            <a target="_blank" href="http://item.yintai.com/21-367-3608c.html" id="yui_3_13_0_1_1486092303867_3223">
+                                                <img height="200" alt="" data-src="http://p10.ytrss.com/product/21/367/3608/NormalImage/yintai_7850f703-7b54-4ec7-9f20-752b5dfaeec9.jpg" src="http://p10.ytrss.com/product/21/367/3608/NormalImage/yintai_7850f703-7b54-4ec7-9f20-752b5dfaeec9.jpg" id="yui_3_13_0_1_1486092303867_3222">
+                                            </a>
+                                        </div>
+                                        <div class="pro_list_xp_content" id="yui_3_13_0_1_1486092303867_3209">
+                                            <p class="pro_list_xp_title" id="yui_3_13_0_1_1486092303867_3221"><a target="_blank" href="http://item.yintai.com/21-367-3608c.html" title="bata编织手拎包（1月18号到2月6号不发货）" id="yui_3_13_0_1_1486092303867_3220">bata编织手拎包（1月18号到2月6号不发货）</a></p>
+                                            <p class="cf" id="yui_3_13_0_1_1486092303867_3219"><span class="yintai-price">￥259</span><span class="shichang-price" id="yui_3_13_0_1_1486092303867_3228">参考价：￥1499</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="border_animation" data-clk="actwatch|floorwulin|wulinxp4" id="yui_3_13_0_1_1486092303867_1929">
+                                        <div class="border_top" style="width: 0px;"></div>
+                                        <div class="border_right" style="height: 0px;" id="yui_3_13_0_1_1486092303867_3230"></div>
+                                        <div class="border_bootom" style="width: 0px;"></div>
+                                        <div class="border_left" style="height: 0px;"></div>
+                                        <div class="pro_list_xp_img" id="yui_3_13_0_1_1486092303867_2882">
+                                            <a target="_blank" href="http://item.yintai.com/21-240-9451c.html" id="yui_3_13_0_1_1486092303867_2881">
+                                                <img height="200" alt="" data-src="http://p10.ytrss.com/product/21/240/9450/NormalImage/16633.jpg" src="http://p10.ytrss.com/product/21/240/9450/NormalImage/16633.jpg" id="yui_3_13_0_1_1486092303867_3204">
+                                            </a>
+                                        </div>
+                                        <div class="pro_list_xp_content">
+                                            <p class="pro_list_xp_title"><a target="_blank" href="http://item.yintai.com/21-240-9451c.html" title="Onitsuka Tiger鬼冢虎 中性MEXICO 66 SLIP-ON系列运动休闲鞋D6G4L-1632，40.5">Onitsuka Tiger鬼冢虎 中性MEXICO 66 SLIP-ON系列运动休闲鞋D6G4L-1632，40.5</a></p>
+                                            <p class="cf"><span class="yintai-price">￥419</span><span class="shichang-price">参考价：￥650</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="border_animation" data-clk="actwatch|floorwulin|wulinxp5" id="yui_3_13_0_1_1486092303867_1947">
+                                        <div class="border_top" style="width: 0px;"></div>
+                                        <div class="border_right" style="height: 0px;"></div>
+                                        <div class="border_bootom" style="width: 0px;"></div>
+                                        <div class="border_left" style="height: 0px;"></div>
+                                        <div class="pro_list_xp_img" id="yui_3_13_0_1_1486092303867_2870">
+                                            <a target="_blank" href="http://item.yintai.com/21-214-1600c.html" id="yui_3_13_0_1_1486092303867_2869">
+                                                <img height="200" alt="" data-src="http://p10.ytrss.com/product/21/214/1599/NormalImage/yintai_65e80271-1024-4103-bddd-73d7ec14a830.jpg" src="http://p10.ytrss.com/product/21/214/1599/NormalImage/yintai_65e80271-1024-4103-bddd-73d7ec14a830.jpg" id="yui_3_13_0_1_1486092303867_3196">
+                                            </a>
+                                        </div>
+                                        <div class="pro_list_xp_content" id="yui_3_13_0_1_1486092303867_2851">
+                                            <p class="pro_list_xp_title"><a target="_blank" href="http://item.yintai.com/21-214-1600c.html" title="【过年不打烊】MEIBIAO美标秋冬男士女士新款棉质睡衣长袖保暖夹层情侣可外穿家居服 99560 99561">【过年不打烊】MEIBIAO美标秋冬男士女士新款棉质睡衣长袖保暖夹层情侣可外穿家居服 99560 99561</a></p>
+                                            <p class="cf"><span class="yintai-price">￥298</span><span class="shichang-price">参考价：￥468</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="border_animation" data-clk="actwatch|floorwulin|wulinxp6" id="yui_3_13_0_1_1486092303867_1965">
+                                        <div class="border_top" style="width: 0px;"></div>
+                                        <div class="border_right" style="height: 0px;" id="yui_3_13_0_1_1486092303867_3231"></div>
+                                        <div class="border_bootom" style="width: 0px;"></div>
+                                        <div class="border_left" style="height: 0px;"></div>
+                                        <div class="pro_list_xp_img" id="yui_3_13_0_1_1486092303867_3207">
+                                            <a target="_blank" href="http://item.yintai.com/21-213-2276c.html" id="yui_3_13_0_1_1486092303867_3206">
+                                                <img height="200" alt="" data-src="http://p10.ytrss.com/product/21/213/2268/NormalImage/yintai_c4f7177d-6e2f-4b5c-8f9f-1171e8d3fc40.jpg" src="http://p10.ytrss.com/product/21/213/2268/NormalImage/yintai_c4f7177d-6e2f-4b5c-8f9f-1171e8d3fc40.jpg" id="yui_3_13_0_1_1486092303867_3208">
+                                            </a>
+                                        </div>
+                                        <div class="pro_list_xp_content">
+                                            <p class="pro_list_xp_title"><a target="_blank" href="http://item.yintai.com/21-213-2276c.html" title="TARANIS 泰兰尼斯 春秋儿童高帮休闲鞋男女童硫化鞋运动休闲鞋一脚蹬帆布鞋WC36310（春节放假期间1.25-2.3的订单将在2.4上班后按时间先后安排发货）">TARANIS 泰兰尼斯 春秋儿童高帮休闲鞋男女童硫化鞋运动休闲鞋一脚蹬帆布鞋WC36310（春节放假期间1.25-2.3的订单将在2.4上班后按时间先后安排发货）</a></p>
+                                            <p class="cf"><span class="yintai-price">￥339</span><span class="shichang-price">参考价：￥678</span></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ytWrap" style="margin-top:30px" data-clk="actwatch|advertisement-zt|K_1" id="yui_3_13_0_1_1486093763883_2746">
+                <a style="display:block;min-height:80px" href="http://www.yintai.com/product/list-50003536.html" target="_blank" id="yui_3_13_0_1_1486093763883_2745"><img img-src="http://r.ytrss.com/rs/img/eccms/2017/1/23/9c706110-c273-4992-ae50-b8c081b01dd2.jpg" align="top" src="http://r.ytrss.com/rs/img/eccms/2017/1/23/9c706110-c273-4992-ae50-b8c081b01dd2.jpg" id="yui_3_13_0_1_1486093763883_2744"></a>
+            </div>
+            <!-- 
+			=======================
+            时尚名品 
+			=======================
+            -->
+            <div class="ytWrap yt_floor_mp yt_floor_item" id="yui_3_13_0_1_1486093763883_2670">
+                <div class="floor_title" id="yui_3_13_0_1_1486093763883_2773">
+                    <a target="_blank" href="//promotion.yintai.com/channels/mp/index.html?intcmp=GGW20141128_home_loucengbiaoti_mp" id="yui_3_13_0_1_1486093763883_2796"><h6 id="yui_3_13_0_1_1486093763883_2795">时尚名品</h6></a>
+                    <div class="tit_recommend">
+                    </div>
+                </div>
+                <div class="floor_nav" id="yui_3_13_0_1_1486093763883_2818">
+                    <ul class="floor_nav_category" data-clk="actwatch|floormp|C1" id="yui_3_13_0_1_1486093763883_2817">
+                        <li id="yui_3_13_0_1_1486093763883_2852"><a target="_blank" href="http://www.yintai.com/product/list-10001904-10001899.html" id="yui_3_13_0_1_1486093763883_2851">针织衫</a></li>
+                        <li id="yui_3_13_0_1_1486093763883_2899"><a target="_blank" href="http://www.yintai.com/product/list-10001905-10001900.html" id="yui_3_13_0_1_1486093763883_2898">外套</a></li>
+                        <li id="yui_3_13_0_1_1486093763883_2843"><a target="_blank" href="http://www.yintai.com/product/list-10001907.html?sort=17&amp;intcmp=GGW20160418_home_mp_c_qunzhuang" id="yui_3_13_0_1_1486093763883_2842">裙装</a></li>
+                        <li id="yui_3_13_0_1_1486093763883_2816"><a target="_blank" href="http://www.yintai.com/product/list-10001910.html" id="yui_3_13_0_1_1486093763883_2815">围巾</a></li>
+                        <li id="yui_3_13_0_1_1486093763883_2854"><a target="_blank" href="http://www.yintai.com/product/list-10001908.html?sort=17&amp;intcmp=GGW20160418_home_mp_c_yaodai" id="yui_3_13_0_1_1486093763883_2853">腰带</a></li>
+                        <li id="yui_3_13_0_1_1486093763883_2845"><a target="_blank" href="http://www.yintai.com/product/list-10002258.html?sort=17&amp;intcmp=GGW20160418_home_mp_c_nvxie" id="yui_3_13_0_1_1486093763883_2844">女鞋</a></li>
+                        <li id="yui_3_13_0_1_1486093763883_2820"><a target="_blank" href="http://www.yintai.com/product/list-10001923-10001924-10001925-10001926-10002022.html?sort=17&amp;intcmp=GGW20160418_home_mp_c_nvbao" id="yui_3_13_0_1_1486093763883_2819">女包</a></li>
+                        <li id="yui_3_13_0_1_1486093763883_2856"><a target="_blank" href="http://www.yintai.com/product/list-10001928-10001929-10001932-10002026-10002027-10002028.html?sort=17&amp;intcmp=GGW20160418_home_mp_c_nanbao" id="yui_3_13_0_1_1486093763883_2855">男包</a></li>
+                        <li id="yui_3_13_0_1_1486093763883_2847"><a target="_blank" href="http://www.yintai.com/product/list-10001927-10001931.html?sort=17&amp;intcmp=GGW20160418_home_mp_c_qianbao" id="yui_3_13_0_1_1486093763883_2846">钱包</a></li>
+                        <li><a target="_blank" href="http://www.yintai.com/product/list-10001888.html?sort=17&amp;intcmp=GGW20160418_home_mp_c_nanxie">男鞋</a></li>
+                        <li id="yui_3_13_0_1_1486093763883_2822"><a target="_blank" href="http://www.yintai.com/product/list-10001898-10001903.html?sort=17&amp;intcmp=GGW20160418_home_mp_c_chenshan" id="yui_3_13_0_1_1486093763883_2821">衬衫</a></li>
+                        <li id="yui_3_13_0_1_1486093763883_2897"><a target="_blank" href="http://www.yintai.com/product/list-10002018-10002025.html?sort=17&amp;intcmp=GGW20160418_home_mp_c_shuang" id="yui_3_13_0_1_1486093763883_2896">双肩包</a></li>
+                    </ul>
+                    <div class="floorbarndSlide" data-clk="actwatch|floormp|C2" id="yui_3_13_0_1_1486093763883_784" style="overflow: hidden;">
+                        <div class="scroller" style="position: relative;" id="yui_3_13_0_1_1486093763883_2829">
+                            <div class="eva-switchable-panels" style="overflow: visible; position: absolute; width: 1020px; left: 0px;" id="yui_3_13_0_1_1486093763883_2828">
+                                <div style="display: block; float: left;" id="yui_3_13_0_1_1486093763883_2827">
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000270-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_BURBERRY ">
+                                        <img width="75" height="50" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/5a5cf650-0d9a-45f1-a0af-d4aed985cdda.jpg" src="http://r.ytrss.com/rs/img/eccms/2016/3/9/5a5cf650-0d9a-45f1-a0af-d4aed985cdda.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000265-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_FERRAGAMO " id="yui_3_13_0_1_1486093763883_2826">
+                                        <img width="75" height="50" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/8d6f279e-e808-4058-8e2e-24f73fa16d50.jpg" src="http://r.ytrss.com/rs/img/eccms/2016/3/9/8d6f279e-e808-4058-8e2e-24f73fa16d50.jpg" id="yui_3_13_0_1_1486093763883_2825">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000455-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_GUCCI ">
+                                        <img width="75" height="50" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/4ad6dd35-39aa-41cb-9c46-602d40302dcd.jpg" src="http://r.ytrss.com/rs/img/eccms/2016/3/9/4ad6dd35-39aa-41cb-9c46-602d40302dcd.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000887-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_ARMANI JEANS ">
+                                        <img width="75" height="50" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/8e9a6faf-f795-4ea4-978f-3965a2d66d71.jpg" src="http://r.ytrss.com/rs/img/eccms/2016/3/9/8e9a6faf-f795-4ea4-978f-3965a2d66d71.jpg">
+                                    </a>
+                                </div>
+                                <div style="display: block; float: left;">
+                                    <a target="_blank" href="http://www.yintai.com/product/list-50000541-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_ZEGNA ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/0e00b125-0bd0-4d66-aedc-59d543afef8d.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000416-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_VERACE ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/10/63626328-f4d1-4027-be72-6b51a795670a.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000369-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_VALENTINO ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/9d5c7386-a84e-476d-8206-08add9c1c210.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000364-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_FENDI ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/4db2c421-fe94-423e-b16f-0f4cc7b2141a.jpg">
+                                    </a>
+                                </div>
+                                <div style="display: block; float: left;">
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000555-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_DIESEL ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/79bf2b82-16fd-4e58-950f-199b0ea2fd4c.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/product/list-50000365-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_EMPORIO ARMANI ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/97c2daf1-2fb1-4160-add4-251a92463a72.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50001052-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_MAX MARA ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/134413ad-c533-4e1f-af8d-f35dea235046.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000375-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_BOTTEGA VENETA ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/c303b22b-79a1-452a-babd-88594fc8f049.jpg">
+                                    </a>
+                                </div>
+                                <div style="display: block; float: left;">
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000270-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_BURBERRY ">
+                                        <img width="75" height="50" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/5a5cf650-0d9a-45f1-a0af-d4aed985cdda.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000265-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_FERRAGAMO ">
+                                        <img width="75" height="50" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/8d6f279e-e808-4058-8e2e-24f73fa16d50.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000455-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_GUCCI ">
+                                        <img width="75" height="50" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/4ad6dd35-39aa-41cb-9c46-602d40302dcd.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000887-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_ARMANI JEANS ">
+                                        <img width="75" height="50" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/8e9a6faf-f795-4ea4-978f-3965a2d66d71.jpg">
+                                    </a>
+                                </div>
+                                <div style="display: block; float: left;">
+                                    <a target="_blank" href="http://www.yintai.com/product/list-50000541-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_ZEGNA ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/0e00b125-0bd0-4d66-aedc-59d543afef8d.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000416-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_VERACE ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/10/63626328-f4d1-4027-be72-6b51a795670a.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000369-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_VALENTINO ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/9d5c7386-a84e-476d-8206-08add9c1c210.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000364-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_FENDI ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/4db2c421-fe94-423e-b16f-0f4cc7b2141a.jpg">
+                                    </a>
+                                </div>
+                                <div style="display: block; float: left;">
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000555-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_DIESEL ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/79bf2b82-16fd-4e58-950f-199b0ea2fd4c.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/product/list-50000365-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_EMPORIO ARMANI ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/97c2daf1-2fb1-4160-add4-251a92463a72.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50001052-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_MAX MARA ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/134413ad-c533-4e1f-af8d-f35dea235046.jpg">
+                                    </a>
+                                    <a target="_blank" href="http://www.yintai.com/store/store-50000375-10001884.html?ChannelID=1100101&amp;intcmp=GGW20151016_home_mp_b_BOTTEGA VENETA ">
+                                        <img width="75" height="50" alt="" data-src="http://r.ytrss.com/rs/img/eccms/2016/3/9/c303b22b-79a1-452a-babd-88594fc8f049.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="eva-switchable-prev">pre</a>
+                        <a href="javascript:;" class="eva-switchable-next" id="yui_3_13_0_1_1486093763883_2861">next</a>
+                    </div>
+                </div>
+                <div class="floor_slide" data-clk="actwatch|floormp|C3" id="yui_3_13_0_1_1486093763883_2766">
+                    <div class="floor_banner_slide" id="yui_3_13_0_1_1486093763883_1333" style="overflow: hidden;">
+                        <div class="floor_b_pannels" style="position: relative;" id="yui_3_13_0_1_1486093763883_2765">
+                            <div class="eva-switchable-panels" style="overflow: visible; position: absolute; width: 1560px; left: 0px;" id="yui_3_13_0_1_1486093763883_2764">
+                                <a target="_blank" href="http://www.yintai.com/product/list-10001925.html?intcmp=GGW20160809_home_mp_c3" style="display: block; float: left;" id="yui_3_13_0_1_1486093763883_2763">
+                                    <img width="390" height="370" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/23/ce711069-166b-4b02-ae94-c9303bd0133a.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/23/ce711069-166b-4b02-ae94-c9303bd0133a.jpg" id="yui_3_13_0_1_1486093763883_2762">
+                                </a>
+                                <a target="_blank" href="http://www.yintai.com/product/list-10002258.html?intcmp=GGW20160809_home_mp_c3-2" style="display: block; float: left;">
+                                    <img width="390" height="370" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/23/c1dbc81a-5a95-4ef4-b179-4d7bb2eedafe.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/23/c1dbc81a-5a95-4ef4-b179-4d7bb2eedafe.jpg">
+                                </a>
+                                <a target="_blank" href="http://www.yintai.com/product/list-10001925.html?intcmp=GGW20160809_home_mp_c3" style="display: block; float: left;">
+                                    <img width="390" height="370" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/23/ce711069-166b-4b02-ae94-c9303bd0133a.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/23/ce711069-166b-4b02-ae94-c9303bd0133a.jpg">
+                                </a>
+                                <a target="_blank" href="http://www.yintai.com/product/list-10002258.html?intcmp=GGW20160809_home_mp_c3-2" style="display: block; float: left;">
+                                    <img width="390" height="370" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/23/c1dbc81a-5a95-4ef4-b179-4d7bb2eedafe.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="floor_slide_trigger" id="yui_3_13_0_1_1486093763883_1335" style="left: 182px;">
+                            <li class="eva-switchable-active"></li>
+                            <li></li>
+                        </ul>
+                        <a class="eva-switchable-prev eva-switchable-disable-btn" href="javascript:;" style="left: 0px;" id="yui_3_13_0_1_1486093763883_2894">pre</a>
+                        <a class="eva-switchable-next" href="javascript:;" style="right: 0px;" id="yui_3_13_0_1_1486093763883_2834">next</a>
+                    </div>
+                </div>
+                <div class="floor_banner" id="yui_3_13_0_1_1486093763883_2669">
+                    <div class="floor_banner_main" id="yui_3_13_0_1_1486093763883_2668">
+                        <div class="product_block" data-clk="actwatch|floormp|C4" id="yui_3_13_0_1_1486093763883_2667">
+                            <div class="border_animation" id="yui_3_13_0_1_1486093763883_1983">
+                                <div class="border border_top" style="width: 0px;"></div>
+                                <div class="border border_right" style="height: 0px;"></div>
+                                <div class="border border_bootom" style="width: 0px;"></div>
+                                <div class="border border_left" style="height: 0px;"></div>
+                                <div class="img_wrap" id="yui_3_13_0_1_1486093763883_2666">
+                                    <a target="_blank" href="http://www.yintai.com/product/list-10002015-10002017.html?intcmp=GGW20160809_home_mp_c4" id="yui_3_13_0_1_1486093763883_2665">
+                                        <img width="270" height="180" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/16/5565bf2d-038e-4c7b-b6af-112e041c0b18.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/16/5565bf2d-038e-4c7b-b6af-112e041c0b18.jpg" id="yui_3_13_0_1_1486093763883_2664">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_block" data-clk="actwatch|floormp|C5">
+                            <div class="border_animation" id="yui_3_13_0_1_1486093763883_2001">
+                                <div class="border border_top"></div>
+                                <div class="border border_right"></div>
+                                <div class="border border_bootom"></div>
+                                <div class="border border_left"></div>
+                                <div class="img_wrap">
+                                    <a target="_blank" href="http://www.yintai.com/product/list-10001905.html?intcmp=GGW20160809_home_mp_c4">
+                                        <img width="270" height="180" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/16/9e3b0943-3f93-4697-b598-e5f013566382.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/16/9e3b0943-3f93-4697-b598-e5f013566382.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_block" data-clk="actwatch|floormp|C6" id="yui_3_13_0_1_1486093763883_2838">
+                            <div class="border_animation" id="yui_3_13_0_1_1486093763883_2019">
+                                <div class="border border_top" style="width: 0px;"></div>
+                                <div class="border border_right" style="height: 0px;"></div>
+                                <div class="border border_bootom" style="width: 0px;"></div>
+                                <div class="border border_left" style="height: 0px;"></div>
+                                <div class="img_wrap" id="yui_3_13_0_1_1486093763883_2837">
+                                    <a target="_blank" href="http://www.yintai.com/product/list-10001899-10001904.html?intcmp=GGW20160809_home_mp_c6" id="yui_3_13_0_1_1486093763883_2836">
+                                        <img width="270" height="180" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/16/2fbc12fd-8605-4653-9f3c-5c394c9441c3.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/16/2fbc12fd-8605-4653-9f3c-5c394c9441c3.jpg" id="yui_3_13_0_1_1486093763883_2835">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_block" data-clk="actwatch|floormp|C7">
+                            <div class="border_animation" id="yui_3_13_0_1_1486093763883_2037">
+                                <div class="border border_top"></div>
+                                <div class="border border_right"></div>
+                                <div class="border border_bootom"></div>
+                                <div class="border border_left"></div>
+                                <div class="img_wrap">
+                                    <a target="_blank" href="http://www.yintai.com/product/list-10001910.html?intcmp=GGW20160809_home_mp_c7">
+                                        <img width="270" height="180" alt="" img-src="http://r.ytrss.com/rs/img/eccms/2017/1/16/44486b8d-f5d2-447c-a4bd-90197f6c1cd5.jpg" src="http://r.ytrss.com/rs/img/eccms/2017/1/16/44486b8d-f5d2-447c-a4bd-90197f6c1cd5.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+===========================
+            卡列表
+===========================
+             -->
+            <div class="ytWrap yt_card" data-clk="actwatch|Marketing|R" id="yui_3_13_0_1_1486093763883_3852">
+                <div class="public-one" id="yui_3_13_0_1_1486093763883_3858">
+                    <a href="http://event.yintai.com/yintaika.shtml" target="_blank" id="yui_3_13_0_1_1486093763883_3857"><img img-src="http://r.ytrss.com/rs/img/eccms/2014/11/27/06e60098-7adc-438c-8a9d-2b9970851ee3.jpg" alt="" src="http://r.ytrss.com/rs/img/eccms/2014/11/27/06e60098-7adc-438c-8a9d-2b9970851ee3.jpg" id="yui_3_13_0_1_1486093763883_3856"></a>
+                </div>
+                <div class="public-two" id="yui_3_13_0_1_1486093763883_3851">
+                    <a href="http://promotion.yintai.com/20160303/taicoll/index.html" target="_blank" id="yui_3_13_0_1_1486093763883_3850"><img img-src="http://r.ytrss.com/rs/img/eccms/2016/3/4/5de0cee3-4fb4-49df-b19e-904f6b003482.jpg" alt="" src="http://r.ytrss.com/rs/img/eccms/2016/3/4/5de0cee3-4fb4-49df-b19e-904f6b003482.jpg" id="yui_3_13_0_1_1486093763883_3854"></a>
+                </div>
+                <div class="public-san">
+                    <a href="http://promotion.yintai.com/20150821/mp/womens/womens.html" target="_blank"><img img-src="http://r.ytrss.com/rs/img/eccms/2016/12/8/2e663a8d-c6a4-4c60-b3a6-534dd4004637.jpg" alt="" src="http://r.ytrss.com/rs/img/eccms/2016/12/8/2e663a8d-c6a4-4c60-b3a6-534dd4004637.jpg"></a>
+                </div>
+            </div>
+            <!-- 
+===============================
+            楼梯导航
+===============================
+             -->
+            <div class="ytWrap float_nav_wrap" data-clk="actwatch|navifd|J" id="yui_3_13_0_1_1486093763883_2989">
+                <div class="float_nav_fixed" id="yui_3_13_0_1_1486093763883_2988">
+                    <div class="float_nav" id="yui_3_13_0_1_1486093763883_370" style="display: block;">
+                        <a id="mp" class="Y_floor_mp" href="javascript:;" target="_self">时尚名品</a>
+                        <a id="wz" class="Y_floor_wz" href="javascript:;" target="_self">潮流女装</a>
+                        <a id="nz" class="Y_floor_nz f_active" href="javascript:;" target="_self">精品男装</a>
+                        <a id="xx" class="Y_floor_xx" href="javascript:;" target="_self">时尚鞋靴</a>
+                        <a id="xb" class="Y_floor_xb" href="javascript:;" target="_self">潮流箱包</a>
+                        <a id="hf" class="Y_floor_hf" href="javascript:;" target="_self">美容护肤</a>
+                        <a id="hw" class="Y_floor_yd" href="javascript:;" target="_self">运动户外</a>
+                        <a id="ps" class="Y_floor_ps" href="javascript:;" target="_self">内衣配饰</a>
+                        <a id="ty" class="Y_floor_ty" href="javascript:;" target="_self">可爱婴童</a>
+                        <a id="top" class="Y_floor_top" href="javascript:;" target="_self">返回顶部</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- 页脚 -->
-        <!-- <div id="ft">
+        <div id="ft">
             <div class="ytWrap itips">
                 <span class="service">
         		            <strong>400-119-1111</strong><i>8:00-24:00</i>
@@ -415,9 +1114,11 @@
         	              </span>
             </div>
             <div class="ytWrap links">
-                <a  href="http://about.yintai.com/about/about.html" target="_blank">关于银泰</a>|<a href="http://www.yintai.com/help/index.html" target="_blank">帮助中心</a>|<a href="http://www.yintai.com/sitemap/onlinecategory.aspx" target="_blank">网站地图</a>|<a  href="http://about.yintai.com/about/biz.html" target="_blank">企业客户</a>|<a  href="http://agent.yintai.com" target="_blank">代理合作</a>|<a  href="http://about.yintai.com/about/business.html" target="_blank">品牌招商</a>|<a  href="http://about.yintai.com/partner/partner.html" target="_blank">商务合作</a>|<a href="http://cps.yintai.com" target="_blank">网站联盟</a>|<a  href="http://about.yintai.com/about/contact.html" target="_blank">联系我们</a>|<a  href="http://about.yintai.com/about/joinus.html" target="_blank">加入银泰</a>|<a  href="http://about.yintai.com/about/copyright.html" target="_blank">版权声明</a>|<a  href="http://about.yintai.com/about/law.html" class="last" target="_blank">法律声明</a>
+                <p>
+                    <a href="http://about.yintai.com/about/about.html" target="_blank">关于银泰</a>|<a href="http://www.yintai.com/help/index.html" target="_blank">帮助中心</a>|<a href="http://www.yintai.com/sitemap/onlinecategory.aspx" target="_blank">网站地图</a>|<a href="http://about.yintai.com/about/biz.html" target="_blank">企业客户</a>|<a href="http://agent.yintai.com" target="_blank">代理合作</a>|<a href="http://about.yintai.com/about/business.html" target="_blank">品牌招商</a>|<a href="http://about.yintai.com/partner/partner.html" target="_blank">商务合作</a>|<a href="http://cps.yintai.com" target="_blank">网站联盟</a>|<a href="http://about.yintai.com/about/contact.html" target="_blank">联系我们</a>|<a href="http://about.yintai.com/about/joinus.html" target="_blank">加入银泰</a>|<a href="http://about.yintai.com/about/copyright.html" target="_blank">版权声明</a>|<a href="http://about.yintai.com/about/law.html" class="last" target="_blank">法律声明</a>
+                </p>
             </div>
-            <div class="ytWrap versions ">
+            <div class="ytWrap versions">
                 <p>
                     <a href="javascript:void(0) ">浙ICP备10200233号</a><a href="javascript:void(0) ">京公网安备110105019085</a><a href="javascript:void(0) ">增值电信业务经营许可证：浙B2-20110005</a>
                 </p>
@@ -434,7 +1135,7 @@
                     <img class="commerce " src="./css/img/commerce.gif ">
                 </a>
             </div>
-        </div> -->
+        </div>
     </div>
 </body>
 

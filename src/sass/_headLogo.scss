@@ -1,5 +1,4 @@
 @import 'common.scss';
-
 #hdmain {
     background-color: #fff;
     .logo {
@@ -13,11 +12,10 @@
             height: 76px;
         }
     }
-    .topMain{
+    .topMain {
         height: 120px
     }
 }
-
 
 //微型购物车
 .cart {
@@ -27,49 +25,49 @@
     margin: 40px 0 0 18px;
     position: relative;
     .minishop {
-    @extend %clearfix;
-    display: inline-block;
-    width: 160px;
-    height: 34px;
-    background: #323333 url(./img/header-02.png) -55px -76px no-repeat;
-    i{
-        float: left;
+        @extend %clearfix;
         display: inline-block;
+        width: 160px;
         height: 34px;
-        line-height: 34px;
-        padding-left: 48px;
-        color: #fff;
-        strong{
-            padding: 0 5px;
-            font: 400 16px/34px Arial;
-            color: #e5004f;
-            vertical-align: middle;
+        background: #323333 url(./img/header-02.png) -55px -76px no-repeat;
+        i {
+            float: left;
+            display: inline-block;
+            height: 34px;
+            line-height: 34px;
+            padding-left: 48px;
+            color: #fff;
+            strong {
+                padding: 0 5px;
+                font: 400 16px/34px Arial;
+                color: #e5004f;
+                vertical-align: middle;
+            }
+        }
+        b {
+            float: right;
+            margin-right: 20px;
+            margin-top: 16px;
+            width: 7px;
+            height: 4px;
+            overflow: hidden;
+            -webkit-transition: -webkit-transform .2s ease-in 0s;
+            background: url(./img/header-02.png) -189px -111px no-repeat;
         }
     }
-    b{
-        float: right;
-        margin-right: 20px;
-        margin-top: 16px;
-        width: 7px;
-        height: 4px;
-        overflow: hidden;
-        -webkit-transition: -webkit-transform .2s ease-in 0s;
-        background: url(./img/header-02.png) -189px -111px no-repeat;
-    }
-}
 }
 
 //搜索框
-.search{
+.search {
     float: right;
     width: 498px;
     margin-top: 40px;
     position: relative;
-    .searchbox{
+    .searchbox {
         height: 30px;
         margin-bottom: 8px;
         border: 2px solid #323333;
-        input{
+        input {
             width: 440px;
             height: 30px;
             line-height: 30px;
@@ -80,7 +78,7 @@
             border: none;
             color: #888;
         }
-        button{
+        button {
             float: left;
             width: 44px;
             height: 30px;
@@ -90,68 +88,64 @@
             background: #323333 url(./img/header-02.png) 0 -78px no-repeat;
         }
     }
-    .hotkeyword{
+    .hotkeyword {
         height: 18px;
         overflow: hidden;
-        a{
+        a {
             float: left;
             margin-right: 12px;
             color: #888;
-            &:hover{
+            &:hover {
                 text-decoration: underline;
                 color: #e5004f;
             }
         }
-        .yt_hotword{
+        .yt_hotword {
             color: #e5004f;
         }
     }
 }
-
-
 
 .itips {
     float: right;
     height: 76px;
-}
-//共有样式
-span {
-    float: left;
-    height: 41px;
-    font-family: "微软雅黑";
-    strong {
-        display: block;
-        font-size: 16px;
-        font-weight: 400;
-        color: #000;
-        i {
-            font-style: normal;
-            color: #e5004f;
+    //共有样式
+    span {
+        float: left;
+        height: 41px;
+        font-family: "微软雅黑";
+        strong {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+            i {
+                font-style: normal;
+                color: #e5004f;
+            }
+        }
+        b {
+            font-weight: 400;
+            color: #888;
         }
     }
-    b {
-        font-weight: 400;
-        color: #888;
+    //退货
+    .exChange {
+        width: 145px;
+        padding: 0 0 0 45px;
+        background: url(./img/footer-01.png) 0 -80px no-repeat;
     }
-
+    //品质
+    .quality {
+        width: 130px;
+        padding: 0 0 0 48px;
+        background: url(./img/footer-01.png) 0 -154px no-repeat;
+    }
+    //运费
+    .carry {
+        width: 110px;
+        border-right: none;
+        padding: 0 0 0 60px;
+        background: url(./img/footer-01.png) 0 -225px no-repeat;
+    }
 }
-//退货
-.exChange {
-    width: 145px;
-    padding: 0 0 0 45px;
-    background: url(./img/footer-01.png) 0 -80px no-repeat;
-}
-//品质
-.quality {
-    width: 130px;
-    padding: 0 0 0 48px;
-    background: url(./img/footer-01.png) 0 -154px no-repeat;
-}
-//运费
-.carry {
-    width: 110px;
-    border-right: none;
-    padding: 0 0 0 60px;
-    background:  url(./img/footer-01.png) 0 -225px no-repeat;
-}
-

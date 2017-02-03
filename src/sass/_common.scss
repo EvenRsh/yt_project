@@ -48,6 +48,7 @@ body {
         margin: 0 auto;
     }
 #ft {
+    @extend %clearfix;
     width: 100%;
     min-width: 1190px;
     padding-top: 30px;
