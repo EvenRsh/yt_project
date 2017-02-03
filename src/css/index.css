@@ -461,7 +461,9 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 .brand_content .eva-switchable-active span { position: absolute; width: 7px; height: 4px; left: 143px; top: 43px; background: url(../css/img/yt_ico.png) 0 -16px no-repeat; overflow: hidden; }
 
-.brand_content .eva-switchable-panels .pr_list_t { padding-top: 10px; width: 940px; height: 262px; }
+.brand_content .eva-switchable-panels .pr_list_t { display: none; padding-top: 10px; width: 940px; height: 262px; }
+
+.brand_content .eva-switchable-panels .pr_list_t:first-child { display: block; }
 
 .brand_content .eva-switchable-panels .pr_list_t > a:hover { opacity: 0.9; }
 
@@ -755,6 +757,8 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 .floor_tk_content .eva-switchable-panels .pro_list_xp li .pro_list_xp_content .pro_list_xp_title { height: 20px; overflow: hidden; }
 
 .floor_tk_content .eva-switchable-panels .pro_list_xp li .pro_list_xp_img { width: 198px; height: 200px; overflow: hidden; }
+
+.floor_tk_content .eva-switchable-panels .pro_list_xp li .pro_list_xp_img img { margin: 5px 22px; }
 
 /* wabapp */
 #wap_box { width: 1190px; height: 170px; margin: 0 auto; position: relative; background-color: #fff; }

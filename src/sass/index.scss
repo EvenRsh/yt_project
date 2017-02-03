@@ -67,9 +67,13 @@
     overflow: hidden;
   }
   .eva-switchable-panels .pr_list_t {
+  	display: none;
     padding-top: 10px;
     width: 940px;
     height: 262px;
+    &:first-child{
+    	display: block
+    }
     > a:hover {
       opacity: 0.9;
     }
@@ -873,6 +877,9 @@
           width: 198px;
           height: 200px;
           overflow: hidden;
+          img{
+          	margin: 5px 22px;
+          }
         }
       }
     }
