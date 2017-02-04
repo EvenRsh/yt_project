@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="../css/goodslist.css">
+    <!-- <link rel="stylesheet" href="../assets/jquery-rhcarousel/jquery.rhcarousel.css"> -->
+    <script src="../assets/jQuery/jquery-3.1.1.js"></script>
+    <!-- <script src="../assets/jquery-rhcarousel/jquery-rhcarousel.js"></script> -->
+    <script src="../js/goodslist.js"></script>
+</head>
+
+<body>
+    <div id='doc'>
+        <!-- 页头 -->
+        <div id="hd" class="ytSecure">
+            <div id="hdtop">
+                <div class="ytWrap topSide cf">
+                    <ul class="topLeft">
+                        <li class="ytIndex">
+                            <a href="index.html">
+                                <s></s>银泰首页</a>
+                        </li>
+                        <li class="separator"></li>
+                        <li class="ytWeiXin">
+                            <a href="#">
+                                <s></s>微信<b></b></a>
+                        </li>
+                        <li class="separator"></li>
+                        <li class="ytPhone">
+                            <a href="#">
+                                <s></s>手机银泰<b></b></a>
+                        </li>
+                    </ul>
+                    <ul class="topRight">
+                        <li class="ytUser">
+                            <span>Hi，欢迎来到银泰网! &nbsp;</span>
+                            <a href="html/login.html" class="ytLogin">登录</a>
+                            <a href="html/register.html" class="ytRegister">注册</a>
+                        </li>
+                        <li class="separator"></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li class="separator"></li>
+                        <li class="myYt"><a href="#">我的银泰<b></b></a></li>
+                        <li class="separator"></li>
+                        <li><a href="#">银泰卡</a></li>
+                        <li class="separator"></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="hdmain">
+                <div class="ytWrap topMain">
+                    <h1 class="logo">
+						<a href="javascript:"></a>
+					</h1>
+                    <div id="miniCart" class="cart cur-icart">
+                        <a target="_blank" href="./html/cartList.html" class="minishop J-MiniShop">
+                            <i>购物袋<strong id="cartCount">0</strong>件</i>
+                            <b></b>
+                        </a>
+                        <div class="yt-bags J-ShopCart" id="J-ShopCart"></div>
+                    </div>
+                    <div class="search">
+                        <div class="searchbox">
+                            <input class="default-attr" type="text" value="雾霾无处藏身的秘密">
+                            <button title="搜索" id="searchBtn"></button>
+                        </div>
+                        <div class="hotkeyword" id="hotKeyWord">
+                            <a class="yt_hotword" target="_blank" href="http://promotion.yintai.com/20170113/mp/nhjyd0117/index.html">运动年终79元起</a>
+                            <a class="yt_hotword" target="_blank" href="http://promotion.yintai.com/20170113/mp/toppp/index.html ">旧衣不过年</a>
+                            <a target="_blank" href="http://www.yintai.com/store/store-50003467.html?supid=104519">婴幼儿服饰</a>
+                            <a target="_blank" href="http://www.yintai.com/mall/181040/index.shtml">轻复古重文艺</a>
+                            <a target="_blank" href="http://www.yintai.com/product/list-10001925.html">奢品斜挎包</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hdmenu">
+                <div class="ytWrap topMenu">
+                    <div class="menu">
+                        <div class="menuTitle">
+                            <a class="mTitle" target="_blank" href="//channel.yintai.com/category/allcategorylistmap/index.html?intcmp=GGW20141215_home_f_a6" id="menu-cate-title">全部分类</a>
+                        </div>
+                        <div class="menuList">
+                            <dl class="dl_1">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_2">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_3">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_4">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_5">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_6">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_7">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_8">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_9">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="dl_10">
+                                <dt class="menuListTitle">
+                                    <a href="#" target="_blank" class="category">
+                                        <em></em>名品
+                                    </a>
+                                    <i></i>
+                                    <div>
+                                        <a href="#" target="_blank">秋冬尚新</a>
+                                        <span></span>
+                                    </div>
+                                </dt>
+                                <dd class="submenuList">
+                                    <div class="submenu cf">
+                                        <div class="sortsList">
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#">男装</a></h3>
+                                                <p>
+                                                    <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> </p>
+                                            </div>
+                                            <div class="sortsRepeat  cf">
+                                                <h3><a href="#" title="女装" >女装</a></h3>
+                                                <p> <a class="yt_hotword" href="#" title="新品">新品</a> <a href="#" title="卫衣">卫衣</a> <a class="yt_hotword" href="#" title="针织衫">针织衫</a> <a href="#" title="裤装">裤装</a> <a href="#" title="外套">外套</a> <a href="#" title="裙装">裙装</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="sortsBrand">
+                                            <h3>品牌</h3>
+                                            <p>
+                                                <a href="#" title="BURBERRY"> BURBERRY</a><a href="#" title="FERRAGAMO"> FERRAGAMO</a><a href="#" title="GUCCI"> GUCCI</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="navHr" style="padding-left:20px">
+                        <ul class="nav-hr" style="padding-left:20px">
+                            <li id="horiNavMpg">
+                                <a target="_blank" href="//promotion.yintai.com/channels/mp/index.html?intcmp=GGW20141215_home_f_a2" data-clk="actwatch|navi|f2"><span>名品馆</span></a>
+                            </li>
+                            <li id="horiNavTemai">
+                                <a target="_blank" href="//temai.yintai.com/?intcmp=GGW20141215_home_f_a4" data-clk="actwatch|navi|f3"><span>特卖</span></a>
+                            </li>
+                            <li id="horiNavHaitao">
+                                <a target="_blank" href="//channel.yintai.com/haitao/index.shtml?intcmp=GGW20141215_home_f_a5" data-clk="actwatch|navi|f4"><span>海淘馆</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navRr">
+                        <a target="_blank" href="//point.yintai.com/activistylist">积分商城</a>|<a target="_blank" href="//channel.yintai.com/Brand/AllBrandsHotRecommand?intcmp=GGW20150528_home_f_a7">全部品牌</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 正文 -->
+        <div id='bd'>
+            <div id="ProlistCon">
+                <!-- 面包屑，筛选 begin -->
+                <!--面包屑 begin-->
+                <div class="p-crumbs-rEP">
+                    <table class="t-crumbs">
+                        <tbody>
+                            <tr>
+                                <td class="first">
+                                    <div class="xuan J_xuanqu" id="yui_3_13_0_1_1486177485026_4241">
+                                        <div class="postip">
+                                            <a href="http://www.yintai.com/product/list-10000591.html">美妆</a>
+                                            <a href="http://www.yintai.com/product/list-10000702.html">女装</a>
+                                            <a href="http://www.yintai.com/product/list-10000667.html">男装</a>
+                                            <a href="http://www.yintai.com/product/list-10000844.html">鞋靴</a>
+                                            <a href="http://www.yintai.com/product/list-10000867.html">运动</a>
+                                            <a href="http://www.yintai.com/product/list-10000500.html">箱包</a>
+                                            <a href="http://www.yintai.com/product/list-10000646.html">内衣</a>
+                                            <a href="http://www.yintai.com/product/list-10001493.html">配饰</a>
+                                            <a href="http://www.yintai.com/product/list-10000533.html">户外</a>
+                                            <a href="http://www.yintai.com/product/list-10000818.html">婴童</a>
+                                            <a href="http://www.yintai.com/product/list-10000305.html">家居</a>
+                                        </div>
+                                        <a class="J-Cousor" href="http://www.yintai.com/product/list-10001884.html" data-clk="navi|mbx|1884">名品<b></b></a>
+                                    </div>
+                                </td>
+                                <td class="next">
+                                    <div class="xuan J_xuanqu" id="yui_3_13_0_1_1486177485026_4272">
+                                        <div class="postip">
+                                            <a href="http://www.yintai.com/product/list-10001886.html">女装</a>
+                                            <a href="http://www.yintai.com/product/list-10002351.html">内衣</a>
+                                            <a href="http://www.yintai.com/product/list-10001887.html">服饰</a>
+                                            <a href="http://www.yintai.com/product/list-10001889.html">女鞋</a>
+                                            <a href="http://www.yintai.com/product/list-10001888.html">男鞋</a>
+                                            <a href="http://www.yintai.com/product/list-10001891.html">女包</a>
+                                            <a href="http://www.yintai.com/product/list-10001890.html">男包</a>
+                                            <a href="http://www.yintai.com/product/list-10001893.html">手表</a>
+                                            <a href="http://www.yintai.com/product/list-10001892.html">首饰</a>
+                                            <a href="http://www.yintai.com/product/list-10001895.html">办公生活</a>
+                                            <a href="http://www.yintai.com/product/list-10001894.html">婴童</a>
+                                            <a href="http://www.yintai.com/product/list-10002332.html">海淘直邮</a>
+                                        </div>
+                                        <a class="J-Cousor" href="javascript:void(0);">男装<b></b></a>
+                                    </div>
+                                </td>
+                                <td class="next kinds">
+                                    <div class="xuan cf">
+                                        <div class="p-filterDivideLe p-filterChooseMain">
+                                            <dl class="cf">
+                                                <dd>
+                                                    <ul class="cf">
+                                                        <li><span>（商品<strong>2012</strong>款、品牌<strong>42</strong>个）</span></li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="last">
+                                    <div class="p-filterReset" style="visibility:hidden"><a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html">撤销全部</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--面包屑 end-->
+                <!--筛选 begin-->
+                <div class="p-filter">
+                    <div class="p-filterMain cf">
+                        <div class="p-filterDivide cf">
+                            <form action="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495" method="GET" class="J-DisHijackForm">
+                                <!--分类 begin-->
+                                <div class="p-filterCommon p-filterkinds cf  ">
+                                    <div class="p-filterDivideLe J-filterKindsMain" data-clk="navi|lbsx|-1|A">
+                                        <dl class="cf">
+                                            <dt>分类：</dt>
+                                            <dd>
+                                                <ul class="cf">
+                                                    <li class="cf">
+                                                        <input name="p-kinds" type="radio" class="p-radio" nvalue="10001896">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001896.html?N=60722495">T恤<span>(79)</span></a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="cf">
+                                                        <input name="p-kinds" type="radio" class="p-radio" nvalue="10001897">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001897.html?N=60722495">POLO衫<span>(34)</span></a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="cf">
+                                                        <input name="p-kinds" type="radio" class="p-radio" nvalue="10001898">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001898.html?N=60722495">衬衫<span>(28)</span></a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="cf">
+                                                        <input name="p-kinds" type="radio" class="p-radio" nvalue="10001899">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001899.html?N=60722495">针织衫/毛衫<span>(46)</span></a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="cf">
+                                                        <input name="p-kinds" type="radio" class="p-radio" nvalue="10001900">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001900.html?N=60722495">外套<span>(73)</span></a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="cf">
+                                                        <input name="p-kinds" type="radio" class="p-radio" nvalue="10001901">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001901.html?N=60722495">裤装<span>(36)</span></a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="cf">
+                                                        <input name="p-kinds" type="radio" class="p-radio" nvalue="10002015">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10002015.html?N=60722495">卫衣/绒衫<span>(90)</span></a>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="p-filterOperate">
+                                    </div>
+                                </div>
+                                <!--分类 end-->
+                                <!--品牌 begin-->
+                                <div class="p-filterCommon J-filterBrand p-filterBrand cf " data-clk="navi|lbsx|-2|B" id="yui_3_13_0_1_1486177485026_385">
+                                    <div class="p-filterDivideLe p-filterBrandMain">
+                                        <dl class="cf">
+                                            <dt>品牌：</dt>
+                                            <dd>
+                                                <div class="brand-key-box" style="display: none;" id="yui_3_13_0_1_1486177485026_5188">
+                                                    <ul class="brand-key-list cf" id="yui_3_13_0_1_1486177485026_5190">
+                                                        <li class="brand-key-item all-brand index-cur" rel-data="all">全部</li>
+                                                        <li class="brand-key-item" rel-data="A">A</li>
+                                                        <li class="brand-key-item" rel-data="B">B</li>
+                                                        <li class="brand-key-item" rel-data="C">C</li>
+                                                        <li class="brand-key-item" rel-data="E">E</li>
+                                                        <li class="brand-key-item" rel-data="F">F</li>
+                                                        <li class="brand-key-item" rel-data="G">G</li>
+                                                        <li class="brand-key-item" rel-data="H">H</li>
+                                                        <li class="brand-key-item" rel-data="J">J</li>
+                                                        <li class="brand-key-item" rel-data="K">K</li>
+                                                        <li class="brand-key-item" rel-data="L">L</li>
+                                                        <li class="brand-key-item" rel-data="M">M</li>
+                                                        <li class="brand-key-item" rel-data="O">O</li>
+                                                        <li class="brand-key-item" rel-data="P">P</li>
+                                                        <li class="brand-key-item" rel-data="R">R</li>
+                                                        <li class="brand-key-item" rel-data="S">S</li>
+                                                        <li class="brand-key-item" rel-data="T">T</li>
+                                                        <li class="brand-key-item" rel-data="V">V</li>
+                                                        <li class="brand-key-item" rel-data="Z">Z</li>
+                                                        <li class="brand-key-item" rel-data="0">#</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="p-lettersSearch">
+                                                    <div class="p-lettersSearch-list">
+                                                        <ul class="cf J-BrandSearchList">
+                                                            <li sy-data="" brandid="50000615" rel-data="M">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000615">
+                                                                <label>
+                                                                    <a title="MICHAEL KORS(252)" href="http://www.yintai.com/product/list-50000615-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">MICHAEL KORS<span>(252)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000270" rel-data="B">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000270">
+                                                                <label>
+                                                                    <a title="BURBERRY(215)" href="http://www.yintai.com/product/list-50000270-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">BURBERRY<span>(215)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000265" rel-data="S">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000265">
+                                                                <label>
+                                                                    <a title="SALVATORE FERRAGAMO(215)" href="http://www.yintai.com/product/list-50000265-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">SALVATORE FERRAGAMO<span>(215)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="CK" brandid="50000519" rel-data="C">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000519">
+                                                                <label>
+                                                                    <a title="CALVIN KLEIN(108)" href="http://www.yintai.com/product/list-50000519-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">CALVIN KLEIN<span>(108)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000887" rel-data="A">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000887">
+                                                                <label>
+                                                                    <a title="ARMANI JEANS(101)" href="http://www.yintai.com/product/list-50000887-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">ARMANI JEANS<span>(101)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000959" rel-data="M">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000959">
+                                                                <label>
+                                                                    <a title="MCQ(99)" href="http://www.yintai.com/product/list-50000959-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">MCQ<span>(99)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000488" rel-data="C">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000488">
+                                                                <label>
+                                                                    <a title="COACH(96)" href="http://www.yintai.com/product/list-50000488-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">COACH<span>(96)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50001052" rel-data="M">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50001052">
+                                                                <label>
+                                                                    <a title="MAX MARA(77)" href="http://www.yintai.com/product/list-50001052-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">MAX MARA<span>(77)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50001058" rel-data="M">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50001058">
+                                                                <label>
+                                                                    <a title="MAX&amp;CO. (75)" href="http://www.yintai.com/product/list-50001058-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">MAX&amp;CO. <span>(75)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000416" rel-data="V">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000416">
+                                                                <label>
+                                                                    <a title="VERSACE(71)" href="http://www.yintai.com/product/list-50000416-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">VERSACE<span>(71)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000282" rel-data="K">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000282">
+                                                                <label>
+                                                                    <a title="KENZO(67)" href="http://www.yintai.com/product/list-50000282-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">KENZO<span>(67)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000368" rel-data="B">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000368">
+                                                                <label>
+                                                                    <a title="BALLY(63)" href="http://www.yintai.com/product/list-50000368-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">BALLY<span>(63)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50003900" rel-data="M">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50003900">
+                                                                <label>
+                                                                    <a title="MARKUS LUPFER(44)" href="http://www.yintai.com/product/list-50003900-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">MARKUS LUPFER<span>(44)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50004582" rel-data="M">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50004582">
+                                                                <label>
+                                                                    <a title="Marcelo Burlon(44)" href="http://www.yintai.com/product/list-50004582-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">Marcelo Burlon<span>(44)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000642" rel-data="A">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000642">
+                                                                <label>
+                                                                    <a title="ALEXANDER MCQUEEN(43)" href="http://www.yintai.com/product/list-50000642-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">ALEXANDER MCQUEEN<span>(43)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50001479" rel-data="R">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50001479">
+                                                                <label>
+                                                                    <a title="RED VALENTINO(43)" href="http://www.yintai.com/product/list-50001479-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">RED VALENTINO<span>(43)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000455" rel-data="G">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000455">
+                                                                <label>
+                                                                    <a title="GUCCI(40)" href="http://www.yintai.com/product/list-50000455-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">GUCCI<span>(40)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50000196" rel-data="F">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000196">
+                                                                <label>
+                                                                    <a title="FURLA(33)" href="http://www.yintai.com/product/list-50000196-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">FURLA<span>(33)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50001244">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50001244">
+                                                                <label>
+                                                                    <a title="SPORTMAX(31)" href="http://www.yintai.com/product/list-50001244-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">SPORTMAX<span>(31)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50000283">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000283">
+                                                                <label>
+                                                                    <a title="MOSCHINO(30)" href="http://www.yintai.com/product/list-50000283-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">MOSCHINO<span>(30)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000364" rel-data="F">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000364">
+                                                                <label>
+                                                                    <a title="FENDI(27)" href="http://www.yintai.com/product/list-50000364-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">FENDI<span>(27)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000373" rel-data="R">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000373">
+                                                                <label>
+                                                                    <a title="RALPH LAUREN(25)" href="http://www.yintai.com/product/list-50000373-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">RALPH LAUREN<span>(25)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50001828" rel-data="L">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50001828">
+                                                                <label>
+                                                                    <a title="LONGCHAMP(24)" href="http://www.yintai.com/product/list-50001828-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">LONGCHAMP<span>(24)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000581" rel-data="H">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000581">
+                                                                <label>
+                                                                    <a title="HUGO BOSS(23)" href="http://www.yintai.com/product/list-50000581-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">HUGO BOSS<span>(23)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50000541" rel-data="Z">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000541">
+                                                                <label>
+                                                                    <a title="ZEGNA(19)" href="http://www.yintai.com/product/list-50000541-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">ZEGNA<span>(19)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50000367" rel-data="J">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000367">
+                                                                <label>
+                                                                    <a title="JIMMY CHOO(17)" href="http://www.yintai.com/product/list-50000367-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">JIMMY CHOO<span>(17)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000869" rel-data="T">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000869">
+                                                                <label>
+                                                                    <a title="TORY BURCH(16)" href="http://www.yintai.com/product/list-50000869-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">TORY BURCH<span>(16)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50001776">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50001776">
+                                                                <label>
+                                                                    <a title="Y-3(16)" href="http://www.yintai.com/product/list-50001776-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">Y-3<span>(16)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000231" rel-data="S">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000231">
+                                                                <label>
+                                                                    <a title="SAINT LAURENT(15)" href="http://www.yintai.com/product/list-50000231-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">SAINT LAURENT<span>(15)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000365" rel-data="E">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000365">
+                                                                <label>
+                                                                    <a title="EMPORIO ARMANI(15)" href="http://www.yintai.com/product/list-50000365-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">EMPORIO ARMANI<span>(15)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50004509" rel-data="M">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50004509">
+                                                                <label>
+                                                                    <a title="MSGM(10)" href="http://www.yintai.com/product/list-50004509-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">MSGM<span>(10)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50003901">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50003901">
+                                                                <label>
+                                                                    <a title="NEIL BARRETT(10)" href="http://www.yintai.com/product/list-50003901-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">NEIL BARRETT<span>(10)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000366" rel-data="B">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000366">
+                                                                <label>
+                                                                    <a title="BALENCIAGA(9)" href="http://www.yintai.com/product/list-50000366-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">BALENCIAGA<span>(9)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50004692" rel-data="O">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50004692">
+                                                                <label>
+                                                                    <a title="OPENING CEREMONY(8)" href="http://www.yintai.com/product/list-50004692-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">OPENING CEREMONY<span>(8)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000230" rel-data="G">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000230">
+                                                                <label>
+                                                                    <a title="GIORGIO ARMANI(6)" href="http://www.yintai.com/product/list-50000230-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">GIORGIO ARMANI<span>(6)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50000522" rel-data="M">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000522">
+                                                                <label>
+                                                                    <a title="MONCLER(5)" href="http://www.yintai.com/product/list-50000522-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">MONCLER<span>(5)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000376" rel-data="P">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000376">
+                                                                <label>
+                                                                    <a title="PRADA(5)" href="http://www.yintai.com/product/list-50000376-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">PRADA<span>(5)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50000512" rel-data="S">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000512">
+                                                                <label>
+                                                                    <a title="STELLA MCCARTNEY(4)" href="http://www.yintai.com/product/list-50000512-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">STELLA MCCARTNEY<span>(4)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li brandid="50001355">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50001355">
+                                                                <label>
+                                                                    <a title="PAUL&amp;SHARK(4)" href="http://www.yintai.com/product/list-50001355-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">PAUL&amp;SHARK<span>(4)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000375" rel-data="B">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000375">
+                                                                <label>
+                                                                    <a title="BOTTEGA VENETA(3)" href="http://www.yintai.com/product/list-50000375-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">BOTTEGA VENETA<span>(3)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000490" rel-data="C">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000490">
+                                                                <label>
+                                                                    <a title="CHLOE(3)" href="http://www.yintai.com/product/list-50000490-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">CHLOE<span>(3)</span></a>
+                                                                </label>
+                                                            </li>
+                                                            <li sy-data="" brandid="50000369" rel-data="V">
+                                                                <input name="p-brand" type="checkbox" class="p-radio" nvalue="50000369">
+                                                                <label>
+                                                                    <a title="VALENTINO(1)" href="http://www.yintai.com/product/list-50000369-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495">VALENTINO<span>(1)</span></a>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="p-filterOperate">
+                                        <span class="p-filterShow J-OpExpand"><a href="javascript:void(0);">展开</a></span>
+                                    </div>
+                                    <div class="p-crumbsRE J-MulSel">
+                                        <!--<span><a href="javascript:void(0);" class="p-crumbsR">单选</a></span>--><span><a href="javascript:void(0);" class="p-crumbsE">多选</a></span>
+                                    </div>
+                                </div>
+                                <!--品牌 end-->
+                                <!--其他属性_begin-->
+                                <div class="p-filterCommon J-otherAttrs cf ">
+                                    <div class="p-filterDivideLe p-filterKindsMain p-setToggle">
+                                        <dl class="cf">
+                                            <dt>色系：</dt>
+                                            <dd>
+                                                <ul class="cf" nvalue="70001528" data-clk="navi|lbsx|1528|C">
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60157428">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60157428">花色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60157412">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60157412">黑色系</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60157416">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60157416">蓝色系</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60157415">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60157415">红色系</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60157414">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60157414">灰色系</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60157417">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60157417">紫色系</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60157423">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60157423">绿色系</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60157413">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60157413">白色系</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590682">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590682">黑色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590675">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590675">蓝色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590681">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590681">红色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590687">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590687">白色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590683">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590683">褐色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590684">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590684">粉红色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590667">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590667">深灰色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590674">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590674">绿色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590672">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590672">浅灰色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590661">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590661">紫色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60521526">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60521526">黄色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590666">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590666">深卡其布色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590678">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590678">桔色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590665">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590665">深蓝色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590663">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590663">天蓝色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590668">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590668">巧克力色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590677">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590677">军绿色</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60157418">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60157418">黄色系</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60157420">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60157420">棕色系</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="&#39;hidden&#39;">
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60590673">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001528%3A60590673">浅黄色</a>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="p-filterOperate">
+                                        <span class="p-filterShow J-OpExpand"><a href="javascript:void(0);">展开</a></span>
+                                    </div>
+                                    <div class="p-crumbsRE J-MulSel">
+                                        <!--<span><a href="javascript:void(0);" class="p-crumbsR">单选</a></span>--><span><a href="javascript:void(0);" class="p-crumbsE">多选</a></span>
+                                    </div>
+                                </div>
+                                <div class="p-filterCommon J-otherAttrs cf ">
+                                    <div class="p-filterDivideLe p-filterKindsMain p-setToggle">
+                                        <dl class="cf">
+                                            <dt>适用性别：</dt>
+                                            <dd>
+                                                <ul class="cf" nvalue="70001804" data-clk="navi|lbsx|1804|D">
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60156146">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001804%3A60156146">女士</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60156147">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001804%3A60156147">男士</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-filter" type="checkbox" class="p-radio" nvalue="60156148">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B70001804%3A60156148">通用</a>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="p-crumbsRE J-MulSel">
+                                        <!--<span><a href="javascript:void(0);" class="p-crumbsR">单选</a></span>--><span><a href="javascript:void(0);" class="p-crumbsE">多选</a></span>
+                                    </div>
+                                </div>
+                                <!--价格_begin-->
+                                <div class="p-filterCommon p-filterPrice cf p-filterDif" data-clk="navi|lbsx|-3|E">
+                                    <div class="p-filterDivideLe p-filterPriceMain p-setToggle">
+                                        <dl class="cf">
+                                            <dt>价格：</dt>
+                                            <dd>
+                                                <ul class="cf">
+                                                    <li>
+                                                        <input name="p-price" type="checkbox" class="p-radio" nvalue="30000002">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=30000002%2B60722495" title="100-200元">100-200元</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-price" type="checkbox" class="p-radio" nvalue="30000003">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=30000003%2B60722495" title="200-500元">200-500元</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-price" type="checkbox" class="p-radio" nvalue="30000004">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=30000004%2B60722495" title="500-1000元">500-1000元</a>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input name="p-price" type="checkbox" class="p-radio" nvalue="30000005">
+                                                        <label>
+                                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=30000005%2B60722495" title="1000元以上">1000元以上</a>
+                                                        </label>
+                                                    </li>
+                                                    <li class="p-filterPriceDo J-FilPrice">
+                                                        <span class="J-PriceWrap">
+                                                                <input type="text" class="p-filterPriceLow" name="priceS" value="￥">
+                                                                <em>-</em>
+                                                                <input type="text" class="p-filterPriceHigh" name="priceE" value="￥">
+                                                                <button type="submit" class="c-lbtn c-lbtn-small">确认</button>
+                                                            </span>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <!--价格_end-->
+                                <!--其他属性_end-->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--筛选 end-->
+                <!-- 面包屑，筛选 end -->
+                <!--浮动导航 begin-->
+                <div class="fixnav-wrap">
+                    <div class="p-listNavVH J-FixNav" id="yui_3_13_0_1_1486177485026_393">
+                        <span class="p-listNavLeft"></span>
+                        <span class="p-listNavRight"></span>
+                        <!--排序_begin-->
+                        <form action="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495" method="GET" class="J-DisHijackForm">
+                            <div class="p-listNav">
+                                <ul class="cf">
+                                    <li class="p-listNavDefaultA J-default">
+                                        <div><a href="javascript:void(0);" style="position:relative;">默认</a></div>
+                                    </li>
+                                    <li class="p-listNavActiveOD J-sales">
+                                        <div><a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495&amp;sort=1">销量</a></div>
+                                    </li>
+                                    <li class="p-listNavActiveTD J-discount">
+                                        <div><a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495&amp;sort=7">折扣</a></div>
+                                    </li>
+                                    <li class="p-listNavActiveTD J-price">
+                                        <div><a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495&amp;sort=2">价格</a></div>
+                                        <div class="another-price"><a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495#">价格</a></div>
+                                    </li>
+                                    <li class="p-listNavHaiTao">
+                                        <div>
+                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495%2B69999999"><i></i>海淘商品</a>
+                                        </div>
+                                        <div>
+                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495&amp;sale=true"><i></i>特卖</a>
+                                        </div>
+                                        <div class="miaohuo">
+                                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495&amp;miao=true"><i></i>喵货</a>
+                                        </div>
+                                    </li>
+                                    <li class="p-listNavSearch">
+                                        <input type="text" class="p-listNavSearchInput" name="ResultKey" value="在结果中搜索">
+                                        <button class="p-listNavSearchBtn" type="submit">确定</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-listNavSearchByColor"><a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891.html?N=60722495&amp;color=true">按颜色展示</a></div>
+                        </form>
+                        <div class="p-listNavFBtn">
+                            <a href="javascript:void(0);" class="p-listNavFBtn-l"></a>
+                            <div>
+                                <em>1</em>/3
+                            </div>
+                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891-2.html?N=60722495" class="p-listNavFBtn-r"></a>
+                        </div>
+                        <!--排序_end-->
+                    </div>
+                </div>
+                <!--浮动导航 end-->
+                <!--
+======================================
+                列表主体 begin
+======================================
+                -->
+                <div class="p-list J-Hj-Partial i-list">
+                    <!--商品列表_begin-->
+                    <div class="p-listMain cf">
+                        <!-- <div class="p-listInfo" sku="21-236-5270">
+                            <div class="p-listImgBig" iic="21-201-8828">
+                                <a href="http://item.yintai.com/21-220-7333C.html" title="【自营】ARMANI JEANS混合材质休闲男士卫衣" target="_blank">
+                                    <img src="http://p10.ytrss.com/product/21/201/8828/BigImage/1789.jpg" width="228" alt="【自营】ARMANI JEANS混合材质休闲男士卫衣">
+                                </a>
+                            </div>
+                            <div class="p-listImgSmall" style="overflow: hidden;">
+                                <div class="listImgSmallP">
+                                   <span class="p-listPicLeftBtn p-listPicBtnDis"><a href=""></a></span>
+                               </div>
+                               <div class="listImgSmallN">
+                                   <span class="p-listPicRightBtn p-listPicBtnDis">
+                                                       <a href="javascript:void(0);"></a>
+                                                   </span>
+                               </div>
+                                <div class="p-listScroller" style="position: relative;">
+                                    <ul class="cf listPicPanel" id="yui_3_13_0_1_1486177485026_470" style="overflow: visible; position: absolute; width: 160px; left: 0px;">
+                                        <li iic="21-201-8828" style="display: block; float: left;">
+                                            <a href="http://item.yintai.com/21-236-5270C.html" title="【自营】ARMANI JEANS黑色混合材质休闲男士卫衣,6X6M266JPAZ,1200,L" msize-src="http://p10.ytrss.com/product/21/201/8828/BigImage/1789.jpg" target="_blank">
+                                                <img src="http://p10.ytrss.com/product/21/201/8828/SmallImage/1789.jpg" width="40" alt="【自营】ARMANI JEANS黑色混合材质休闲男士卫衣,6X6M266JPAZ,1200,L" title="【自营】ARMANI JEANS黑色混合材质休闲男士卫衣,6X6M266JPAZ,1200,L">
+                                            </a>
+                                        </li>
+                                        <li iic="21-220-7328" style="display: block; float: left;">
+                                            <a href="http://item.yintai.com/21-257-3671C.html" title="【自营】ARMANI JEANS深蓝色混合材质休闲男士卫衣 6X6M26 6JPAZ  1547 L" msize-src="http://p10.ytrss.com/product/21/220/7328/BigImage/63153.jpg" target="_blank">
+                                                <img src="http://p10.ytrss.com/product/21/220/7328/SmallImage/63153.jpg" width="40" alt="【自营】ARMANI JEANS深蓝色混合材质休闲男士卫衣 6X6M26 6JPAZ  1547 L" title="【自营】ARMANI JEANS深蓝色混合材质休闲男士卫衣 6X6M26 6JPAZ  1547 L">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-listPrice">
+                                <strong class="y-p">￥1300</strong>
+                                <em class="m-p">￥1730</em>
+                            </div>
+                            <div class="p-listTxt">
+                                <p class=""><a href="http://item.yintai.com/21-220-7333C.html" target="_blank" title="【自营】ARMANI JEANS黑色混合材质休闲男士卫衣,6X6M266JPAZ,1200,L">【自营】ARMANI JEANS混合材质休闲男士卫衣</a></p>
+                            </div>
+                            <div class="p-listCustomIcon">
+                            </div>
+                            添加信息
+                            <div class="p-listAddInfo">
+                                <p class="p-preferentialInfo" title="">
+                                </p>
+                                <p class="p-storeEntrance">
+                                    <a href="http://www.yintai.com/store/store-10001884-50000887.html " target="_blank" title="ARMANI JEANS品牌店">ARMANI JEANS品牌店</a>
+                                </p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!--商品列表_end-->
+                    <!--分页 begin-->
+                    <div class="p-page">
+                        <div id="Y_Foot_Page" class="b-page">
+                            <!-- <span class="b-p-first">　</span> -->
+                            <!-- <a class="b-pageNum b-pageNumActive">1</a>
+                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891-2.html?N=60722495" class="b-pageNum">2</a>
+                            <span class="b-pageOmission">...</span>
+                            <a href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891-34.html?N=60722495" class="b-pageNum">3</a> -->
+                            <!-- <a class="b-p-down" href="http://www.yintai.com/product/list-10001885-10001886-10001887-10001888-10001889-10001890-10001891-2.html?N=60722495">　</a>
+                            <em class="p-pagesAll">共4页</em>
+                            <em>到第<input type="text" class="pageinput" value="1" maxlength="3">页</em>
+                            <button type="submit" class="c-btn">确定</button> -->
+                        </div>
+                    </div>
+                    <!--分页 end-->
+                </div>
+            </div>
+        </div>
+        <!-- 页脚 -->
+        <div id="ft">
+            <div class="ytWrap itips">
+                <span class="service">
+        		            <strong>400-119-1111</strong><i>8:00-24:00</i>
+        		            <b>service@yintai.com</b>
+        		        </span>
+                <span class="exChange">
+        	                  <strong><i>15天</i>无忧退换货</strong>
+        	                  <b>为您提供售后无忧保证</b>
+        	              </span>
+                <span class="quality">
+        	                  <strong><i>100%</i>正品保证</strong>
+        	                  <b>品质护航 购物无忧</b>
+        	              </span>
+                <span class="carry">
+        	                  <strong><i>满199元</i>免运费</strong>
+        	                  <b>为您提供便利物流</b>
+        	              </span>
+            </div>
+            <div class="ytWrap links">
+                <p>
+                    <a href="http://about.yintai.com/about/about.html" target="_blank">关于银泰</a>|<a href="http://www.yintai.com/help/index.html" target="_blank">帮助中心</a>|<a href="http://www.yintai.com/sitemap/onlinecategory.aspx" target="_blank">网站地图</a>|<a href="http://about.yintai.com/about/biz.html" target="_blank">企业客户</a>|<a href="http://agent.yintai.com" target="_blank">代理合作</a>|<a href="http://about.yintai.com/about/business.html" target="_blank">品牌招商</a>|<a href="http://about.yintai.com/partner/partner.html" target="_blank">商务合作</a>|<a href="http://cps.yintai.com" target="_blank">网站联盟</a>|<a href="http://about.yintai.com/about/contact.html" target="_blank">联系我们</a>|<a href="http://about.yintai.com/about/joinus.html" target="_blank">加入银泰</a>|<a href="http://about.yintai.com/about/copyright.html" target="_blank">版权声明</a>|<a href="http://about.yintai.com/about/law.html" class="last" target="_blank">法律声明</a>
+                </p>
+            </div>
+            <div class="ytWrap versions">
+                <p>
+                    <a href="javascript:void(0) ">浙ICP备10200233号</a><a href="javascript:void(0) ">京公网安备110105019085</a><a href="javascript:void(0) ">增值电信业务经营许可证：浙B2-20110005</a>
+                </p>
+                <p>Yintai © 2014, 银泰电子商务有限公司.</p>
+            </div>
+            <div class="ytWrap lastTubiao ">
+                <a href="javascript:void(0) ">
+                    <img class="m-integrity " src="../css/img/yt-ntegrity.png ">
+                </a>
+                <a href="javascript:void(0) ">
+                    <img class="cnnic " src="../css/img/cnnic.png ">
+                </a>
+                <a href="javascript:void(0) ">
+                    <img class="commerce " src="../css/img/commerce.gif ">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

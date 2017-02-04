@@ -1,0 +1,28 @@
+//引入外部文件
+@import 'reset.scss';
+@import 'common.scss';
+@import 'headTop.scss';
+@import 'headLogo.scss';
+@import 'navList.scss';
+@import 'footTop.scss';
+@import 'foot.scss';
+
+.ytSecure{
+  padding: 0;
+}
+#hdmenu{
+  .topMenu{
+    .menu{
+
+     .menuList{
+        display: none;
+     }
+     &:hover{
+      .menuList{
+        display: block;
+     }
+     } 
+    }
+  } 
+}
+
