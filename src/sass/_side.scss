@@ -1,0 +1,357 @@
+//引入外部文件
+@import 'reset.scss';
+@import 'common.scss';
+/**左侧分类  wanjie**/
+
+.g-s-block {
+  padding-bottom: 10px;
+}
+
+.g-s-ad img {
+  display: block;
+  width: 190px;
+}
+
+.g-s-bd a {
+  outline: none;
+}
+
+.g-s-tt {
+  height: 28px;
+  color: #fff;
+  padding: 0 0 0 10px;
+  background: #000;
+  line-height: 28px;
+  h5 span {
+    font-weight: lighter;
+    font-family: Arial;
+  }
+}
+
+.g-s-first a:hover {
+  background: #eee;
+}
+
+.g-s-second h3, .g-s-first a {
+  position: relative;
+  display: block;
+  height: 35px;
+  padding: 0 0 1px 10px;
+  border-bottom: 1px dotted #9a9a9a;
+  background: #f4f4f4;
+  line-height: 35px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.g-s-second h3 a {
+  em {
+    font-weight: 400;
+    font-family: 宋体;
+    color: #666;
+    font-size: 12px;
+  }
+  display: block;
+  background: url(/rs/img/EC/v3/channel/icon.gif) no-repeat 157px -56px;
+  &:hover {
+    background: #eee url(/rs/img/EC/v3/channel/icon.gif) no-repeat 157px -56px;
+  }
+}
+
+.secondshow h3 a {
+  background: #f4f4f4 url(/rs/img/EC/v3/channel/icon.gif) no-repeat 157px -92px;
+  &:hover {
+    background: #eee url(/rs/img/EC/v3/channel/icon.gif) no-repeat 157px -92px;
+  }
+}
+
+.g-s-bd .g-s-second a, .g-s-first a {
+  color: #000;
+}
+
+.g-s-second .g-second-con {
+  display: none;
+}
+
+.g-s-item {
+  h6 {
+    display: block;
+    height: 35px;
+    padding: 0 0 0 20px;
+    background: url(/rs/img/EC/v3/channel/icon.gif) no-repeat 167px 12px;
+    border-bottom: 1px dotted #9a9a9a;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: lighter;
+    cursor: pointer;
+    a {
+      height: 35px;
+      display: block;
+    }
+  }
+  .g-s-show {
+    display: none;
+    line-height: 24px;
+    li {
+      padding: 4px 0 4px 25px;
+      height: 20px;
+      line-height: 20px;
+    }
+    a {
+      padding: 3px;
+      &:hover {
+        color: #fff;
+        background: #000;
+      }
+    }
+  }
+}
+
+.secondshow .g-second-con {
+  display: block;
+}
+
+.thirdshow .g-s-show {
+  display: block;
+  border-bottom: 1px dotted #9a9a9a;
+  padding-bottom: 2px;
+}
+
+.g-s-second h3 {
+  background-position: 167px -92px;
+  cursor: pointer;
+}
+
+.thirdshow h6 {
+  background-position: 167px -20px;
+  border-top: none;
+  margin: 0;
+}
+
+.g-s-second .cur a {
+  background-color: #000;
+  color: #fff;
+}
+
+/* common dropdown */
+
+.dropdown {
+  position: relative;
+  .seler {
+    background: url(/rs/img/EC/v3/dropdown-icons.png) no-repeat scroll -397px 0 transparent;
+    height: 24px;
+    display: inline-block;
+  }
+  .cur-sel {
+    border-top: #dedede solid 1px;
+    border-bottom: #dedede solid 1px;
+    min-width: 80px;
+    max-width: 80px;
+    _width: 80px;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+    padding-left: 5px;
+    margin-left: 2px;
+    background-color: #fff;
+    overflow: hidden;
+    display: inline;
+  }
+  .action {
+    display: block;
+    width: 37px;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+  }
+  .drop {
+    background: url(/rs/img/EC/v3/dropdown-icons.png) no-repeat;
+  }
+  .del {
+    background: url(/rs/img/EC/v3/dropdown-icons.png) no-repeat -64px 0;
+  }
+  .drop-bd {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+    width: 150px;
+  }
+  .drop-round-top {
+    background: url(/rs/img/EC/v3/dropdown-icons.png) no-repeat scroll 0 -48px transparent;
+    font-size: 0;
+    padding-left: 4px;
+    .inner {
+      background: url(/rs/img/EC/v3/dropdown-icons.png) no-repeat scroll 100% -44px transparent;
+      height: 4px;
+    }
+  }
+  .drop-round-bd {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 200px;
+    _height: expression(this.scrollHeight > 200 ? "200px" : "auto");
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #DEDEDE;
+    border-right: 1px solid #DEDEDE;
+    padding: 10px;
+    li {
+      margin: 5px 0;
+      line-height: 15px;
+      a {
+        display: block;
+      }
+    }
+  }
+  .drop-round-bot {
+    background: url(/rs/img/EC/v3/dropdown-icons.png) no-repeat scroll 0 -52px transparent;
+    font-size: 0;
+    padding-left: 4px;
+    .inner {
+      background: url(/rs/img/EC/v3/dropdown-icons.png) no-repeat scroll 100% -56px transparent;
+      height: 4px;
+    }
+  }
+  .active {
+    color: #e5004f;
+  }
+  .action a {
+    display: block;
+    width: 36px;
+    height: 23px;
+    line-height: 100px;
+    overflow: hidden;
+  }
+}
+
+/**通用商品图文img180*240 start**/
+
+.c-pictxt {
+  width: 180px;
+  overflow: hidden;
+  .c-pic {
+    position: relative;
+    width: 180px;
+    height: 240px;
+    .c-pic-product {
+      width: 180px;
+      height: 240px;
+      vertical-align: top;
+    }
+  }
+  .c-pt-detail {
+    overflow: hidden;
+    padding: 5px 0 0;
+    line-height: 18px;
+  }
+  .c-brand {
+    overflow: hidden;
+    height: 18px;
+    a {
+      color: #000;
+    }
+  }
+  .c-pt-detail .c-tit {
+    overflow: hidden;
+    height: 36px;
+  }
+  .c-tit a {
+    color: #666;
+  }
+  .c-info {
+    s {
+      color: #999;
+      font-family: Arial;
+    }
+    .c-oprice {
+      height: 20px;
+      line-height: 20px;
+      em {
+        margin-right: 5px;
+      }
+    }
+  }
+  .c-pt-detail {
+    em, .c-discount a {
+      color: #e5004f;
+    }
+  }
+  .c-pic {
+    .c-bar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 76px;
+      height: 75px;
+    }
+    .c-preSale {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 43px;
+      height: 43px;
+    }
+    .c-sell-out {
+      position: absolute;
+      bottom: 5px;
+      right: 60px;
+      display: block;
+      width: 59px;
+      height: 21px;
+    }
+  }
+}
+
+/*推荐label*/
+
+.reco-icon {
+  width: 29px;
+  height: 55px;
+  position: absolute;
+  background: url(/rs/img/ec/v3/rec_icon_20120531.gif) no-repeat;
+  left: 0;
+  top: 0;
+}
+
+/**通用商品图文 img150*200 start**/
+
+.c-pictxt-150 {
+  width: 150px;
+  .c-pic {
+    width: 150px;
+    height: 200px;
+    .c-pic-product {
+      width: 150px;
+      height: 200px;
+    }
+    .c-sell-out {
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 76px;
+      height: 75px;
+    }
+  }
+}
+
+.c-discount a {
+  color: #e5004f;
+  cursor: default;
+}
+
+/*add letian*/
+
+.c-letian {
+  height: 15px;
+  padding: 0 0 5px 26px;
+  display: block;
+}
+
+/*add 左上边广告*/
+
+.tab-pannel {
+  padding-bottom: 10px;
+}

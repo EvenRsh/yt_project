@@ -39,7 +39,7 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 #hdmain { background-color: #fff; }
 
-#hdmain .logo { float: left; height: 76px; margin: 0 5px 0 0; }
+#hdmain .logo { float: left; height: 76px; margin: 0 5px 0 0; margin-top: 21px; }
 
 #hdmain .logo a { display: block; background: #eee url(./img/header-20160223.gif) 0 0 no-repeat; width: 215px; height: 76px; }
 
