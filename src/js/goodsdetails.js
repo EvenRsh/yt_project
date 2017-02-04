@@ -7,4 +7,7 @@
 
 $(function() {
     console.log('调用该js');
+    var $magnifier_mousetrap = $ ('.magnifier-mousetrap');
+    console.log($magnifier_mousetrap);
+    // $magnifier_mousetrap.rhzoom();
 });
