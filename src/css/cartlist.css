@@ -415,7 +415,7 @@ span.click-one, span.click-two, span.click-san { background: url(./img/shopping-
 
 .CommodityList .pro-price strong em { font-weight: 700; }
 
-.CommodityList .pro-price .pro-rebate { display: inline-block; width: 49px; height: 16px; line-height: 16px; padding-right: 6px; vertical-align: middle; text-align: center; overflow: hidden; color: #fff; font-family: Verdana; background: url(./img/shopcart/shopping-icon.png) 0 -177px no-repeat; }
+.CommodityList .pro-price .pro-rebate { display: inline-block; width: 49px; height: 16px; line-height: 16px; padding-right: 6px; vertical-align: middle; text-align: center; overflow: hidden; color: #fff; font-family: Verdana; background: url(./img/shopping-icon.png) 0 -177px no-repeat; }
 
 .CommodityList .pro-price .pro-rebate b { color: #fff; }
 
@@ -449,7 +449,7 @@ span.click-one, span.click-two, span.click-san { background: url(./img/shopping-
 
 .CommodityList .pro-number .ModifyTip i { display: block; width: 50px; height: 18px; line-height: 18px; text-align: center; cursor: pointer; font-style: normal; text-decoration: underline; margin: 0 auto; }
 
-.CommodityList .pro-number .ModifyTip .uparrow { position: absolute; top: 76px; left: 102px; width: 7px; height: 5px; overflow: hidden; background: url(./img/shopcart/shopping-icon.png) 0 -193px no-repeat; }
+.CommodityList .pro-number .ModifyTip .uparrow { position: absolute; top: 76px; left: 102px; width: 7px; height: 5px; overflow: hidden; background: url(./img/shopping-icon.png) 0 -193px no-repeat; }
 
 .CommodityList .pro-number .ModifyTipBig { height: 70px; top: -100px; }
 
@@ -459,15 +459,15 @@ span.click-one, span.click-two, span.click-san { background: url(./img/shopping-
 
 .CommodityList .decidetime a:hover { color: #e5004f; }
 
-.CommodityList .decidetime .pro-collect { display: block; width: 52px; height: 18px; padding-left: 16px; color: #666; background: url(./img/shopcart/shopping-icon.png) 0 -177px no-repeat; }
+.CommodityList .decidetime .pro-collect { display: block; width: 52px; height: 18px; padding-left: 16px; color: #666; background: url(./img/shopping-icon.png) 0 -177px no-repeat; }
 
-.decidetime .pro-remove, .decidetime .pro-alter { display: block; width: 52px; height: 18px; padding-left: 16px; color: #666; background: url(./img/shopcart/shopping-icon.png) 0 -177px no-repeat; }
+.decidetime .pro-remove, .decidetime .pro-alter { display: block; width: 52px; height: 18px; padding-left: 16px; color: #666; background: url(./img/shopping-icon.png) 0 -177px no-repeat; }
 
 .CommodityList .decidetime .pro-collect { background-position: 0 -92px; }
 
 .CommodityList .decidetime .pro-remove { background-position: 1px -125px; }
 
-.CommodityList .decidetime .pro-alter { background: url(./img/shopcart/shopcart-premiums.png) 0 4px no-repeat; }
+.CommodityList .decidetime .pro-alter { background: url(./img/shopcart-premiums.png) 0 4px no-repeat; }
 
 .CommodityList .decidetime .decbox { position: absolute; top: -62px; left: -48px; width: 158px; height: 40px; border: 1px solid #cecece; background-color: #fffeed; padding: 8px 0; z-index: 999; }
 
@@ -477,7 +477,7 @@ span.click-one, span.click-two, span.click-san { background: url(./img/shopping-
 
 .CommodityList .decidetime .decbox-i p a { display: inline-block; width: 30px; height: 20px; line-height: 20px; }
 
-.CommodityList .decidetime .decbox .decrow { position: absolute; top: 48px; _top: 52px; left: 80px; width: 7px; height: 5px; overflow: hidden; background: url(./img/shopcart/shopping-icon.png) 0 -193px no-repeat; }
+.CommodityList .decidetime .decbox .decrow { position: absolute; top: 48px; _top: 52px; left: 80px; width: 7px; height: 5px; overflow: hidden; background: url(./img/shopping-icon.png) 0 -193px no-repeat; }
 
 .CommodityList .decidetime .delbox { height: 80px; top: -100px; }
 
@@ -558,7 +558,7 @@ span.click-one, span.click-two, span.click-san { background: url(./img/shopping-
 
 .PayofFou .AccountsNum .math { color: #bfbebe; font-size: 12px; font-weight: 400; vertical-align: middle; }
 
-.PayofFou .Accountsbox { float: right; width: 147px; height: 43px; margin-left: 15px; overflow: hidden; cursor: pointer; background: url(./img/shopcart/shopping-submit.png) 0 0 no-repeat; }
+.PayofFou .Accountsbox { float: right; width: 147px; height: 43px; margin-left: 15px; overflow: hidden; cursor: pointer; background: url(./img/shopping-submit.png) 0 0 no-repeat; }
 
 .PayofFou .Accountsbox:hover { background-position: -147px 0; }
 
@@ -729,7 +729,7 @@ span.click-one, span.click-two, span.click-san { background: url(./img/shopping-
 
 .ComListThis .pro-price strong { color: #e4004f; display: inline-block; height: 16px; line-height: 16px; padding-right: 8px; vertical-align: middle; font-family: Verdana; }
 
-.ComListThis .pro-rebate { color: #fff; display: inline-block; font-family: Verdana; height: 16px; line-height: 16px; overflow: hidden; padding-right: 6px; text-align: center; vertical-align: middle; width: 49px; background: url(./img/shopcart/shopping-icon.png) 0 -177px no-repeat; }
+.ComListThis .pro-rebate { color: #fff; display: inline-block; font-family: Verdana; height: 16px; line-height: 16px; overflow: hidden; padding-right: 6px; text-align: center; vertical-align: middle; width: 49px; background: url(./img/shopping-icon.png) 0 -177px no-repeat; }
 
 .ComListThis .pro-rebate b { color: #fff; }
 
@@ -770,7 +770,7 @@ span.click-one, span.click-two, span.click-san { background: url(./img/shopping-
 
 .DirectoryTitle .y-other { position: relative; float: right; padding-right: 4px; cursor: pointer; zoom: 1; z-index: 101; }
 
-.DirectoryTitle .y-other span { display: block; width: 12px; height: 12px; text-indent: -99px; cursor: pointer; overflow: hidden; margin-top: 9px; background: url(./img/shopcart/shopcart-premiums.png) 0 -74px no-repeat; }
+.DirectoryTitle .y-other span { display: block; width: 12px; height: 12px; text-indent: -99px; cursor: pointer; overflow: hidden; margin-top: 9px; background: url(./img/shopcart-premiums.png) 0 -74px no-repeat; }
 
 .CheapGift .AProduct { margin: 0 auto; }
 
@@ -835,13 +835,13 @@ span.click-one, span.click-two, span.click-san { background: url(./img/shopping-
 
 .pro-txt-tip { float: left; position: relative; z-index: 10; }
 
-.pro-txt-tip .m-tip-cla { float: left; width: 20px; height: 12px; margin-top: 6px; overflow: hidden; text-indent: -999px; background: url(./img/shopcart/shopcart-premiums.png) 0 -47px no-repeat; cursor: pointer; }
+.pro-txt-tip .m-tip-cla { float: left; width: 20px; height: 12px; margin-top: 6px; overflow: hidden; text-indent: -999px; background: url(./img/shopcart-premiums.png) 0 -47px no-repeat; cursor: pointer; }
 
 .pro-txt-tip .m-tip-box { position: absolute; left: -209px; top: -252px; width: 432px; height: 252px; display: none; }
 
 .pro-txt-tip .m-tip-list { position: relative; width: 430px; height: 250px; border: 1px solid #ccc; background-color: #fffeed; overflow: auto; }
 
-.pro-txt-tip .m-triangle { position: absolute; left: 0; top: 251px; width: 432px; height: 10px; overflow: hidden; background: url(./img/shopcart/shopcart-premiums.png) 210px -27px no-repeat; }
+.pro-txt-tip .m-triangle { position: absolute; left: 0; top: 251px; width: 432px; height: 10px; overflow: hidden; background: url(./img/shopcart-premiums.png) 210px -27px no-repeat; }
 
 .pro-txt-tip .m-l-title { width: 386px; line-height: 18px; padding: 12px 13px; font-size: 12px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #e5004f; }
 
@@ -881,7 +881,7 @@ span.click-one, span.click-two, span.click-san { background: url(./img/shopping-
 
 .k-enter-re .c-lay-tip { float: left; height: 28px; line-height: 28px; margin: 0 8px; vertical-align: top; background: url(./img/shopcart-icon_20130529.png) no-repeat left -23px; padding-left: 18px; color: #E5004F; }
 
-.k-enter-re .c-ente { float: left; width: 76px; height: 28px; line-height: 28px; border: 1px solid #82002d; font-size: 14px; text-align: center; margin: 0 8px; background: #be0142 url(./img/shopcart/shopcart-check.png) 0 0 repeat-x; color: #fff; vertical-align: top; }
+.k-enter-re .c-ente { float: left; width: 76px; height: 28px; line-height: 28px; border: 1px solid #82002d; font-size: 14px; text-align: center; margin: 0 8px; background: #be0142 url(./img/shopcart-check.png) 0 0 repeat-x; color: #fff; vertical-align: top; }
 
 .k-enter-re .c-ente:hover { background-position: 0 bottom; color: #fff; }
 

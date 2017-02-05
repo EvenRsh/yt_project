@@ -63,14 +63,16 @@ $(function() {
     	if($selColor.find('.item').hasClass('selected') && $selSize.find('.item').hasClass('selected')){
     		var _title = $p_info.find('h1').text();
     		var _price = $p_info.find('.YTPrice').find('strong').text().slice(1);
-    		var _color = $selColor.find('.selected').find('span').text();
-    		var _size = $selSize.find('.selected').find('span').text();
+            var _color = $selColor.find('.selected').find('span').text();
+    		var _src = $selColor.find('.selected').find('img').attr('src');
+    		var _size = $selSize.find('.selected').find('span').text().slice(3);
     		var _count = $buyNum.val();
     		// console.log(_title,_price,_color,_size,_count);
     		$.post('../php/goodsdetails.php',{
     			'title':_title,
     			"price":_price,
     			"color":_color,
+                "src":_src,
     			"size":_size,
     			"count":_count
     		},function(res){
