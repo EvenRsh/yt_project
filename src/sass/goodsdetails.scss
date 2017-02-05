@@ -892,7 +892,10 @@ html .b-top {
       text-align: center;
       *zoom: 1;
       vertical-align: bottom;
-      line-height: 25px;
+      /* line-height: 25px; */
+      span{
+        margin-left: -7px;
+      }
     }
     .selected a {
       padding: 0 11px;
@@ -4171,11 +4174,14 @@ html .b-top {
   .eva-widget-carousel {
     ul {
       width: 300px;
+      margin-left: 40px;
+    }
+    .ew-c-list{
+      @extend %clearfix;
     }
     .ew-c-list li {
       float: left;
-      width: 62px;
-      height: 62px;
+      border: 1px solid #999;
       overflow: hidden;
       text-align: center;
     }

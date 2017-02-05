@@ -584,7 +584,7 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 .floor_banner .border_animation { position: relative; width: 272px; height: 182px; float: left; }
 
-.border_animation .img_wrap { width: 270px; height: 180px; border: 1px solid #eee; }
+.border_animation .img_wrap { box-sizing: border-box; width: 270px; height: 180px; border: 1px solid #eee; }
 
 .border_animation .border_top { position: absolute; height: 1px; width: 0; font-size: 0; background: #666666; top: 0; left: 0; transition: all 0.5s ease-out; }
 

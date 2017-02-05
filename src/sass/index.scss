@@ -414,6 +414,7 @@
 
 .border_animation {
   .img_wrap {
+    box-sizing:border-box;
     width: 270px;
     height: 180px;
     border: 1px solid #eee;

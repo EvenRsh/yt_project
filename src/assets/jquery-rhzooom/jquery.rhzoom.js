@@ -51,6 +51,8 @@
 
 					$self.on('mouseenter',function(){
 						$lens.show();
+						bigUrl = $smallImg.attr('data-big');
+						$bigLens.find('img').attr({'src':bigUrl});
 						$bigLens.show();
 						ratio = $smallImg.outerWidth()/$bigImg.outerWidth();
 					})

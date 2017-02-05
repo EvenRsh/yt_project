@@ -38,8 +38,8 @@ $(function() {
     $('body').on('mouseenter', '.border_animation', function() {
 
         var $self = $(this);
-        var _width = $self.find('img').outerWidth();
-        var _height = $self.find('img').outerHeight();
+        var _width = $self.outerWidth();
+        var _height = $self.outerHeight();
         $self.children('.border_top').animate({ width: _width }).next().animate({ height: _height }).next().animate({ width: _width }).next().animate({ height: _height });
     }).on('mouseleave', '.border_animation', function() {
         var $self = $(this);
