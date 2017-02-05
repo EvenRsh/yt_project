@@ -1,0 +1,2344 @@
+//引入外部文件
+@import 'reset.scss';
+@import 'common.scss';
+@import 'headTop.scss';
+@import 'headLogo.scss';
+@import 'footTop.scss';
+@import 'foot.scss';
+
+body{
+  background-color: #f4f4f4;
+}
+.ytSecure{
+  padding: 0;
+}
+#hdmenu{
+  .topMenu{
+    .menu{
+     .menuList{
+        display: none;
+     }
+     &:hover{
+      .menuList{
+        display: block;
+     }
+     } 
+    }
+  } 
+}
+#bd {
+  width: 980px;
+  margin: 0 auto;
+  clear: both;
+  
+  font: normal 12px/1.5 "\5fae\8f6f\96c5\9ed1",Verdana,simsun,Sans-Serif;
+}
+
+
+
+.bdwraper {
+  width: 940px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+/* shopping header */
+
+.CartSteps {
+  height: 80px;
+  margin-bottom: 10px;
+  h2 {
+    float: left;
+    width: 112px;
+    height: 80px;
+    text-indent: -999px;
+    overflow: hidden;
+  }
+  .sp-step {
+    padding-top: 3px;
+    float: right;
+    margin-right: 10px;
+    display: inline;
+    span {
+      float: left;
+      vertical-align: top;
+      text-align: center;
+      font-family: "\5fae\8f6f\96c5\9ed1";
+      color: #999;
+      em {
+        display: block;
+        padding-top: 20px;
+        text-align: center;
+        font-family: Verdana;
+        font-size: 10px;
+        color: #ccc;
+      }
+    }
+  }
+  .clickone {
+    width: 76px;
+  }
+  .clicktwo {
+    width: 402px;
+  }
+  .clicksan {
+    width: 60px;
+  }
+  span {
+    &.arrow {
+      display: block;
+      overflow: hidden;
+      width: 0;
+      text-indent: -999px;
+    }
+    &.click-one, &.click-two, &.click-san {
+      font-size: 14px;
+      color: #e4004d;
+    }
+    &.click-one em, &.click-two em, &.click-san em {
+      padding-top: 18px;
+      color: #e4004d;
+    }
+  }
+  h2 {
+    background: url(./img/shopping-head.jpg) 0 0 no-repeat;
+  }
+}
+
+.sp-step {
+  background: url(./img/shopping-head.jpg) 0 0 no-repeat;
+}
+
+span {
+  &.click-one, &.click-two, &.click-san {
+    background: url(./img/shopping-head.jpg) 0 0 no-repeat;
+  }
+}
+
+.CartSteps {
+  h2 {
+    background-position: 0 0;
+  }
+  .sp-step {
+    background-position: -158px 5px;
+  }
+  span {
+    &.click-one {
+      background-position: -158px -52px;
+    }
+    &.click-two {
+      background-position: -234px -52px;
+    }
+    &.click-san {
+      background-position: -635px -52px;
+    }
+  }
+}
+
+/* empty shopping bag */
+
+.Emptycart {
+  width: 940px;
+  height: 285px;
+  background: url(./img/coupon-bg_20131012.png) 0 0 repeat-x;
+  margin: 10px auto;
+}
+
+.EmptyExplain {
+  height: 148px;
+  padding: 72px 0 0 281px;
+  zoom: 1;
+}
+
+.EmptyIco {
+  float: left;
+  width: 108px;
+  height: 144px;
+  margin-right: 30px;
+  background: url(./img/shopping-head.jpg) -754px 0 no-repeat;
+  zoom: 1;
+}
+
+.EmptyDetails {
+  h3 {
+    font-size: 14px;
+    padding-top: 27px;
+    height: 26px;
+    white-space: nowrap;
+  }
+  p {
+    height: 38px;
+  }
+}
+
+/* shopping loading */
+
+.CartLoading {
+  height: 280px;
+  padding-top: 150px;
+  p {
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background: url(./img/cart-loading.gif) 0 20px no-repeat;
+  }
+}
+
+/* enter empty shopping bag */
+
+.empty-tip-txt {
+  height: 40px;
+  padding-top: 16px;
+  text-align: center;
+  span {
+    display: inline-block;
+    height: 32px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 40px;
+    background: url(./img/user-point-important.png) 0 0 no-repeat;
+  }
+}
+
+.empty-tip-submit {
+  clear: both;
+  text-align: center;
+  input {
+    cursor: pointer;
+  }
+  .submit {
+    margin-right: 6px;
+  }
+}
+
+/* shopping title */
+
+.CommodityCate {
+  height: 30px;
+  background-color: #666;
+  span {
+    float: left;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 700;
+    overflow: hidden;
+    color: #fff;
+  }
+  .th-chk {
+    width: 103px;
+    padding-left: 27px;
+    span {
+      position: relative;
+      display: inline-block;
+      zoom: 1;
+      width: 14px;
+      height: 13px;
+      margin-top: 10px;
+      overflow: hidden;
+      vertical-align: top;
+    }
+    label {
+      position: relative;
+      z-index: 1;
+      float: left;
+      width: 14px;
+      height: 13px;
+      overflow: hidden;
+      cursor: pointer;
+      background: url(./img/shopping-icon.png) 0 -55px no-repeat;
+      &.checked {
+        background-position: 0 -73px;
+      }
+    }
+    input {
+      position: absolute;
+      z-index: 0;
+      left: -15px;
+      top: 0;
+    }
+  }
+  .th-item {
+    width: 372px;
+  }
+  .th-price {
+    width: 130px;
+  }
+  .th-amount {
+    width: 66px;
+    padding-right: 60px;
+    text-align: center;
+  }
+  .th-sum {
+    width: 90px;
+  }
+  .th-op {
+    width: 92px;
+  }
+}
+
+/* shopping list */
+
+.CommodityBox {
+  width: 940px;
+  margin-bottom: 10px;
+}
+
+.CommodityTitle {
+  clear: both;
+  position: relative;
+  height: 30px;
+  border: 1px solid #e2e2e2;
+  border-bottom: none;
+  background-color: #eee;
+  .ActivitieHead {
+    position: absolute;
+    top: -1px;
+    left: -10px;
+    height: 40px;
+    overflow: hidden;
+    padding-left: 10px;
+    h3 {
+      line-height: 30px;
+      color: #666;
+      padding: 0 32px 0 10px;
+      font-size: 12px;
+    }
+  }
+  .Initiate {
+    background: url(./img/shopping-title-20141118.png) 0 0 no-repeat;
+    h3 {
+      background: url(./img/shopping-title-20141118.png) 0 0 no-repeat;
+      background-position: right -45px;
+      color: #fff;
+    }
+  }
+  .Activities {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 15px;
+    p {
+      float: left;
+      color: #e5004f;
+    }
+    a {
+      float: left;
+      padding-left: 15px;
+      color: #e5004f;
+      font-family: simsun;
+      text-decoration: underline;
+    }
+  }
+}
+
+.CommodityList {
+  clear: both;
+  display: block;
+  position: relative;
+  zoom: 1;
+  width: 938px;
+  border: 1px solid #e2e2e2;
+  border-top: none;
+  .AProduct {
+    position: relative;
+    padding: 15px 0 0;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #fff;
+  }
+  .areacolor {
+    background-color: #f9f9f9;
+  }
+  .category {
+    float: left;
+  }
+  .th-chk {
+    width: 40px;
+    height: 62px;
+    padding-left: 26px;
+    div {
+      position: relative;
+      display: inline-block;
+      width: 14px;
+      height: 13px;
+      overflow: hidden;
+      vertical-align: top;
+    }
+    label {
+      position: relative;
+      z-index: 1;
+      float: left;
+      width: 14px;
+      height: 13px;
+      overflow: hidden;
+      cursor: pointer;
+      background: url(./img/shopping-icon.png) 0 -55px no-repeat;
+      &.checked {
+        background-position: 0 -73px;
+      }
+    }
+    input {
+      position: absolute;
+      z-index: 0;
+      left: -15px;
+      top: 0;
+    }
+  }
+  .th-item {
+    width: 435px;
+  }
+  .th-price {
+    width: 130px;
+  }
+  .th-amount {
+    width: 66px;
+    height: 20px;
+    padding-right: 60px;
+    text-align: center;
+  }
+  .th-sum {
+    width: 90px;
+    line-height: 20px;
+  }
+  .th-op {
+    width: 91px;
+  }
+  .property {
+    width: 425px;
+    margin-bottom: 10px;
+    .pro-img {
+      float: left;
+      width: 45px;
+      height: 60px;
+      margin-right: 10px;
+      overflow: hidden;
+      border: 1px solid #efefef;
+      background-color: #fff;
+      img {
+        vertical-align: top;
+        width: 45px;
+        height: 60px;
+      }
+    }
+    .pro-title {
+      float: left;
+      width: 328px;
+      position: relative;
+    }
+  }
+}
+
+.property .pro-pro {
+  float: left;
+  width: 328px;
+  position: relative;
+}
+
+.CommodityList .property {
+  .pro-title a {
+    color: #666;
+    i {
+      display: inline-block;
+      width: 18px;
+      height: 17px;
+      margin-right: 5px;
+      vertical-align: middle;
+      background: url(./img/miao-card-small.png) 0 0 no-repeat;
+    }
+  }
+  .pro-check {
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 328px;
+    span {
+      margin-right: 10px;
+      color: #999;
+      b {
+        font-weight: 400;
+      }
+    }
+  }
+  .pro-tip-time {
+    clear: both;
+    height: 24px;
+    color: #e5004f;
+  }
+  .pro-tip {
+    position: relative;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+    z-index: 10;
+  }
+  .pro-tip-txt {
+    display: inline-block;
+    height: 16px;
+    padding-left: 3px;
+  }
+}
+
+.property {
+  .pro-tip-txt2, .pro-tip-txt3 {
+    display: inline-block;
+    height: 16px;
+    padding-left: 3px;
+  }
+}
+
+.CommodityList {
+  .property {
+    .pro-tip-txt {
+      background: url(./img/shopping-icon.png) 0 -198px no-repeat;
+      em {
+        background: #c4b697 url(./img/shopping-icon.png) right -214px no-repeat;
+      }
+    }
+    .pro-tip-txt2 {
+      background: url(./img/shopping-icon.png) 0 -230px no-repeat;
+      em {
+        background: #c4b697 url(./img/shopping-icon.png) right -246px no-repeat;
+      }
+    }
+    .pro-tip-txt3 {
+      background: url(./img/shopping-icon.png) 0 -262px no-repeat;
+      em {
+        background: #c4b697 url(./img/shopping-icon.png) right -278px no-repeat;
+      }
+    }
+    .pro-tip-txt4 {
+      display: inline-block;
+      height: 16px;
+      line-height: 16px;
+      vertical-align: top;
+      a {
+        display: inline-block;
+        height: 16px;
+        padding-left: 20px;
+        background: url(./img/tuihuanhuo.png) 0 1px no-repeat;
+        vertical-align: top;
+      }
+    }
+    .pro-tip {
+      span em {
+        height: 16px;
+        line-height: 16px;
+        display: inline-block;
+        color: #fff;
+        vertical-align: top;
+        padding: 0 7px 0 5px;
+      }
+      .tipbox {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 24px;
+        width: 300px;
+        border: 1px solid #d7d7d7;
+        background-color: #fffeed;
+        z-index: 999;
+      }
+    }
+    .tipbox-i {
+      position: relative;
+      padding: 6px;
+      .uparrow {
+        position: absolute;
+        top: -5px;
+        _top: -6px;
+        left: 16px;
+        width: 7px;
+        height: 5px;
+        overflow: hidden;
+        background: url(./img/shopping-icon.png) -8px -193px no-repeat;
+      }
+    }
+    .pro-tip .tipbox i {
+      font-style: normal;
+    }
+  }
+  .pro-spec-bt {
+    height: 20px;
+    min-width: 200px;
+    _width: 200px;
+    clear: both;
+    position: relative;
+  }
+  .pro-spec {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 16px;
+    word-break: keep-all;
+    white-space: nowrap;
+    color: #e5004f;
+    .pro-spec-tit {
+      display: inline-block;
+      padding: 0 5px;
+      margin-right: 5px;
+      background-color: #e5004f;
+      color: #fff;
+    }
+  }
+  .pro-price {
+    line-height: 20px;
+    strong {
+      display: inline-block;
+      height: 16px;
+      line-height: 16px;
+      vertical-align: middle;
+      color: #e5004f;
+      padding-right: 8px;
+      i {
+        color: #666;
+        font-style: normal;
+      }
+      em {
+        font-weight: 700;
+      }
+    }
+    .pro-rebate {
+      display: inline-block;
+      width: 49px;
+      height: 16px;
+      line-height: 16px;
+      padding-right: 6px;
+      vertical-align: middle;
+      text-align: center;
+      overflow: hidden;
+      color: #fff;
+      font-family: Verdana;
+      background: url(./img/shopcart/shopping-icon.png) 0 -177px no-repeat;
+      b {
+        color: #fff;
+      }
+    }
+    .integral {
+      color: #e4004f;
+      display: block;
+      i {
+        color: #666;
+        font-style: normal;
+      }
+    }
+    .hidden {
+      display: none;
+    }
+  }
+  .pro-number {
+    position: relative;
+    width: 64px;
+    margin: 0 auto;
+    text-align: center;
+    color: #666;
+    input {
+      position: absolute;
+      left: 17px;
+      top: 0;
+      z-index: 1;
+      width: 28px;
+      height: 18px;
+      line-height: 18px;
+      overflow: hidden;
+      text-align: center;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      color: #666;
+    }
+    a {
+      position: absolute;
+      width: 16px;
+      height: 18px;
+      line-height: 18px;
+      overflow: hidden;
+      border: 1px solid #dfdfdf;
+      background-color: #eee;
+      color: #666;
+      &:hover {
+        border: 1px solid #e5004f;
+        color: #e5004f;
+      }
+      &.nums-red {
+        left: 0;
+        top: 0;
+        z-index: 2;
+      }
+      &.nums-add {
+        right: 0;
+        top: 0;
+        z-index: 2;
+      }
+      &.disable:hover {
+        border: 1px solid #dfdfdf;
+        color: #666;
+      }
+    }
+    .ModifyTip {
+      display: none;
+      position: absolute;
+      top: -85px;
+      left: -74px;
+      z-index: 5;
+      width: 208px;
+      height: 56px;
+      border: 1px solid #ccc;
+      background-color: #fffeed;
+      padding: 10px 0;
+      p {
+        text-align: center;
+      }
+      strong {
+        display: block;
+        text-align: center;
+        font-weight: 400;
+        color: #e5004f;
+      }
+      p b {
+        color: #e50150;
+      }
+      i {
+        display: block;
+        width: 50px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        cursor: pointer;
+        font-style: normal;
+        text-decoration: underline;
+        margin: 0 auto;
+      }
+      .uparrow {
+        position: absolute;
+        top: 76px;
+        left: 102px;
+        width: 7px;
+        height: 5px;
+        overflow: hidden;
+        background: url(./img/shopcart/shopping-icon.png) 0 -193px no-repeat;
+      }
+    }
+    .ModifyTipBig {
+      height: 70px;
+      top: -100px;
+      .uparrow {
+        top: 90px;
+      }
+    }
+  }
+  .decidetime {
+    position: relative;
+    a:hover {
+      color: #e5004f;
+    }
+    .pro-collect {
+      display: block;
+      width: 52px;
+      height: 18px;
+      padding-left: 16px;
+      color: #666;
+      background: url(./img/shopcart/shopping-icon.png) 0 -177px no-repeat;
+    }
+  }
+}
+
+.decidetime {
+  .pro-remove, .pro-alter {
+    display: block;
+    width: 52px;
+    height: 18px;
+    padding-left: 16px;
+    color: #666;
+    background: url(./img/shopcart/shopping-icon.png) 0 -177px no-repeat;
+  }
+}
+
+.CommodityList .decidetime {
+  .pro-collect {
+    background-position: 0 -92px;
+  }
+  .pro-remove {
+    background-position: 1px -125px;
+  }
+  .pro-alter {
+    background: url(./img/shopcart/shopcart-premiums.png) 0 4px no-repeat;
+  }
+  .decbox {
+    position: absolute;
+    top: -62px;
+    left: -48px;
+    width: 158px;
+    height: 40px;
+    border: 1px solid #cecece;
+    background-color: #fffeed;
+    padding: 8px 0;
+    z-index: 999;
+  }
+  .decbox-i {
+    position: relative;
+    text-align: center;
+  }
+  .decbox i {
+    display: block;
+    line-height: 20px;
+    padding-bottom: 4px;
+    font-style: normal;
+  }
+  .decbox-i p a {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .decbox .decrow {
+    position: absolute;
+    top: 48px;
+    _top: 52px;
+    left: 80px;
+    width: 7px;
+    height: 5px;
+    overflow: hidden;
+    background: url(./img/shopcart/shopping-icon.png) 0 -193px no-repeat;
+  }
+  .delbox {
+    height: 80px;
+    top: -100px;
+    i {
+      padding: 0 12px;
+      text-align: left;
+    }
+    .decrow {
+      top: 87px;
+    }
+  }
+}
+
+/* shopping settlement */
+
+.PayofTable {
+  width: 938px;
+  margin: 10px 0 20px;
+  border: solid #ddd;
+  border-width: 1px 1px 2px;
+  background-color: #eee;
+  .PayofOne {
+    min-height: 24px;
+    margin: 15px 20px 5px;
+  }
+  .PayofTwo {
+    min-height: 24px;
+    margin: 0 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d2d2d2;
+  }
+  .PayofSan {
+    height: 0px;
+    overflow: hidden;
+    margin: 0 20px;
+    border-top: 1px solid #fff;
+  }
+  .PayofFou {
+    width: 938px;
+    height: 65px;
+    .PayofFouCont {
+      width: 886px;
+      height: 42px;
+      padding: 8px 26px 15px;
+      position: static;
+      left: auto;
+      bottom: 0;
+      z-index: 99;
+      background-color: #eee;
+    }
+  }
+}
+
+.PayofOne {
+  .RegretOption {
+    float: left;
+    line-height: 24px;
+    a {
+      float: left;
+      margin-right: 15px;
+    }
+  }
+  .th-chk {
+    float: left;
+    width: 55px;
+    padding-left: 6px;
+    span {
+      position: relative;
+      display: inline-block;
+      zoom: 1;
+      margin-top: -1px;
+      width: 14px;
+      height: 13px;
+      overflow: hidden;
+      vertical-align: middle;
+    }
+    label {
+      position: relative;
+      z-index: 1;
+      float: left;
+      width: 14px;
+      height: 13px;
+      overflow: hidden;
+      cursor: pointer;
+      background: url(./img/shopping-icon.png) 0 -55px no-repeat;
+      &.checked {
+        background-position: 0 -73px;
+      }
+    }
+    input {
+      position: absolute;
+      z-index: 0;
+      left: -15px;
+      top: 0;
+    }
+  }
+  .TipFalse, .TipTure {
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px 0 21px;
+    font-weight: 700;
+    font-size: 14px;
+    background: url(./img/shopping-icon.png) 0 0 no-repeat;
+  }
+  .TipFalse {
+    background-position: 0 -330px;
+  }
+  .TipTure {
+    background-position: 0 -299px;
+  }
+}
+
+.PayofTwo {
+  .TotalIntegral {
+    clear: both;
+    height: 28px;
+    line-height: 28px;
+    text-align: right;
+    padding-right: 6px;
+    font-size: 14px;
+    strong {
+      font-family: Verdana;
+      font-weight: 400;
+    }
+  }
+  .TotalAmount {
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    padding-right: 6px;
+    font-size: 14px;
+    strong {
+      font-family: Verdana;
+      font-weight: 400;
+      color: #e5004f;
+      &.pay {
+        font-size: 16px;
+      }
+    }
+    span {
+      float: left;
+    }
+    .math {
+      padding: 0 5px;
+      color: #bfbebe;
+    }
+  }
+}
+
+.PayofFou {
+  .Selectkey {
+    float: left;
+    height: 35px;
+    padding-top: 5px;
+    .c-lbtn {
+      float: left;
+      height: 22px;
+      padding-bottom: 0;
+      padding-top: 7px;
+      margin-right: 5px;
+      font-size: 12px;
+      background-position: 0 -299px;
+      color: #666;
+      &:hover {
+        background-position: 0 -484px;
+      }
+    }
+  }
+  .SheckLiPin {
+    position: relative;
+    top: -4px;
+    float: left;
+    width: 108px;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 45px;
+    background: url(./img/selectgifts.png) left 0 no-repeat;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-position: right 0;
+    }
+  }
+  .AccountsTip {
+    float: right;
+    padding-right: 15px;
+    height: 42px;
+    line-height: 42px;
+    img {
+      vertical-align: middle;
+      margin-right: 2px;
+    }
+  }
+  .AccountsNum {
+    float: right;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    .pay {
+      padding: 0 5px;
+      font-size: 16px;
+      font-family: Verdana;
+      color: #e5004f;
+      vertical-align: middle;
+    }
+    .integral {
+      padding-left: 5px;
+      font-size: 14px;
+      font-family: Verdana;
+      font-weight: 400;
+      color: #666;
+    }
+    .math s {
+      font-style: normal;
+      color: #666;
+      text-decoration: none;
+      position: relative;
+      top: -1px;
+    }
+    .cue {
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: -5px;
+      font-style: normal;
+      color: #666;
+    }
+    .math {
+      color: #bfbebe;
+      font-size: 12px;
+      font-weight: 400;
+      vertical-align: middle;
+    }
+  }
+  .Accountsbox {
+    float: right;
+    width: 147px;
+    height: 43px;
+    margin-left: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(./img/shopcart/shopping-submit.png) 0 0 no-repeat;
+    &:hover {
+      background-position: -147px 0;
+    }
+  }
+  .inhibit {
+    background-position: 0 bottom;
+    cursor: not-allowed;
+    &:hover {
+      background-position: 0 bottom;
+      cursor: not-allowed;
+    }
+  }
+  .Accounts {
+    float: left;
+    width: 143px;
+    height: 38px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 50em;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .inhibit .Accounts {
+    cursor: not-allowed;
+  }
+}
+
+/* recommend goods */
+
+.shopping_special {
+  margin-bottom: 20px;
+}
+
+.product_title {
+  height: 26px;
+  line-height: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping_menuOne {
+  float: left;
+  width: 460px;
+  margin-right: 19px;
+  margin-top: 15px;
+}
+
+.shopping_menuTwo {
+  float: left;
+  width: 460px;
+  margin-right: 19px;
+  margin-top: 15px;
+  float: right;
+  margin-right: 0;
+}
+
+.shopping_special_img {
+  float: left;
+  width: 88px;
+  height: 118px;
+  border: 1px solid #e4e4e4;
+  padding: 1px;
+  img {
+    vertical-align: top;
+  }
+}
+
+.shopping_special_info {
+  float: right;
+  width: 360px;
+  h3 {
+    padding-top: 3px;
+    padding-bottom: 9px;
+    line-height: 20px;
+    a {
+      font-weight: 400;
+    }
+  }
+}
+
+.CheckGoods {
+  height: 28px;
+  display: none;
+  select {
+    width: 75px;
+    line-height: 20px;
+  }
+}
+
+.CheckGoodsAttr {
+  height: 30px;
+  padding-top: 2px;
+}
+
+.add_shopping_bag {
+  float: right;
+  width: 84px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 27px;
+  border: 1px solid #e1e1e1;
+  cursor: pointer;
+}
+
+.PresentPrice {
+  color: #e5004f;
+  font-weight: 700;
+  padding-right: 8px;
+}
+
+.OriginalPrice {
+  color: #999;
+}
+
+.ActivitiesTips {
+  background: #fff7f8;
+  border: 1px solid #f27fa7;
+  padding: 5px 10px;
+}
+
+/* remove goods */
+
+.RemoveBox {
+  width: 940px;
+  margin-bottom: 20px;
+}
+
+.RemoveTitle {
+  height: 26px;
+  h3 {
+    float: left;
+    height: 26px;
+    margin-right: 12px;
+    font-size: 12px;
+  }
+  p {
+    float: left;
+  }
+}
+
+.RemoveList {
+  width: 938px;
+  border: 1px solid #e2e2e2;
+}
+
+.RemoveThis {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.Remove {
+  float: left;
+  padding: 12px 0 12px 10px;
+}
+
+.Remove1 {
+  width: 98px;
+  color: #999;
+}
+
+.Remove2 {
+  width: 430px;
+}
+
+.Remove3 {
+  width: 140px;
+}
+
+.Remove4 {
+  width: 98px;
+}
+
+.Remove5 {
+  width: 120px;
+  color: #666;
+  text-align: center;
+}
+
+.Remove2 a:link {
+  color: #999;
+}
+
+/* choose coupons */
+
+.CouponsBox {
+  width: 940px;
+  background: #eee url(./img/coupon-topbg.png) top left repeat-x;
+}
+
+.CouponsBoxTwo {
+  width: 940px;
+  background: #eee url(./img/coupon-bottombg.png) bottom left repeat-x;
+  background-position: 0 bottom;
+  background-color: transparent;
+}
+
+.CouponsBoxSan {
+  min-height: 124px;
+  _height: 124px;
+  background: url(./img/coupon-centerbg.gif) center 0 repeat-y;
+}
+
+.Coupnone {
+  background: none;
+}
+
+.CouponsOne, .CouponsTwo {
+  position: relative;
+  float: left;
+  width: 470px;
+  padding: 24px 0;
+}
+
+.CouponsOne h3 {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "\5fae\8f6f\96c5\9ed1","\5b8b\4f53",Arial;
+}
+
+.CouponsTwo {
+  h3 {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "\5fae\8f6f\96c5\9ed1","\5b8b\4f53",Arial;
+  }
+  display: none;
+}
+
+.CoveringBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #999;
+  opacity: 0.75;
+}
+
+.OnCheckGood {
+  position: absolute;
+  z-index: 2;
+  width: 152px;
+  height: 50px;
+  text-indent: -999px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.CouponsList {
+  ul {
+    clear: both;
+  }
+  p {
+    clear: both;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 16px;
+  }
+}
+
+.CouponsSan {
+  width: 920px;
+  padding-left: 20px;
+}
+
+.ActivateCoupons {
+  width: 118px;
+  height: 40px;
+  line-height: 20px;
+  padding-top: 10px;
+  border: none;
+  color: #fff;
+  text-indent: 40px;
+  cursor: pointer;
+}
+
+.CouponsList {
+  margin-top: 10px;
+  li {
+    position: relative;
+    float: left;
+    height: 50px;
+    margin: 0 45px 15px 0;
+    cursor: pointer;
+    input {
+      float: left;
+      vertical-align: top;
+      margin-right: 6px;
+    }
+    .check-cash {
+      float: left;
+      width: 148px;
+      height: 42px;
+      padding-top: 6px;
+      background-color: #ffeee9;
+      border: dashed 1px #ff0e19;
+      white-space: nowrap;
+      position: relative;
+    }
+  }
+}
+
+.Ticket {
+  float: left;
+  width: 148px;
+  height: 42px;
+  padding-top: 6px;
+  background-color: #ffeee9;
+  border: dashed 1px #ff0e19;
+  white-space: nowrap;
+  position: relative;
+}
+
+.CouponsList li .check-cash span, .Ticket span {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.CouponsList li .check-cash sup, .Ticket sup {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 1px 2px 3px 2px;
+  background: url(./img/shopcart-coupon-cash.png) 0 0 no-repeat;
+  _background: url(./img/shopcart-coupon-cash-ie.png) 0 0 no-repeat;
+}
+
+.CouponsList li .c-cash-activity, .Ticket .c-cash-activity {
+  font-weight: 700;
+  color: #fb6133;
+}
+
+.CouponsList li.checkthis .check-cash {
+  background-color: #ffd4c7;
+}
+
+.Ticket {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.CommodityListTwo {
+  width: 940px;
+}
+
+.ComListBox {
+  border: 1px solid #e2e2e2;
+  .NeverChoose {
+    background-color: #eee;
+    opacity: 0.75;
+  }
+}
+
+.ComListSpan {
+  height: 30px;
+  line-height: 30px;
+  background-color: #666;
+  span {
+    float: left;
+    height: 30px;
+    text-align: left;
+    padding-left: 10px;
+    color: #fff;
+  }
+}
+
+.ComListThis {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.ComList {
+  float: left;
+  padding: 28px 0 8px 10px;
+}
+
+.ComList1 {
+  width: 34px;
+  position: relative;
+}
+
+.ComList2 {
+  width: 88px;
+}
+
+.ComList3 {
+  width: 288px;
+}
+
+.ComList4 {
+  width: 138px;
+}
+
+.ComList5 {
+  width: 182px;
+}
+
+.ComList6 {
+  width: 76px;
+}
+
+.ComList7 {
+  width: 58px;
+}
+
+.ComList1 input {
+  vertical-align: middle;
+}
+
+.ComListThis {
+  .ComList3 {
+    padding-top: 8px;
+  }
+  .ComList5 {
+    padding-top: 18px;
+  }
+}
+
+.CommodityListTwo .ComList7 {
+  text-indent: 5px;
+}
+
+.ComList5 .PromWrap {
+  min-height: 65px;
+  *height: 65px;
+}
+
+.ComListThis {
+  .pro-img {
+    background-color: #000;
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 45px;
+    img {
+      height: 60px;
+      vertical-align: top;
+      width: 45px;
+    }
+  }
+  .property2 {
+    width: 288px;
+    overflow: hidden;
+  }
+  .pro-title2, .pro-pro2 {
+    float: left;
+    width: 232px;
+  }
+  .pro-title2 a {
+    color: #666;
+  }
+  .pro-price strong {
+    color: #e4004f;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding-right: 8px;
+    vertical-align: middle;
+    font-family: Verdana;
+  }
+  .pro-rebate {
+    color: #fff;
+    display: inline-block;
+    font-family: Verdana;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    padding-right: 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 49px;
+    background: url(./img/shopcart/shopping-icon.png) 0 -177px no-repeat;
+    b {
+      color: #fff;
+    }
+  }
+}
+
+.Selectkey2 {
+  float: left;
+  width: 700px;
+  height: 85px;
+  border-right: 1px solid #d2d2d2;
+  padding: 15px 0 15px 30px;
+  input {
+    font-size: 12px;
+  }
+  p {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    &.TipFalse, &.TipTure {
+      background: url(./img/shopping-icon.png) 0 0 no-repeat;
+      color: #e5004f;
+    }
+    &.TipFalse {
+      background-position: 0 -22px;
+    }
+    &.TipTure {
+      background-position: 0 10px;
+    }
+  }
+  a {
+    margin-left: 8px;
+    color: #666;
+    text-decoration: underline;
+  }
+  .c-btnle {
+    width: 125px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.TotalAmount2 {
+  float: left;
+  width: 169px;
+  height: 85px;
+  border-left: 1px solid #fff;
+  padding: 20px 0 10px 35px;
+  p {
+    font-size: 12px;
+    margin-top: 2px;
+    font-weight: 700;
+    &.AmountNums {
+      color: #E5004F;
+    }
+  }
+  .EnterCheck {
+    width: 150px;
+    height: 33px;
+    margin-top: 10px;
+    background: url(./img/shopping-submit.png) -167px -86px no-repeat;
+    input {
+      width: 123px;
+      height: 28px;
+      border: none;
+      background: none;
+      overflow: hidden;
+      line-height: 100px;
+      opacity: 0;
+      cursor: pointer;
+    }
+    span {
+      vertical-align: top;
+    }
+  }
+}
+
+/* value-for-money purchase */
+
+.DirectoryTitle {
+  background-color: #666;
+  height: 30px;
+  position: relative;
+  .y-title {
+    float: left;
+    h3 {
+      color: #fff;
+      line-height: 30px;
+      padding: 0 32px 0 10px;
+    }
+  }
+  .y-other {
+    position: relative;
+    float: right;
+    padding-right: 4px;
+    cursor: pointer;
+    zoom: 1;
+    z-index: 101;
+    span {
+      display: block;
+      width: 12px;
+      height: 12px;
+      text-indent: -99px;
+      cursor: pointer;
+      overflow: hidden;
+      margin-top: 9px;
+      background: url(./img/shopcart/shopcart-premiums.png) 0 -74px no-repeat;
+    }
+  }
+}
+
+.CheapGift {
+  .AProduct {
+    margin: 0 auto;
+  }
+  .Itemize {
+    height: 30px;
+    span {
+      float: left;
+      line-height: 30px;
+      padding-left: 10px;
+      text-align: left;
+      background-color: #eee;
+      overflow: hidden;
+      color: #999;
+    }
+    .lipin1 {
+      padding-left: 15px;
+    }
+  }
+  .lipin {
+    float: left;
+    padding: 10px 0 10px 10px;
+  }
+  .lipin1 {
+    width: 40px;
+  }
+  .lipin2 {
+    width: 311px;
+  }
+  .lipin3 {
+    width: 92px;
+  }
+  .lipin4, .lipin5 {
+    width: 220px;
+  }
+  .ItemList {
+    margin: 0 0 0 13px;
+    overflow: hidden;
+    width: 925px;
+  }
+  .AProduct {
+    .lipin1 {
+      input {
+        margin-left: 4px;
+      }
+      padding-left: 0;
+    }
+    .lipin5 {
+      width: 205px;
+      padding-right: 0;
+      overflow: hidden;
+    }
+  }
+}
+
+.gifperty {
+  .gif-img {
+    float: left;
+    width: 45px;
+    height: 60px;
+    margin-right: 10px;
+    overflow: hidden;
+    img {
+      vertical-align: top;
+      width: 45px;
+      height: 60px;
+    }
+  }
+  .gif-title, .gif-pro {
+    float: left;
+    width: 242px;
+  }
+  .gif-title a {
+    color: #666;
+  }
+  .gif-check {
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 242px;
+    span {
+      margin-right: 10px;
+      color: #999;
+      b {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.lipin-changeColor ul li {
+  float: left;
+  width: 30px;
+  height: 40px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 1px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  cursor: pointer;
+  &.select {
+    border: 1px solid #e5004f;
+    background-color: #e5004f;
+  }
+  img {
+    vertical-align: top;
+    width: 30px;
+    height: 40px;
+  }
+}
+
+.lipin-changeSize ul li {
+  float: left;
+  display: inline-block;
+  min-height: 22px;
+  _height: 22px;
+  line-height: 22px;
+  padding: 1px;
+  text-align: center;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-family: Verdana;
+  font-size: 12px;
+  &.select {
+    border: 1px solid #e5004f;
+    background-color: #e5004f;
+  }
+  &.lipin-dis-sel {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 1px 5px;
+  }
+  span {
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 5px;
+    background-color: #fff;
+  }
+}
+
+/* value-for-money purchase */
+
+.yui3-widget .PresentBox {
+  width: 938px;
+  border: 1px solid #999;
+  box-Shadow: 2px 2px 4px #ccc;
+}
+
+.pro-activity {
+  clear: both;
+  width: 328px;
+}
+
+.pro-txt-name {
+  line-height: 22px;
+  color: #b0a48a;
+}
+
+.pro-txt-tip {
+  float: left;
+  position: relative;
+  z-index: 10;
+  .m-tip-cla {
+    float: left;
+    width: 20px;
+    height: 12px;
+    margin-top: 6px;
+    overflow: hidden;
+    text-indent: -999px;
+    background: url(./img/shopcart/shopcart-premiums.png) 0 -47px no-repeat;
+    cursor: pointer;
+  }
+  .m-tip-box {
+    position: absolute;
+    left: -209px;
+    top: -252px;
+    width: 432px;
+    height: 252px;
+    display: none;
+  }
+  .m-tip-list {
+    position: relative;
+    width: 430px;
+    height: 250px;
+    border: 1px solid #ccc;
+    background-color: #fffeed;
+    overflow: auto;
+  }
+  .m-triangle {
+    position: absolute;
+    left: 0;
+    top: 251px;
+    width: 432px;
+    height: 10px;
+    overflow: hidden;
+    background: url(./img/shopcart/shopcart-premiums.png) 210px -27px no-repeat;
+  }
+  .m-l-title {
+    width: 386px;
+    line-height: 18px;
+    padding: 12px 13px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #e5004f;
+  }
+  .m-l-list {
+    width: 398px;
+    padding-left: 13px;
+    li {
+      height: 70px;
+    }
+    .pic {
+      float: left;
+      width: 43px;
+      height: 58px;
+      margin-right: 8px;
+      overflow: hidden;
+      border: 1px solid #efefee;
+      background-color: #f3f3f3;
+      img {
+        width: 43px;
+        height: 58px;
+      }
+    }
+    .ptx {
+      float: left;
+      width: 334px;
+    }
+    .ptx-href {
+      width: 334px;
+      height: 30px;
+      line-height: 30px;
+      overflow: hidden;
+      a {
+        color: #666;
+        &:hover {
+          color: #666;
+        }
+      }
+    }
+    .ptx-tiua {
+      color: #888;
+      strong {
+        font-weight: 400;
+        color: #e5004f;
+      }
+      b {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.k-enter {
+  border-top: 1px solid #fff;
+  margin: 0 15px;
+  padding: 12px 0 18px 4px;
+}
+
+.k-enter-le {
+  float: left;
+  font-size: 14px;
+  line-height: 28px;
+  .k-check-all {
+    float: left;
+    b, strong {
+      color: #e5004f;
+    }
+  }
+}
+
+.k-enter-re {
+  float: right;
+  height: 30px;
+  .c-lbtn {
+    float: left;
+  }
+  .c-lay-tip {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 8px;
+    vertical-align: top;
+    background: url(./img/shopcart-icon_20130529.png) no-repeat left -23px;
+    padding-left: 18px;
+    color: #E5004F;
+  }
+  .c-ente {
+    float: left;
+    width: 76px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #82002d;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 8px;
+    background: #be0142 url(./img/shopcart/shopcart-check.png) 0 0 repeat-x;
+    color: #fff;
+    vertical-align: top;
+    &:hover {
+      background-position: 0 bottom;
+      color: #fff;
+    }
+  }
+}
+
+/* interested */
+
+.interested {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.inter-title {
+  height: 32px;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #f4f4f4;
+  span {
+    position: relative;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 20px;
+    text-align: center;
+    color: #666;
+    background: url(./img/shopping-interested.png) no-repeat 0 0;
+    cursor: pointer;
+    i {
+      display: none;
+    }
+  }
+  .cursor {
+    background-color: #e1e1e1;
+  }
+  .none {
+    background-image: none;
+  }
+  .cursor i {
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    margin-left: -9px;
+    width: 18px;
+    height: 9px;
+    background: url(./img/shopping-interested.png) no-repeat 0 -36px;
+  }
+}
+
+.inter-mian {
+  width: 940px;
+  height: 328px;
+  overflow: hidden;
+}
+
+.inter-solo {
+  position: relative;
+  width: 940px;
+  height: 303px;
+  padding-top: 25px;
+  .inter-prev, .inter-next {
+    float: left;
+    width: 21px;
+    height: 303px;
+    background: url(./img/shopping-interested.png) no-repeat -42px -51px;
+    cursor: pointer;
+  }
+  .inter-prev {
+    margin-right: 26px;
+  }
+  .inter-next {
+    float: right;
+    background-position: -63px -51px;
+  }
+  .inter-prev:hover {
+    background-position: 0 -51px;
+  }
+  .inter-next:hover {
+    float: right;
+    background-position: -21px -51px;
+  }
+  .featured-prev {
+    background-position: -42px -51px;
+    &:hover {
+      background-position: -42px -51px;
+    }
+  }
+  .featured-next {
+    background-position: -63px -51px;
+    &:hover {
+      background-position: -63px -51px;
+    }
+  }
+  .eva-switchable-triggers {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    visibility: hidden;
+    li {
+      float: left;
+      width: 15px;
+      height: 24px;
+      line-height: 24px;
+      font-size: 24px;
+      font-family: Arial;
+      text-align: center;
+      cursor: pointer;
+      color: #ccc;
+      &.eva-switchable-active {
+        color: #e5004f;
+      }
+    }
+  }
+}
+
+.inter-list {
+  float: left;
+  position: relative;
+  z-index: 2;
+  zoom: 1;
+  width: 848px;
+  height: 303px;
+  overflow: hidden;
+  ul {
+    width: 900px;
+    height: 303px;
+  }
+  li {
+    float: left;
+    z-index: 1;
+    width: 152px;
+    height: 303px;
+    margin-right: 22px;
+    .inter-pro-pic {
+      width: 150px;
+      height: 200px;
+      overflow: hidden;
+      border: 1px solid #e1e1e1;
+      background-color: #f4f4f4;
+      img {
+        width: 150px;
+        height: 200px;
+      }
+    }
+    .inter-pro-txt {
+      height: 38px;
+      overflow: hidden;
+      padding-top: 5px;
+      line-height: 18px;
+    }
+    .inter-pro-dis {
+      height: 20px;
+      color: #e5004f;
+    }
+    .inter-pro-add {
+      height: 28px;
+      padding-top: 10px;
+      .c-lbtn {
+        position: relative;
+        font-size: 12px;
+        color: #666;
+      }
+    }
+  }
+}
+
+.inter-opaque {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 940px;
+  height: 303px;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.pro-det-box {
+  position: absolute;
+  bottom: 58px;
+  left: 302px;
+  z-index: 4;
+  width: 328px;
+  height: 208px;
+  padding: 4px;
+  border: 2px solid #f4f4f4;
+}
+
+.pro-det-main {
+  position: relative;
+  width: 308px;
+  height: 190px;
+  padding: 18px 0 0 20px;
+  background-color: #f4f4f4;
+  .fordetails {
+    height: 24px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .forcolor {
+    margin-bottom: 10px;
+    height: 45px;
+  }
+  .forsize {
+    height: 48px;
+    clear: both;
+  }
+  .color-name {
+    float: left;
+  }
+  .size-name {
+    float: left;
+    line-height: 20px;
+  }
+  .color-list {
+    float: left;
+    width: 270px;
+    height: 45px;
+    overflow: hidden;
+  }
+  .size-list {
+    float: left;
+    width: 270px;
+    height: 48px;
+    overflow: hidden;
+  }
+  .color-list span {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 40px;
+    margin: 0 5px 5px 0;
+    padding: 1px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    i {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 10px;
+      height: 9px;
+      background: url(./img/shopping-title-20141118.png) no-repeat -37px -85px;
+    }
+  }
+  .size-list span i {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 9px;
+    background: url(./img/shopping-title-20141118.png) no-repeat -37px -85px;
+  }
+  .color-list span.cursor {
+    padding: 0;
+    border: 2px solid #e5004f;
+    i {
+      display: block;
+    }
+  }
+  .size-list span.cursor {
+    i {
+      display: block;
+    }
+    border: 1px solid #e5004f;
+  }
+  .color-list span img {
+    width: 30px;
+    height: 40px;
+  }
+  .size-list span {
+    position: relative;
+    float: left;
+    max-width: 240px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 8px;
+    margin: 0 5px 3px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    img {
+      width: 32px;
+      height: 42px;
+    }
+  }
+  .fortips {
+    height: 22px;
+    line-height: 22px;
+    padding-right: 20px;
+    text-align: center;
+    p {
+      color: #e5004f;
+    }
+  }
+  .foradd {
+    height: 32px;
+    padding-right: 20px;
+    .enter-add {
+      display: inline-block;
+      width: 75px;
+      height: 32px;
+      margin-left: 106px;
+      background: url(./img/shopping-title-20141118.png) no-repeat -57px -85px;
+      a {
+        display: block;
+        width: 70px;
+        height: 29px;
+        line-height: 29px;
+        text-align: center;
+        font-size: 16px;
+        font-family: "\5fae\8f6f\96c5\9ed1";
+        color: #fff;
+        &:hover {
+          display: block;
+          width: 70px;
+          height: 29px;
+          line-height: 29px;
+          text-align: center;
+          font-size: 16px;
+          font-family: "\5fae\8f6f\96c5\9ed1";
+          color: #fff;
+        }
+      }
+    }
+  }
+  .forclose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 24px;
+    height: 24px;
+    background: url(./img/shopping-title-20141118.png) no-repeat -137px -82px;
+    cursor: pointer;
+  }
+}
+
+/* float-side */
+
+.side-place {
+  position: relative;
+  height: 0px;
+  .side-posi {
+    position: absolute;
+    left: 980px;
+    top: -308px;
+    width: 32px;
+    height: 306px;
+  }
+  .side-float {
+    position: static;
+    bottom: 0;
+    width: 32px;
+    z-index: 101;
+  }
+}
+
+.side-float {
+  a {
+    display: block;
+    width: 32px;
+  }
+  .propose {
+    height: 258px;
+    background-color: #c1c1c1;
+    i {
+      display: block;
+      width: 32px;
+      height: 35px;
+      background: url(./img/shopping-title-20141118.png) -168px -85px no-repeat;
+    }
+    strong {
+      display: block;
+      width: 14px;
+      line-height: 16px;
+      padding: 0 8px 0 10px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+  .gototop {
+    height: 45px;
+    overflow: hidden;
+    margin-top: 5px;
+    text-indent: -50px;
+    background: url(./img/shopping-title-20141118.png) 0 -85px no-repeat;
+  }
+}
+
