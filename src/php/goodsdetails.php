@@ -7,7 +7,7 @@
 	$count = $_POST['count'];
 	session_start();
 	if($title && $price && $color && $src && $size && $count){
-		$_SESSION['goods'] = $title.";".$price.";".$color.";".$src.";".$size.";".$count;
+		$_SESSION['goods'] = "title".":".$title.";"."price".":".$price.";"."color".":".$color.";"."src".":".$src.";"."size".":".$size.";"."count".":".$count;
 		echo true;
 	}else{
 		echo false;

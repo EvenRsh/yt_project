@@ -76,6 +76,7 @@ $(function() {
     			"size":_size,
     			"count":_count
     		},function(res){
+                // console.log(res);
     			if(res){
 	    			console.log('返回成功')
     			}else{

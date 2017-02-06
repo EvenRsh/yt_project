@@ -47,13 +47,13 @@ $(function() {
     				return false;
     			}else{
     				$('<b/>').text('用户可以注册').insertAfter($phone);
+                   //生成随机验证码
+                     $ytRight.on('click','#getCode',function(){
+                        $('#setCode').val(randomNum());
+                    })
     			}
     		});
     	}
-    })
-    //生成随机验证码
-    .on('click','#getCode',function(){
-    	$('#setCode').val(randomNum());
     })
     //输入密码
     .on('change','#password',function(){
@@ -63,20 +63,20 @@ $(function() {
     		return false;
     	}else{
     		$password.siblings().remove();
+            //判断所有输入框是否已经存在数据
+            $ytRight.on('input',function(){
+                if ($code.val() && $password.val() && $repassword.val()) {
+                    //提交按钮高亮
+                    $btnSubmit.addClass('active')
+                }else{
+                    $btnSubmit.removeClass('active')
+                }
+            })
     	}
     })
-    //判断所有输入框是否已经存在数据
-    .on('input',function(){
-    	if ($code.val() && $password.val() && $repassword.val()) {
-            //提交按钮高亮
-            $btnSubmit.addClass('active')
-        }else{
-            $btnSubmit.removeClass('active')
-        }
-    })
+    //提交
     .on('click','#submitButton',function(){
     	//判断提交按钮是否高亮
-    	console.log('123')
         if ($btnSubmit.hasClass('active')) {
             if ($password.val() != $repassword.val()) {
             	$repassword.siblings().remove();
@@ -92,7 +92,7 @@ $(function() {
                     var data = eval('(' + response + ')');
                     if (data.state) {
                         alert('注册成功！');
-                        return false;
+                        window.location.href = 'login.html';
                     } else {
                         alert(data.message);
                     }
