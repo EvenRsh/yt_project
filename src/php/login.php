@@ -12,4 +12,6 @@
 	}
 	session_start();
 	$_SESSION['phone_login'] = $phone;
+	$lifeTime = 20;
+	setcookie(session_name(), session_id(), time() + $lifeTime, "/");
  ?>

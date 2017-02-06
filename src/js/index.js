@@ -6,8 +6,34 @@
 //页面加载
 
 $(function() {
+    //////////////
+    //判断是否有用户登录 //
+    //////////////
+    $.post('./php/index.php',function(res){
+        console.log(res);
+        var data = eval('('+res+')');
+        if(data.state){
+            console.log(data.message);
+            var $ytUser = $('.ytUser');
+            $ytUser.html('').html('Hi,欢迎你,' + data.message);
+            var $logout = $('<a/>').text('登出').appendTo($ytUser);
+            ////////////
+            //登出效果//
+            ////////////
+            $logout.on('click',function(){
+                $.post('./php/logout.php',function(res){
+                    window.location.href = 'index.html';
+                })
+            })
+        }else{
+            console.log('初始主页')
+        }
+    })
 
     
+
+
+
     $banner = $('#banner');
 
     ///////////

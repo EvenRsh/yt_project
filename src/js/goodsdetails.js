@@ -78,7 +78,8 @@ $(function() {
     		},function(res){
                 // console.log(res);
     			if(res){
-	    			console.log('返回成功')
+	    			console.log('返回成功');
+                    window.location.href = './cartlist.html';
     			}else{
     				console.log('添加失败')
     			}
