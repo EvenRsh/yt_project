@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* 重置样式 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+
+ul { list-style: none; }
+
+a { text-decoration: none; color: #666; }
+
+/* 公共样式 */
+input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
+
+#ft::after { content: ''; display: block; clear: both; }
+
+#doc, #hd { width: 100%; min-width: 1190px; }
+
+body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
+
+.ytSecure { background-color: #fff; padding: 20px 0; }
+
+.ytWrap { width: 1190px; margin: 0 auto; }
+
+#ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
+
+#ft div { text-align: center; }
+
+#hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
+
+a:hover { color: #e5004f; }
+
+/* 页头样式 */
+.page-header { display: -webkit-flex; display: flex; }
+
+.page-header ul { display: -webkit-flex; display: flex; }
+
+.page-header .topLeft li { text-align: left; }
+
+.page-header .topLeft li a { display: inline-block; line-height: 34px; padding-left: 25px; position: relative; }
+
+.page-header .topLeft li a s { display: inline-block; position: absolute; top: 6px; left: 0; width: 21px; height: 21px; background: url(./img/header-02.png) 0 0 no-repeat; }
+
+.page-header .topLeft li a b { display: inline-block; width: 9px; height: 5px; margin: 0 5px; overflow: hidden; background: url(./img/header-02.png) -175px -111px no-repeat; -webkit-transition: -webkit-transform .2s ease-in 0s; }
+
+.page-header .topLeft li a em { width: 0; height: 14px; line-height: 14px; border-left: 1px solid #ccc; margin: 0 5px; }
+
+.page-header .topLeft .ytIndex s { background-position: -225px 0; }
+
+.page-header .topLeft .ytIndex:hover s { background-position: -225px -27px; }
+
+.page-header .topLeft .ytWeiXin s { background-position: -225px -57px; }
+
+.page-header .topLeft .ytWeiXin:hover s { background-position: -225px -27px; }
+
+.page-header .topLeft .ytPhone s { height: 20px; background: url(./img/phone.png) center 0 no-repeat; }
+
+.page-header .topLeft .ytPhone b { left: 85px; }
+
+.page-header .topLeft .ytPhone:hover s { background-position: -225px -27px; }

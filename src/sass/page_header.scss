@@ -1,0 +1,89 @@
+//引入外部文件
+/* 重置样式 */
+@import 'reset.scss';
+/* 公共样式 */
+@import 'common.scss';
+/* 页头样式 */
+.page-header{
+    display:-webkit-flex;
+    display: flex;
+    ul{
+        display:-webkit-flex;
+        display: flex;
+    }
+    .topLeft{
+        li{
+            text-align: left;
+            a{
+                display: inline-block;
+                line-height: 34px;
+                padding-left: 25px;
+                position: relative;
+                s{
+                    display: inline-block;
+                    position: absolute;
+                    top: 6px;
+                    left: 0;
+                    width: 21px;
+                    height: 21px;
+                    background: url(./img/header-02.png) 0 0 no-repeat;
+                }
+                b {
+                    display: inline-block;
+                    width: 9px;
+                    height: 5px;
+                    margin: 0 5px;
+                    overflow: hidden;
+                    background: url(./img/header-02.png) -175px -111px no-repeat;
+                    -webkit-transition: -webkit-transform .2s ease-in 0s;            
+                }
+                em{
+                    width: 0;
+                    height: 14px;
+                    line-height: 14px;
+                    border-left: 1px solid #ccc;
+                    margin: 0 5px;
+                }
+            }
+        }
+        
+        .ytIndex{
+            s {
+                background-position: -225px 0;
+            }
+            &:hover{
+               s {
+                    background-position: -225px -27px;
+                } 
+            }
+        }
+        .ytWeiXin{
+            s {
+                background-position: -225px -57px;
+            }
+            &:hover{
+               s {
+                    background-position: -225px -27px;
+                } 
+            }
+        }
+        .ytPhone{
+            s{
+                height: 20px;
+                background: url(./img/phone.png) center 0 no-repeat;
+            }
+             b{
+                left: 85px;
+            }
+            &:hover{
+               s {
+                    background-position: -225px -27px;
+                } 
+            }
+        }
+    }
+    
+}
+
+
+

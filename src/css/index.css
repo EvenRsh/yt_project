@@ -25,6 +25,10 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 #ft div { text-align: center; }
 
+#hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
+
+a:hover { color: #e5004f; }
+
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
 #ft::after, .cf::after, .topSide::after, .cart .minishop::after, .topMenu::after, .topMenu .menu .menuList::after, .topMenu .submenu::after { content: ''; display: block; clear: both; }
@@ -44,6 +48,10 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 #ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
 
 #ft div { text-align: center; }
+
+#hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
+
+a:hover { color: #e5004f; }
 
 #hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
 
@@ -111,6 +119,10 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 #ft div { text-align: center; }
 
+#hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
+
+a:hover { color: #e5004f; }
+
 #hdbanner a { display: block; min-height: 80px; background: url("../img/9b67843b-f07c-40ae-9546-0becbc3d7697.jpg") center top; }
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
@@ -132,6 +144,10 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 #ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
 
 #ft div { text-align: center; }
+
+#hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
+
+a:hover { color: #e5004f; }
 
 #hdmain { background-color: #fff; }
 
@@ -202,6 +218,10 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 #ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
 
 #ft div { text-align: center; }
+
+#hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
+
+a:hover { color: #e5004f; }
 
 #hdmenu { border-bottom: 1px solid #2d2e2e; background-color: #fff; }
 
@@ -348,6 +368,10 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 #ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
 
 #ft div { text-align: center; }
+
+#hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
+
+a:hover { color: #e5004f; }
 
 #tab_nav { position: relative; }
 

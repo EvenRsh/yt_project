@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* 重置样式 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+
+ul { list-style: none; }
+
+a { text-decoration: none; color: #666; }
+
+/* 公共样式 */
+body { background-color: #f3f3f3; font-size: 12px; line-height: 24px; }
+
+a:hover { color: #e5004a; }
+
+/* 页头样式 */
+.goodsContent { width: 1200px; margin: 0 auto; }
+
+/* 列表 */
+#ulContent { display: -webkit-flex; display: flex; flex-wrap: wrap; }
+
+#ulContent li { border: 1px solid #000; margin: 10px 2px; padding: 10px; width: 220px; box-sizing: border-box; background-color: #FFF; }
+
+#ulContent li:hover { border: 1px solid #e5004f; }
+
+#ulContent li .listGoodImg { text-align: center; }
+
+#ulContent li .listGoodImg a { display: inline-block; }
+
+#ulContent li .listGoodImg a img { width: 100%; height: auto; }
+
+#ulContent li .listGoodTitle { padding: 0 10px; }
+
+#ulContent li .listGoodPrice { margin-left: 10px; font-family: "微软雅黑"; }
+
+#ulContent li .listGoodPrice strong { color: #e5004b; font-size: 16px; font-weight: 600; }
+
+#ulContent li .listGoodPrice i { font-style: initial; }
+
+#ulContent li .listGoodPrice s { color: #a2a2a2; }
+
+#ulContent li .listGoodAddbox .sumBox { display: inline-block; border: 1px solid #f3f3f3; width: 42px; position: relative; }
+
+#ulContent li .listGoodAddbox .sumBox input { display: inline-block; width: 30px; height: 30px; border: none; color: #666; text-align: center; line-height: 30px; white-space: nowrap; }
+
+#ulContent li .listGoodAddbox .sumBox a { background-color: #EAEAEA; width: 11px; height: 14px; line-height: 11px; position: absolute; text-align: center; }
+
+#ulContent li .listGoodAddbox .sumBox .addBox { top: 0; right: 0; }
+
+#ulContent li .listGoodAddbox .sumBox .delBox { bottom: 0; right: 0; }
+
+#ulContent li .listGoodAddbox .addCart { display: inline-block; width: 100px; height: 32px; background-color: #f6f6f6; border: none; }
+
+#ulContent li .listGoodAddbox .addCart:hover { background-color: #e5004a; color: #fff; }
+
+#ulContent li .listGoodAddbox .addSc { display: inline-block; background-color: #f6f6f6; border: 1px solid #eaeaea; margin-left: 4px; height: 30px; width: 34px; line-height: 30px; text-align: center; }
+
+#ulContent li .listGoodAddbox .addSc:hover { color: #e5004a; }
+
+/* 分页 */
+#page { text-align: right; margin-right: 100px; }
+
+#page span { display: inline-block; background-color: #efefef; border: 1px solid #000; padding: 2px 3px; margin-left: 2px; }
+
+#page span:hover { background-color: #e5004a; color: #fff; }
+
+#page .pageNo { padding: 2px 10px; }
+
+#page .active { border: 1px solid #fff; }
+
+/* 侧边栏 */
+.nav_right { background: #e5004b; height: 100%; position: fixed; right: 0; top: 0; z-index: 10000; }
+
+.nav_right ul { width: 100%; margin-top: 300px; }
+
+.nav_right ul li { position: relative; display: block; margin: 10px 0; z-index: 999; }
+
+.nav_right ul li i { display: block; color: #FFFFFF; padding: 7px; font-size: 20px; cursor: pointer; }
+
+.nav_right ul li span { position: absolute; top: 0; left: 60px; font-size: 15px; height: 34px; line-height: 34px; display: block; color: #FFFFFF; background: #9381f4; border-bottom-left-radius: 4px; border-top-left-radius: 4px; white-space: nowrap; text-align: center; cursor: pointer; }
+
+.nav_right ul li .lnr { font-family: 'Linearicons-Free'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; }
+
+.nav_right ul #cartlist { position: fixed; top: 50%; right: 0; }
+
+.nav_right ul #cartlist .carCount { width: 20px; height: 20px; background-color: #fff; border-radius: 50%; text-align: center; font-size: 18px; }

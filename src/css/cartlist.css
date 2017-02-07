@@ -25,6 +25,10 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 #ft div { text-align: center; }
 
+#hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
+
+a:hover { color: #e5004f; }
+
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
 #ft::after, .cf::after, .topSide::after, .cart .minishop::after { content: ''; display: block; clear: both; }
@@ -44,6 +48,10 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 #ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
 
 #ft div { text-align: center; }
+
+#hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
+
+a:hover { color: #e5004f; }
 
 #hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
 
@@ -110,6 +118,10 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 #ft { width: 100%; min-width: 1190px; padding-top: 30px; background-color: #fff; }
 
 #ft div { text-align: center; }
+
+#hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
+
+a:hover { color: #e5004f; }
 
 #hdmain { background-color: #fff; }
 

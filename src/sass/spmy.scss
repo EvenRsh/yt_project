@@ -1,0 +1,221 @@
+//引入外部文件
+/* 重置样式 */
+@import 'reset.scss';
+/* 公共样式 */
+body{
+    background-color: #f3f3f3;
+    font-size: 12px;
+    line-height: 24px;
+}
+a:hover{
+    color: #e5004a;
+}
+/* 页头样式 */
+.goodsContent{
+    width:1200px;
+    margin: 0 auto;
+}
+/* 列表 */
+#ulContent{
+    display:-webkit-flex;
+    display: flex;
+    flex-wrap:wrap;
+    li{
+        border: 1px solid #000;
+        margin: 10px 2px;
+        padding: 10px;
+        width: 220px;
+        box-sizing:border-box;
+        background-color: #FFF;
+        &:hover{
+           border: 1px solid #e5004f;; 
+        }
+        //商品图片
+        .listGoodImg{
+            text-align: center;
+            a{
+                display: inline-block;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        //商品说明
+        .listGoodTitle{
+            padding: 0 10px;
+        }
+        //商品价格
+        .listGoodPrice{
+            margin-left: 10px;
+            font-family: "微软雅黑";
+            strong{
+                color: #e5004b;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            i{
+                    font-style:initial;
+                }
+            s{
+                color: #a2a2a2;
+            }
+        }
+        //商品添加
+        .listGoodAddbox{
+            .sumBox{
+                // padding-left: 10px;
+                display: inline-block;
+                border: 1px solid #f3f3f3;
+                width: 42px;
+                position: relative;
+                input{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    border: none;
+                    color: #666;
+                    text-align: center;
+                    line-height: 30px;
+                    white-space: nowrap;
+                }
+                a{
+                    background-color: #EAEAEA;
+                    width: 11px;
+                    height: 14px;
+                    line-height: 11px;
+                    position: absolute;
+                    text-align: center;
+                }
+                .addBox{
+                    top: 0;
+                    right:0;
+                }
+                .delBox{
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            .addCart{
+                display: inline-block;
+                width: 100px;
+                height: 32px;
+                background-color: #f6f6f6;
+                border: none;
+                &:hover{
+                    background-color: #e5004a;
+                    color:#fff;
+                }
+            }
+            .addSc{
+                display: inline-block;
+                background-color: #f6f6f6;
+                border: 1px solid #eaeaea;
+                margin-left: 4px;
+                height: 30px;
+                width: 34px;
+                line-height: 30px;
+                text-align: center;
+                &:hover{
+                    color:#e5004a;
+                }
+            }
+        }
+    }
+}
+/* 分页 */
+#page{
+    text-align: right;
+    margin-right: 100px;
+    span{
+        display: inline-block;
+        background-color: #efefef;
+        border: 1px solid #000;
+        padding: 2px 3px;
+        margin-left: 2px;
+        &:hover{
+            background-color: #e5004a;
+            color:#fff;
+        }
+    }
+    .pageNo{
+        padding: 2px 10px;
+    }
+    .active{
+        border: 1px solid #fff;
+    }
+}
+
+/* 侧边栏 */
+.nav_right{
+    background: #e5004b;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+    ul{
+        width: 100%;
+        margin-top: 300px;
+        li{
+            position: relative;
+            display: block;
+            margin: 10px 0;
+            z-index: 999;
+            i{
+                display: block;
+                color: #FFFFFF;
+                padding: 7px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            span{
+                position: absolute;
+                top: 0;
+                left: 60px;
+                font-size: 15px;
+                height: 34px;
+                line-height: 34px;
+                display: block;
+                color: #FFFFFF;
+                background: #9381f4;
+                border-bottom-left-radius: 4px;
+                border-top-left-radius: 4px;
+                white-space: nowrap;
+                text-align: center;
+                cursor: pointer;
+            }
+            .lnr{
+                font-family: 'Linearicons-Free';
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+            }
+            #end{
+
+            }
+        }
+        #cartlist{
+          position: fixed;
+          top: 50%;
+          right: 0;
+          .carCount{
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius:50%;
+            text-align: center;
+            font-size: 18px;
+          }
+        }
+        // :last-of-type{
+        //     position: fixed;
+        //     bottom: 20px;
+        // }
+    }
+}
+
