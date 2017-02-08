@@ -25,16 +25,34 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 #hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
 
-a:hover { color: #e5004f; }
+a:hover { color: #e5004f; text-decoration: none; }
 
 /* 页头样式 */
 /* 顶部登录toolbar */
 .toolbar { background-color: #eee; }
 
+.pull-left .Icon { font-size: 14px; top: -5px; color: #fff; }
+
 .pull-left ul { display: inline-flex; }
 
-.pull-left ul li { line-height: 34px; }
+.pull-left ul li { line-height: 34px; position: relative; }
 
-.pull-left ul li a { display: inline-block; display: inline-flex; text-align: center; height: 34px; line-height: 34px; }
+.pull-left ul li a { display: inline-block; text-align: center; height: 34px; line-height: 34px; position: relative; }
 
-.pull-left ul li a i { display: inline-block; width: 20px; height: 20px; justify-content: center; border: 1px solid #000; border-radius: 50%; background-color: #000; }
+.pull-left ul li a i { display: inline-block; position: relative; top: 6px; width: 20px; height: 20px; border-radius: 50%; background-color: #000; margin-right: 4px; }
+
+.pull-left ul li a em { display: inline-block; position: relative; top: 4px; width: 0; height: 18px; line-height: 18px; margin: 0 8px; border: 1px solid #ccc; }
+
+.pull-left ul li:hover i { background-color: #e5004f; }
+
+.pull-left .phone .Icon { color: #000; top: 4px; font-size: 20px; }
+
+.pull-left .weixin:hover { width: 110px; padding: 0 10px; background-color: #FFF; }
+
+.pull-left .weixin:hover i { background-color: green; }
+
+.pull-left .weixin:hover em { border: 0; }
+
+.pull-left .weixin:hover .weinxinImg { display: inline-block; }
+
+.pull-left .weinxinImg { position: absolute; top: 40px; left: 5px; }
