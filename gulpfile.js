@@ -10,6 +10,7 @@ gulp.task('buildSass', function() {
 
   	//编译.scss文件
   	.pipe(sass({outputStyle:'compact'}).on('error',sass.logError))
+  	//输出
   	.pipe(gulp.dest('./src/css'))
 //.on('error',sass.logError)
   	//编译成功后,
@@ -37,3 +38,30 @@ gulp.task('server',function(){
 
 	});
 });
+
+//合并插件
+var concat = require('gulp-concat');
+
+//压缩插件
+var uglify = require('gulp-uglify');
+
+//重命名
+
+var rename = require('gulp-rename');
+
+gulp.task('mergejs',function(){
+	gulp.src('./src/js/*.js')
+		.pipe(concat('all.js'))
+		.pipe(gulp.dest('./dist/js'))
+		.pipe(uglify({
+			compress: false,//类型：Boolean 默认：true 是否完全压缩
+			preserveComments: 'all' //保留所有注释
+		}))
+		.pipe(gulp.dest('./dist/js'))
+
+		//jquery.min.js,all.min.js
+		.pipe(rename({
+			suffix: ".min"
+		}))
+		.pipe(gulp.dest('./dist/js'))
+})
