@@ -1,0 +1,95 @@
+//引入外部文件
+
+/* 重置样式 */
+
+@import 'reset.scss';
+
+/* 公共样式 */
+
+@import 'common.scss';
+
+/* 页头样式 */
+
+
+/* 顶部登录toolbar */
+
+.toolbar {
+    background-color: #eee;
+}
+
+//顶部左边
+.pull-left {
+    .Icon {
+        font-size: 14px;
+        top: -5px;
+        color: #fff;
+    }
+    ul {
+        display: inline-flex;
+        li {
+            line-height: 34px;
+            position: relative;
+            a {
+                display: inline-block;
+                text-align: center;
+                height: 34px;
+                line-height: 34px;
+                position: relative;
+                i {
+                    display: inline-block;
+                    position: relative;
+                    top: 6px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #000;
+                    margin-right: 4px;
+                }
+                em {
+                    display: inline-block;
+                    position: relative;
+                    top: 4px;
+                    width: 0;
+                    height: 18px;
+                    line-height: 18px;
+                    margin: 0 8px;
+                    border: 1px solid #ccc;
+                }
+            }
+            &:hover {
+                i {
+                    background-color: #e5004f;
+                }
+            }
+        }
+    }
+    .phone {
+
+        .Icon {
+            color:#000;
+            top: 4px;
+            font-size: 20px;
+        }
+    }
+    .weixin:hover {
+        width: 110px;
+        padding: 0 10px;
+        background-color: #FFF;
+        i {
+            background-color: green;
+        }
+        em{
+            border:0;
+        }
+        .weinxinImg{
+            display: inline-block;
+            
+        }
+    }
+    .weinxinImg{
+        // display: none;
+        position: absolute;
+        top: 40px;
+        left: 5px;
+    }
+}

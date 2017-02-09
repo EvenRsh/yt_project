@@ -27,7 +27,7 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 #hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
 
-a:hover { color: #e5004f; }
+a:hover { color: #e5004f; text-decoration: none; }
 
 input { font-size: 100%; vertical-align: middle; outline: none; border: 0; }
 
@@ -51,7 +51,7 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 #hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
 
-a:hover { color: #e5004f; }
+a:hover { color: #e5004f; text-decoration: none; }
 
 #hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
 
@@ -121,7 +121,7 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 #hdtop { height: 34px; border-bottom: 1px solid #fff; background-color: #eee; }
 
-a:hover { color: #e5004f; }
+a:hover { color: #e5004f; text-decoration: none; }
 
 #hdmain { background-color: #fff; }
 
