@@ -6,38 +6,108 @@
     <title>页头</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/page_header.css">
-    <script src="../assets/jQuery/jquery-3.1.1.js"></script>
+    
 </head>
 
 <body>
-    <!-- 顶部登录toolbar -->
-    <div class="toolbar">
-        <div class="container">
-            <div class="row">
-                <div class="pull-left">
-                    <ul>
-                        <li class= "index"><a href="index.html"><i><span class="glyphicon glyphicon-home Icon" aria-hidden="true"></span></i>银泰首页<em></em></a></li>
+    <header>
+        <!-- 顶部登录toolbar -->
+        <div class="toolbar ">
+            <div class="container ytWrap">
+                <div class="row clearfix ">
+                    <!-- 左边结构 -->
+                    <ul class="toolLeft fleft ">
+                        <li class= "index "><a href="index.html" title="银泰首页"><i class="rhCircle "></i><span class="glyphicon glyphicon-home rhIcon" aria-hidden="true"></span>银泰首页</a></li>
+                        <li class="rhLine"></li>
                         <li class= "weixin">
-                            <p>
-                                <a href="#"><i><span class="glyphicon glyphicon-user Icon" aria-hidden="true"></span></i>微信<span class="glyphicon glyphicon-chevron-down "></span><em></em></a>
-                            </p>
-                            <p>
-                                <img class="weinxinImg" src="../css/img/wechat.png" alt="微信二维码">
-                            </p>
-                            </li>
-                        <li class="phone">
-                            <p>
-                                <a href="#"><span class="glyphicon glyphicon-phone Icon" aria-hidden="true"></span>手机银泰<span class="glyphicon glyphicon-chevron-down "></span></a>
-                            </p>
-                            <p>
-                                <img class="appphoneImg" src="../css/img/appphone.png" alt="客户端二维码">
-                            </p>
+                            <div>
+                                <a href="#" title="微信"><i class="rhCircle "></i><span class="glyphicon glyphicon-user rhIcon" aria-hidden="true"></span>微信<b class="glyphicon glyphicon-chevron-down animation"></b></a>
+                            </div>
+                            <div class="weinxinImg  dnone">
+                                <img  src="../css/img/wechat.png" alt="微信二维码">
+                            </div>
                         </li>
+                        <li class="rhLine"></li>
+                        <li class="phone ">
+                            <div>
+                                <a href="#" title="手机银泰"><span class="glyphicon glyphicon-phone rhIcon" aria-hidden="true"></span>手机银泰<b class="glyphicon glyphicon-chevron-down animation"></b></a>
+                            </div>
+                            <div class="appphoneImg dnone">
+                                <img src="../css/img/appphone.png" alt="客户端二维码">
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 右边结构 -->
+                    <ul class="toolRight fright ">
+                        <li class="ytUser ">
+                            <span>Hi，欢迎来到银泰网! &nbsp;</span><a href="html/login.html" class="ytLogin">登录</a><a href="html/register.html" class="ytRegister">注册</a>
+                        </li>
+                        <li class="ytUser dnone">
+                            <a>Hi,<span class="userName">13800138000</span></a><a href="html/login.html" class="ytLogin">登出</a>
+                        </li>
+                        <li class="rhLine"></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li class="rhLine"></li>
+                        <li>
+                            <div class="myYt">
+                                <p><a href="#">我的银泰<span class="glyphicon glyphicon-chevron-down animation"></span></a></p>
+                                <p><a target="_blank" href="//my.yintai.com/Account/FavoriteList">我的收藏</a></p>
+                                <p><a target="_blank" href="//my.yintai.com/Account/BalanceList">我的余额</a></p>
+                                <p><a target="_blank" href="//my.yintai.com/Account/CoinList">我的银元</a></p>
+                                <p><a target="_blank" href="//my.yintai.com/YTCard/MyCardBind">我的银泰卡</a></p>
+                                <p><a target="_blank" href="//my.yintai.com/Account/MyTicketList">我的优惠券</a></p>
+                                <p><a target="_blank" href="//my.yintai.com/Account/PointList">我的积分</a></p>
+                            </div>
+                        </li>
+                        <li class="rhLine"></li>
+                        <li><a href="#">银泰卡</a></li>
+                        <li class="rhLine"></li>
+                        <li><a href="#">帮助中心</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- logo、search -->
+        <div class="header_logo">
+            <div class="container ytWrap">
+                <div class="row clearfix">
+                    <div class="logo_left fleft">
+                        <a class="logo_gif" href="index.html" title="银泰,传递生活美学"></a>
+                    </div>
+                    <div class="logo_right fright">
+                        <!-- search -->
+                        <div class="head_search">
+                            <p>
+                                <input id="search_in" type="text" name="搜索框" placeholder="时尚家居">
+                                <span><i class="glyphicon glyphicon-search"></i></span>
+                            </p>
+                            <p class="search_keyword">
+                                <a class="hover" target="_blank" href="http://www.yintai.com/product/list-0.html?N=60832454&amp;sort=1">运动早春新品</a>
+                                <a target="_blank" href="http://www.yintai.com/store/store-50003313.html?N=8010050">卡帕运动5折封顶</a>
+                                <a target="_blank" href="http://www.yintai.com/product/list-0.html?N=60832869">白里挑一</a>
+                                <a class="hover" target="_blank" href="http://www.yintai.com/product/search.aspx?keyword=%E6%9C%B1%E7%82%B3%E4%BB%81%E9%93%9C">朱炳仁铜 满600减100 可累计</a>
+                            </p>
+                        </div>
+                        <!-- mincart -->
+                        <div class="head_cart">
+                            <p class="mincart">
+                                <i class="mincart_gif"></i>购物车<span class="hover ">0</span>件<s class="triangle_png"></s>
+                            </p>
+                            <p>
+                                <span class="trumpet_png"></span><a class="hover" href="#" title="技术升级公告">技术升级公告</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品导航栏 -->
+        <div class="header_nav">
+            <div class="container ytWrap">
+            </div>
+        </div>
+    </header>
+    
 </body>
-
+    <script src="../assets/jQuery/jquery-3.1.1.js"></script>
 </html>
