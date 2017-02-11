@@ -1,3 +1,4 @@
+;
 $(function() {
     console.log('调用spmy.js');
     $.post('../php/spmy.php', function(res) {
@@ -41,9 +42,7 @@ $(function() {
         var _val;
 
         var $carCount = $('#cartlist').find('.carCount');
-        /*$.post('../php/spmycart.php',function(res){
-            console.log(res)
-        })*/
+        
         $ulContent.on('click', '.sumBox>a', function() {
                 var $self = $(this);
 
