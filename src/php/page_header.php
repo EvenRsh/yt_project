@@ -32,6 +32,39 @@
 					"data":["BURBERRY","FERRAGAMO","GUCCI","COACH","ARMANI","JEANS","DIESEL","VERSACE","MAX&CO","FRED","PERRY","CELINE","SPORTMAX","MAX","MARA","MICHAEL","KORS","ZEGNA","FENDI","EMPORIO","ARMANI","BALLY","ALEXANDER","MCQUEEN"]
 				}
 			}
+		},
+		"nv":{
+			"name":"名品",
+			"title":"秋冬时尚",
+			"submenu":{
+				"Category":[
+					{"name":"男装",
+					"data":["新品","卫衣","针织衫","裤装","外套"]
+					},
+					{"name":"女装",
+					"data":["新品","卫衣","针织衫","裤装","外套","裙装"]
+					},
+					{"name":"鞋靴",
+					"data":["新品","女士单鞋","男鞋","靴子"]
+					},
+					{"name":"女包",
+					"data":["新品","手提斜挎包","单肩包","钱夹","手拿包"]
+					},
+					{"name":"男包",
+					"data":["新品","钱包","单肩包","手拿包","手提包"]
+					},
+					{"name":"配饰",
+					"data":["新品","围巾","帽子","腰带"]
+					},
+					{"name":"婴童",
+					"data":["童装","童鞋","婴童配饰"]
+					}
+				],
+				"brand":{
+					"name":"品牌",
+					"data":["BURBERRY","FERRAGAMO","GUCCI","COACH","ARMANI","JEANS","DIESEL","VERSACE","MAX&CO","FRED","PERRY","CELINE","SPORTMAX","MAX","MARA","MICHAEL","KORS","ZEGNA","FENDI","EMPORIO","ARMANI","BALLY","ALEXANDER","MCQUEEN"]
+				}
+			}
 		}
 	}]';
  ?>
