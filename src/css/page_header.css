@@ -141,11 +141,11 @@ a:hover { color: #e5004f; text-decoration: none; }
 
 .logo_right .head_search p { display: flex; height: 34px; }
 
-.logo_right .head_search span { display: inline-block; cursor: pointer; width: 44px; background-color: #000; text-align: center; z-index: -2; }
+.logo_right .head_search span { display: inline-block; cursor: pointer; width: 44px; background-color: #323333; text-align: center; z-index: -2; }
 
 .logo_right .head_search span i { line-height: 30px; color: #fff; font-size: 18px; z-index: -1; }
 
-.logo_right .head_search #search_in { border: 3px solid #000; width: 450px; text-indent: 5px; }
+.logo_right .head_search #search_in { border: 3px solid #323333; width: 450px; text-indent: 5px; }
 
 .logo_right .head_search .search_keyword { margin-top: 5px; }
 
@@ -155,7 +155,7 @@ a:hover { color: #e5004f; text-decoration: none; }
 
 .logo_right .head_cart { width: 160px; cursor: pointer; }
 
-.logo_right .head_cart .mincart { display: flex; background-color: #000; height: 34px; line-height: 34px; color: #fff; }
+.logo_right .head_cart .mincart { display: flex; background-color: #323333; height: 34px; line-height: 34px; color: #fff; }
 
 .logo_right .head_cart span { font-size: 18px; margin: 0 5px; }
 
@@ -166,3 +166,92 @@ a:hover { color: #e5004f; text-decoration: none; }
 .logo_right .head_cart :not(.mincart) { display: flex; }
 
 .logo_right .head_cart .trumpet_png { display: inline-block; margin-top: 2px; width: 14px; height: 16px; background: url(./img/yt_ico.png) 0 0 no-repeat; }
+
+/* 商品导航栏 */
+.nav_left { display: flex; }
+
+.nav_left .nav_menu { background-color: #222; display: flex; flex-direction: column; }
+
+.nav_left .all_menu { height: 39px; }
+
+.nav_left .all_menu a { display: block; width: 210px; height: 39px; line-height: 39px; text-align: center; color: #fff; font: 400 18px/39px "微软雅黑"; }
+
+.nav_left .classification { display: flex; flex-direction: column; position: relative; }
+
+.nav_left .classification .mainmenu { width: 210px; height: 46px; background-color: #333; border-bottom: 1px solid #666; }
+
+.nav_left .classification .mainmenu:hover .mainmenu_title { background-color: #e5004f; }
+
+.nav_left .classification .mainmenu_title { height: 46px; line-height: 46px; text-align: center; width: 210px; }
+
+.nav_left .classification .mainmenu_title a { color: #fff; }
+
+.nav_left .classification .mainmenu_title a:nth-of-type(1) { font: 400 16px/18px "微软雅黑"; }
+
+.nav_left .classification .mainmenu_title i { color: #666; margin: 0 4px; }
+
+.nav_left .classification .submenu { display: none; position: absolute; left: 210px; top: 0; width: 500px; height: 460px; overflow: hidden; }
+
+.nav_left .classification .submenu_left { float: left; width: 335px; height: 460px; background-color: #333; }
+
+.nav_left .classification .submenu_right { float: left; width: 160px; height: 460px; background-color: #000; }
+
+.nav_left .nav_link { font-size: 16px; height: 39px; }
+
+.nav_left .nav_link li { padding: 0 5px; margin: 0 20px; text-align: center; }
+
+.nav_left .nav_link li a { display: inline-block; padding-top: 10px; color: #000; }
+
+.nav_left .nav_link li:hover { cursor: pointer; border-bottom: 3px solid #e5004f; }
+
+.nav_left .nav_link li:hover a { color: #e5004f; }
+
+.nav_right { height: 34px; display: flex; font-size: 14px; color: #666; }
+
+.nav_right span { padding: 0 5px; }
+
+.nav_menu .classification .mainmenu_title_png { display: inline-block; width: 17px; height: 17px; margin-right: 7px; margin-bottom: 4px; vertical-align: middle; background: url(./img/header-02.png) no-repeat; }
+
+.nav_menu .classification .menu_right_png { display: inline-block; width: 6px; height: 11px; vertical-align: middle; margin-left: 42px; background: url(./img/header-02.png) -209px -111px no-repeat; }
+
+.nav_menu .classification .mainmenu_title:hover .menu_right_png { background: #e5004f; }
+
+.nav_menu .classification .dl_mp .mainmenu_title > .mainmenu_title_png { background-position: 0 -108px; }
+
+.nav_menu .classification .dl_nv .mainmenu_title > .mainmenu_title_png { background-position: -17px -110px; }
+
+.nav_menu .classification .dl_na .mainmenu_title > .mainmenu_title_png { background-position: -34px -110px; }
+
+.nav_menu .classification .dl_xx .mainmenu_title > .mainmenu_title_png { background-position: -51px -111px; }
+
+.nav_menu .classification .dl_mz .mainmenu_title > .mainmenu_title_png { background-position: -68px -111px; }
+
+.nav_menu .classification .dl_xb .mainmenu_title > .mainmenu_title_png { background-position: -85px -110px; }
+
+.nav_menu .classification .dl_yd .mainmenu_title > .mainmenu_title_png { background-position: -102px -111px; }
+
+.nav_menu .classification .dl_nz .mainmenu_title > .mainmenu_title_png { background-position: -119px -111px; }
+
+.nav_menu .classification .dl_yt .mainmenu_title > .mainmenu_title_png { background-position: -136px -111px; }
+
+.nav_menu .classification .dl_ny .mainmenu_title > .mainmenu_title_png { background-position: -153px -111px; }
+
+.nav_menu .classification .dl_mp .mainmenu_title:hover > .mainmenu_title_png { background-position: 0 -126px; }
+
+.nav_menu .classification .dl_nv .mainmenu_title:hover > .mainmenu_title_png { background-position: -17px -128px; }
+
+.nav_menu .classification .dl_na .mainmenu_title:hover > .mainmenu_title_png { background-position: -34px -128px; }
+
+.nav_menu .classification .dl_xx .mainmenu_title:hover > .mainmenu_title_png { background-position: -51px -129px; }
+
+.nav_menu .classification .dl_mz .mainmenu_title:hover > .mainmenu_title_png { background-position: -68px -129px; }
+
+.nav_menu .classification .dl_xb .mainmenu_title:hover > .mainmenu_title_png { background-position: -85px -128px; }
+
+.nav_menu .classification .dl_yd .mainmenu_title:hover > .mainmenu_title_png { background-position: -102px -129px; }
+
+.nav_menu .classification .dl_nz .mainmenu_title:hover > .mainmenu_title_png { background-position: -119px -129px; }
+
+.nav_menu .classification .dl_yt .mainmenu_title:hover > .mainmenu_title_png { background-position: -136px -129px; }
+
+.nav_menu .classification .dl_ny .mainmenu_title:hover > .mainmenu_title_png { background-position: -153px -129px; }
