@@ -2,7 +2,7 @@
 (function($) {
     $.fn.extend({
         rhcarousel: function(options) {
-            console.log('调用该插件')
+            console.log('调用rhcarousel插件')
                 /* 编写轮播图插件，要求如下：
                     - 是否自动轮播
                     - 是否显示小图
@@ -15,7 +15,7 @@
                 width: 810,
                 height: 320,
                 autoPlay: true,
-                showSmls: true,
+                isSeamless: true,
                 showSmall: false,
                 showButton: true,
                 page: 'center', //center,left
@@ -86,7 +86,7 @@
                         }
                     }
                     //是否无缝
-                    if (opt.showSmls) {
+                    if (opt.isSeamless) {
                         var $bigClone = $big.children('li').clone().appendTo($big);
                     }
 
@@ -137,20 +137,21 @@
                         $big.animate({
                             [_type]: _val * opt.index,
                         },function(){
-                             if (!opt.showSmls) {
-                                if (opt.index >= len) {
-                                    opt.index = -1;
-                                } else if (opt.index < 0) {
-                                    opt.index = len - 1;
-                                }
-                            } else {
-                                if (opt.index > len-1) {
+                             if (opt.isSeamless) {
+                                 if (opt.index > len-1) {
                                     opt.index = 0;
                                     $big.css({[_type]:0});
                                 } else if (opt.index < 0) {
                                     opt.index = len - 1;
                                     $big.css({[_type]: _val * len});
                                 }
+                            } else {
+                                if (opt.index >= len) {
+                                    opt.index = -1;
+                                } else if (opt.index < 0) {
+                                    opt.index = len - 1;
+                                }
+                               
                             }
                         });
 
