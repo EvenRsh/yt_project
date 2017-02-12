@@ -93,8 +93,7 @@ require(["config"],()=>{
                             dom.append(str);
                         }
                     });
-                    console.log('调用了该函数');
-                    return "成功加入结构";
+                    return this;
                 }
             };
 
@@ -104,8 +103,14 @@ require(["config"],()=>{
             let $classification = $("#classification");
                 //轮播图
             let $banner = $("#banner");
-             //请求商品导航栏后台数据
-             $.ajax({
+             //后台API
+            let navUrl = `../php/page_header.php`;
+
+
+            //请求数据
+            console.log($.ajax());
+            
+            $.ajax({
                 url:"../php/page_header.php",
                 type: "GET",
             })
@@ -115,8 +120,8 @@ require(["config"],()=>{
                 console.log(data);
                 let navStructure = new Structure();
                 navStructure.addMethod($classification,"navInit",data);
+                console.log(navStructure)
                 navStructure.formStructure();
-              
             });
 
             //轮播实现

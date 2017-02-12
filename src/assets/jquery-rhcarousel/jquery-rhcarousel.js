@@ -19,7 +19,7 @@
                 showSmall: false,
                 showButton: true,
                 page: 'center', //center,left
-                duration: 1000,
+                duration: 3000,
                 index: 0,
                 type: 'horizontal' //fade,horizontal,show,vertial(默认)
             };
@@ -87,7 +87,7 @@
                     }
                     //是否无缝
                     if (opt.isSeamless) {
-                        var $bigClone = $big.children('li').clone().appendTo($big);
+                        var $bigClone = $big.children('li').eq(0).clone().appendTo($big);
                     }
 
 
@@ -134,25 +134,25 @@
 
                     //显示图片
                     function showPic() {
+                        if (opt.isSeamless) {
+                             if (opt.index > len) {
+                                opt.index = 1;
+                                $big.css({[_type]:0});
+                            } else if (opt.index < 0) {
+                                opt.index = len-1;
+                                $big.css({[_type]: _val * len});
+                                console.log($big.css([_type]));
+                            }
+                        } else {
+                            if (opt.index >= len) {
+                                opt.index = 0;
+                            } else if (opt.index < 0) {
+                                opt.index = len - 1;
+                            }
+                           
+                        }
                         $big.animate({
                             [_type]: _val * opt.index,
-                        },function(){
-                             if (opt.isSeamless) {
-                                 if (opt.index > len-1) {
-                                    opt.index = 0;
-                                    $big.css({[_type]:0});
-                                } else if (opt.index < 0) {
-                                    opt.index = len - 1;
-                                    $big.css({[_type]: _val * len});
-                                }
-                            } else {
-                                if (opt.index >= len) {
-                                    opt.index = -1;
-                                } else if (opt.index < 0) {
-                                    opt.index = len - 1;
-                                }
-                               
-                            }
                         });
 
                         //小图高亮
