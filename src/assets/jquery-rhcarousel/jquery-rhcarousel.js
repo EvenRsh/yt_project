@@ -2,7 +2,7 @@
 (function($) {
     $.fn.extend({
         rhcarousel: function(options) {
-            console.log('调用该插件')
+            console.log('调用rhcarousel插件');
                 /* 编写轮播图插件，要求如下：
                     - 是否自动轮播
                     - 是否显示小图
@@ -15,7 +15,7 @@
                 width: 810,
                 height: 320,
                 autoPlay: true,
-                showSmls: true,
+                isSeamless: true,
                 showSmall: false,
                 showButton: true,
                 page: 'center', //center,left
@@ -63,6 +63,7 @@
                         //点击
                         $btnPrev.on('click', function() {
                             opt.index--;
+                            console.log('12');
                             showPic();
                         });
                         $btnNext.on('click', function() {
@@ -86,8 +87,8 @@
                         }
                     }
                     //是否无缝
-                    if (opt.showSmls) {
-                        var $bigClone = $big.children('li').clone().appendTo($big);
+                    if (opt.isSeamless) {
+                        var $bigClone = $big.children('li').eq(1).clone().appendTo($big);
                     }
 
 
@@ -134,26 +135,28 @@
 
                     //显示图片
                     function showPic() {
-                        $big.animate({
-                            [_type]: _val * opt.index,
-                        },function(){
-                        	 if (!opt.showSmls) {
-	                            if (opt.index >= len) {
-	                                opt.index = -1;
-	                            } else if (opt.index < 0) {
-	                                opt.index = len - 1;
-	                            }
-	                        } else {
-	                            if (opt.index > len-1) {
-	                                opt.index = 0;
+                        console.log('1');
+                        	if (opt.isSeamless) {
+                                console.log('1');
+	                            if (opt.index > len) {
+	                                opt.index = 1;
 	                                $big.css({[_type]:0});
+                                    console.log('1');
 	                            } else if (opt.index < 0) {
-	                                opt.index = len - 1;
-	                                $big.css({[_type]: _val * len});
+	                                opt.index = len-1 ;
+	                                $big.css({[_type]: _val * opt.index});
+                                    console.log('1');
 	                            }
+                            } else {
+                                if (opt.index >= len) {
+                                    opt.index = -1;
+                                } else if (opt.index < 0) {
+                                    opt.index = len - 1;
+                                }
 	                        }
-                        });
-
+                            $big.animate({
+                                [_type]: _val * opt.index
+                            };
                         //小图高亮
                         if (opt.showSmall) {
                             $small.children().eq(opt.index).animate({ opacity: 1 }).siblings('li').animate({ opacity: 0.5 })

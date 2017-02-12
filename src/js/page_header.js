@@ -5,15 +5,14 @@
  */
 ;
 "use strict"
-require(['config'],()=>{
-    require(['jquery'],($)=>{
+;
+require(["config"],()=>{
+    require(["jquery","carousel"],($,crou)=>{
         $(()=>{
-             console.log('调用page_header.js');
-             //生成商品导航栏的数据
-             //商品导航元素获取
-             let $classification = $("#classification");
+            console.log('调用page_header.js');
+             
              //生成页面结构的构造函数
-             let Structure = function () {
+            let Structure = function () {
                  this.cache = [];
              };
 
@@ -44,127 +43,53 @@ require(['config'],()=>{
                     $.each(data,(idx,item)=>{
                         console.log(item);
                         for(let key in item){
-                            console.log(key);
                             let str = `<dl class="mainmenu dl_${key}">
                                             <dt class="mainmenu_title">
                                                 <span class="mainmenu_title_png"></span><a href="#" title="${item[key]["name"]}">${item[key]["name"]}</a><i>|</i><a href="#" title="${item[key]["title"]}">${item[key]["title"]}</a><s class="menu_right_png"></s>
                                             </dt>
                                             <dd class="submenu clearfix">
                                                 <div class="submenu_left">
-                                                    <div class="subnav">
-                                                        <h4><a href="#" title="女装">女装</a></h4>
-                                                        <p>
-                                                            <a class="hover" href="#" title="新品">新品</a>
-                                                            <a  href="#" title="卫衣">卫衣</a>
-                                                            <a class="hover" href="#" title="针织衫">针织衫</a>
-                                                            <a  href="#" title="裤装">裤装</a>
-                                                            <a  href="#" title="外套">外套</a>
-                                                            <a  href="#" title="群装">群装</a>
-                                                        </p>
-                                                    </div>
-                                                    <div class="subnav">
-                                                        <h4><a href="#" title="鞋靴">鞋靴</a></h4>
-                                                        <p>
-                                                            <a class="hover" href="#" title="新品">新品</a>
-                                                            <a  href="#" title="女士单鞋">女士单鞋</a>
-                                                            <a class="hover" href="#" title="男鞋">男鞋</a>
-                                                            <a  href="#" title="靴子">靴子</a>
-                                                            <a  href="#" title="外套">外套</a>
-
-                                                        </p>
-                                                    </div>
-                                                    <div class="subnav">
-                                                        <h4><a href="#" title="女装">女装</a></h4>
-                                                        <p>
-                                                            <a class="hover" href="#" title="新品">新品</a>
-                                                            <a  href="#" title="卫衣">卫衣</a>
-                                                            <a class="hover" href="#" title="针织衫">针织衫</a>
-                                                            <a  href="#" title="裤装">裤装</a>
-                                                            <a  href="#" title="外套">外套</a>
-                                                            <a  href="#" title="群装">群装</a>
-                                                        </p>
-                                                    </div>
-                                                    <div class="subnav">
-                                                        <h4><a href="#" title="男装">男装</a></h4>
-                                                        <p>
-                                                            <a class="hover" href="#" title="新品">新品</a>
-                                                            <a  href="#" title="卫衣">卫衣</a>
-                                                            <a class="hover" href="#" title="针织衫">针织衫</a>
-                                                            <a  href="#" title="裤装">裤装</a>
-                                                            <a  href="#" title="外套">外套</a>
-                                                            <a class="hover" href="#" title="新品">新品</a>
-                                                            <a  href="#" title="卫衣">卫衣</a>
-                                                            <a class="hover" href="#" title="针织衫">针织衫</a>
-                                                            <a  href="#" title="裤装">裤装</a>
-                                                            <a  href="#" title="外套">外套</a>
-                                                        </p>
-                                                    </div>
-                                                    <div class="subnav">
-                                                        <h4><a href="#" title="女装">女装</a></h4>
-                                                        <p>
-                                                            <a class="hover" href="#" title="新品">新品</a>
-                                                            <a  href="#" title="卫衣">卫衣</a>
-                                                            <a class="hover" href="#" title="针织衫">针织衫</a>
-                                                            <a  href="#" title="裤装">裤装</a>
-                                                            <a  href="#" title="外套">外套</a>
-                                                            <a  href="#" title="群装">群装</a>
-                                                        </p>
-                                                    </div>
-                                                    <div class="subnav">
-                                                        <h4><a href="#" title="男装">男装</a></h4>
-                                                        <p>
-                                                            <a class="hover" href="#" title="新品">新品</a>
-                                                            <a  href="#" title="卫衣">卫衣</a>
-                                                            <a class="hover" href="#" title="针织衫">针织衫</a>
-                                                            <a  href="#" title="裤装">裤装</a>
-                                                            <a  href="#" title="外套">外套</a>
-
-                                                        </p>
-                                                    </div>
-                                                    <div class="subnav">
-                                                        <h4><a href="#" title="男装">男装</a></h4>
-                                                        <p>
-                                                            <a class="hover" href="#" title="新品">新品</a>
-                                                            <a  href="#" title="卫衣">卫衣</a>
-                                                            <a class="hover" href="#" title="针织衫">针织衫</a>
-                                                            <a  href="#" title="裤装">裤装</a>
-                                                            <a  href="#" title="外套">外套</a>
-
-                                                        </p>
-                                                    </div>
-                                                    
+                                                    ${(()=>{
+                                                        let str = "";
+                                                        let subnav = item[key]["submenu"]["Category"];
+                                                        for(let i=0;i<subnav.length;i++){
+                                                            str += `<div class="subnav">
+                                                                        <h4><a href="#" title="${subnav[i]["name"]}">${subnav[i]["name"]}</a></h4>
+                                                                        <p>
+                                                                            ${(()=>{
+                                                                                let subnavData = subnav[i]["data"];
+                                                                                let str = "";
+                                                                                for(let i=0;i<subnavData.length;i++){
+                                                                                    str += `<a  href="#" title="${subnavData[i]}">${subnavData[i]}</a>`;
+                                                                                }
+                                                                                return str;
+                                                                            })()}
+                                                                        </p>
+                                                                    </div>`;
+                                                        }
+                                                        return str;
+                                                    })()}
                                                 </div>
                                                 <div class="submenu_right">
-                                                    <h4><a href="#" title="品牌">品牌</a></h4>
+                                                    <h4>${(()=>{
+                                                        let pinpaititle = item[key]["submenu"]["brand"]["name"];
+                                                        return `<a href="#" title="${pinpaititle}">${pinpaititle}</a>`;
+                                                    })()}</h4>
                                                     <p>
-                                                       <a href="#" title="BURBERRY">BURBERRY</a>
-                                                       <a href="#" title="FERRAGAMO">FERRAGAMO</a>
-                                                       <a href="#" title="GUCCI">GUCCI</a>
-                                                       <a href="#" title="COACH">COACH</a>
-                                                       <a href="#" title="ARMANI">ARMANI</a>
-                                                       <a href="#" title="JEANS">JEANS</a>
-                                                       <a href="#" title="DIESEL">DIESEL</a>
-                                                       <a href="#" title="VERSACE">VERSACE</a>
-                                                       <a href="#" title="MAX&CO">MAX&CO</a>
-                                                       <a href="#" title="FRED">FRED</a>
-                                                       <a href="#" title="PERRY">PERRY</a>
-                                                       <a href="#" title="CELINE">CELINE</a>
-                                                       <a href="#" title="SPORTMAX">SPORTMAX</a>
-                                                       <a href="#" title="MAX">MAX</a>
-                                                       <a href="#" title="MARA">MARA</a>
-                                                       <a href="#" title="MICHAEL">MICHAEL</a>
-                                                       <a href="#" title="KORS">KORS</a>
-                                                       <a href="#" title="FENDI">FENDI</a>
-                                                       <a href="#" title="EMPORIO">EMPORIO</a>
-                                                       <a href="#" title="ARMANI">ARMANI</a>
-                                                       <a href="#" title="BALLY">BALLY</a>
-                                                       <a href="#" title="ALEXANDER">ALEXANDER</a>
-                                                       <a href="#" title="MCQUEEN">MCQUEEN</a>
+                                                        ${(()=>{
+                                                            let str = "";
+                                                            let brandData = item[key]["submenu"]["brand"]["data"];
+                                                            for(let i=0;i<brandData.length;i++){
+                                                                str += `<a href="#" title="${brandData[i]}">${brandData[i]}</a>`;
+                                                            }
+                                                            return str;
+                                                        })()}
 
                                                     </p>
                                                 </div>
                                             </dd>
                                         </dl>`;
+                            // console.log(str);
                             dom.append(str);
                         }
                     });
@@ -172,20 +97,30 @@ require(['config'],()=>{
                     return "成功加入结构";
                 }
             };
-             
-             //请求后台数据
+
+            //生成商品导航栏的数据
+             //元素获取
+                //商品导航
+            let $classification = $("#classification");
+                //轮播图
+            let $banner = $("#banner");
+             //请求商品导航栏后台数据
              $.ajax({
                 url:"../php/page_header.php",
                 type: "GET",
             })
             .done((res)=>{
                 let data = JSON.parse(res);
-                // console.log(data);
+                // let data = eval('('+res+')');
+                console.log(data);
                 let navStructure = new Structure();
                 navStructure.addMethod($classification,"navInit",data);
                 navStructure.formStructure();
               
             });
+
+            //轮播实现
+            $banner.rhcarousel({imglist:["../img/059c1b4b-94cd-4630-b04c-9a189b3a4285.jpg", "../img/88b6dad4-b26a-4c4d-a53d-51c41add7be2.jpg", "../img/107269b8-1478-4850-8320-21e6307bd3d1.jpg", "../img/8fcf3e58-3adf-48c2-9b3a-e6786291a1b3.jpg", "../img/ca11e774-32ab-4149-bac2-da2918f4a592.jpg"], "width": 1190, "height": 460 })
          });
     });
 });

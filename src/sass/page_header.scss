@@ -350,11 +350,16 @@
     }
     
 }
-/* 商品导航栏 */
+/* 商品导航栏 begin*/
 .header_nav{
+    height: 39px;
+    position: relative;
 }
 .nav_left{
+    width: 210px;
     display: flex;
+    position: absolute;
+    z-index: 1000;
     .nav_menu{
         background-color: #222;
         display: flex;
@@ -381,6 +386,7 @@
         display: flex;
         flex-direction:column;
         flex-wrap:wrap;
+        width: 210px;
         position: relative;
         .mainmenu{
             width:210px;
@@ -433,7 +439,12 @@
             .subnav{
                 border-bottom: 1px dotted #666;
                 h4{
-                    a{color: #fff;}
+                    a{color: #fff;
+                        &:hover{
+                           color:#e5004f; 
+                        }
+                    }
+                    font-size: 14px;
                     margin-bottom: 5px;
                 }
                 p{
@@ -485,39 +496,47 @@
         }
     }
 
-    .nav_link{
-        font-size: 16px;
-        height: 39px;
-        li{
-            padding: 0 5px;
-            margin: 0 20px;
-            text-align: center;
+}
+.nav_link{
+    display: flex;
+    // position: absolute;
+    // left: 210px;
+    font-size: 16px;
+    height: 39px;
+    li{
+        padding: 0 5px;
+        margin: 0 20px;
+        text-align: center;
+        a{
+            display: block;
+            padding-top: 10px;
+            color:#000;
+        }
+        &:hover{
+            cursor: pointer;
+            border-bottom: 3px solid #e5004f;
             a{
-                display: inline-block;
-                padding-top: 10px;
-                color:#000;
-            }
-            &:hover{
-                cursor: pointer;
-                border-bottom: 3px solid #e5004f;
-                a{
-                    color:#e5004f;
-                }
+                color:#e5004f;
             }
         }
     }
 }
 .nav_right{
-    height: 34px;
+    width:980px;
     display: flex;
+    justify-content:space-between;
     font-size: 14px;
     color: #666;
     span{
         padding: 0 5px;
     }
+    &>div{
+        height: 39px;
+        line-height: 39px;
+    }
 }
 
-//分类第一导航的小图标
+/* 分类第一导航的小图标 begin*/
 .nav_menu{
     .classification{
        .mainmenu_title_png{
@@ -604,5 +623,30 @@
         .dl_ny .mainmenu_title:hover>.mainmenu_title_png {
             background-position: -153px -129px;
           } 
+    }
+}
+/* 分类第一导航的小图标 end*/
+/* 商品导航栏 end*/
+
+
+/* <!-- 内容部分 --> */
+
+.blackline{
+    border: 1px solid #000;
+}
+
+
+/* <!-- 侧边图片 --> */
+.sibePic{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 200px;
+    height: 460px;
+    background: url(../img/b94938b6-fac5-406f-b395-76009e5e1729.jpg) 0 0 no-repeat;
+    transition: transform 0.2s linear;
+    &:hover{
+        transform: translateX(-5px);
     }
 }

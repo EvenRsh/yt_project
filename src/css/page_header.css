@@ -167,8 +167,10 @@ a:hover { color: #e5004f; text-decoration: none; }
 
 .logo_right .head_cart .trumpet_png { display: inline-block; margin-top: 2px; width: 14px; height: 16px; background: url(./img/yt_ico.png) 0 0 no-repeat; }
 
-/* 商品导航栏 */
-.nav_left { display: flex; }
+/* 商品导航栏 begin*/
+.header_nav { height: 39px; position: relative; }
+
+.nav_left { width: 210px; display: flex; position: absolute; z-index: 1000; }
 
 .nav_left .nav_menu { background-color: #222; display: flex; flex-direction: column; }
 
@@ -176,7 +178,7 @@ a:hover { color: #e5004f; text-decoration: none; }
 
 .nav_left .all_menu a { display: block; width: 210px; height: 39px; line-height: 39px; text-align: center; color: #fff; font: 400 18px/39px "微软雅黑"; }
 
-.nav_left .classification { display: flex; flex-direction: column; flex-wrap: wrap; position: relative; }
+.nav_left .classification { display: flex; flex-direction: column; flex-wrap: wrap; width: 210px; position: relative; }
 
 .nav_left .classification .mainmenu { width: 210px; height: 46px; background-color: #333; border-bottom: 1px solid #666; }
 
@@ -198,9 +200,11 @@ a:hover { color: #e5004f; text-decoration: none; }
 
 .nav_left .classification .submenu_left .subnav { border-bottom: 1px dotted #666; }
 
-.nav_left .classification .submenu_left .subnav h4 { margin-bottom: 5px; }
+.nav_left .classification .submenu_left .subnav h4 { font-size: 14px; margin-bottom: 5px; }
 
 .nav_left .classification .submenu_left .subnav h4 a { color: #fff; }
+
+.nav_left .classification .submenu_left .subnav h4 a:hover { color: #e5004f; }
 
 .nav_left .classification .submenu_left .subnav p { margin-bottom: 10px; display: flex; flex-wrap: wrap; }
 
@@ -222,20 +226,23 @@ a:hover { color: #e5004f; text-decoration: none; }
 
 .nav_left .classification .submenu_right p a:hover { color: #e5004f; }
 
-.nav_left .nav_link { font-size: 16px; height: 39px; }
+.nav_link { display: flex; font-size: 16px; height: 39px; }
 
-.nav_left .nav_link li { padding: 0 5px; margin: 0 20px; text-align: center; }
+.nav_link li { padding: 0 5px; margin: 0 20px; text-align: center; }
 
-.nav_left .nav_link li a { display: inline-block; padding-top: 10px; color: #000; }
+.nav_link li a { display: block; padding-top: 10px; color: #000; }
 
-.nav_left .nav_link li:hover { cursor: pointer; border-bottom: 3px solid #e5004f; }
+.nav_link li:hover { cursor: pointer; border-bottom: 3px solid #e5004f; }
 
-.nav_left .nav_link li:hover a { color: #e5004f; }
+.nav_link li:hover a { color: #e5004f; }
 
-.nav_right { height: 34px; display: flex; font-size: 14px; color: #666; }
+.nav_right { width: 980px; display: flex; justify-content: space-between; font-size: 14px; color: #666; }
 
 .nav_right span { padding: 0 5px; }
 
+.nav_right > div { height: 39px; line-height: 39px; }
+
+/* 分类第一导航的小图标 begin*/
 .nav_menu .classification .mainmenu_title_png { display: inline-block; width: 17px; height: 17px; margin-right: 7px; margin-bottom: 4px; vertical-align: middle; background: url(./img/header-02.png) no-repeat; }
 
 .nav_menu .classification .menu_right_png { display: inline-block; width: 6px; height: 11px; vertical-align: middle; margin-left: 42px; background: url(./img/header-02.png) -209px -111px no-repeat; }
@@ -281,3 +288,13 @@ a:hover { color: #e5004f; text-decoration: none; }
 .nav_menu .classification .dl_yt .mainmenu_title:hover > .mainmenu_title_png { background-position: -136px -129px; }
 
 .nav_menu .classification .dl_ny .mainmenu_title:hover > .mainmenu_title_png { background-position: -153px -129px; }
+
+/* 分类第一导航的小图标 end*/
+/* 商品导航栏 end*/
+/* <!-- 内容部分 --> */
+.blackline { border: 1px solid #000; }
+
+/* <!-- 侧边图片 --> */
+.sibePic { position: absolute; top: 0; right: 0; z-index: 1000; width: 200px; height: 460px; background: url(../img/b94938b6-fac5-406f-b395-76009e5e1729.jpg) 0 0 no-repeat; transition: transform 0.2s linear; }
+
+.sibePic:hover { transform: translateX(-5px); }
