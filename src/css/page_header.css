@@ -60,6 +60,8 @@ a:hover { color: #e5004f; text-decoration: none; }
 
 .animation { font-size: 12px; -webkit-transition: all 0.3s ease-in-out; -webkit-transform: rotate(0deg); }
 
+.allTab .tabNavs li:hover { border-bottom: 3px solid #e5004f; }
+
 /* 页头样式 */
 /* 顶部登录toolbar */
 .toolbar { background-color: #eee; }
@@ -298,3 +300,47 @@ a:hover { color: #e5004f; text-decoration: none; }
 .sibePic { position: absolute; top: 0; right: 0; z-index: 1000; width: 200px; height: 460px; background: url(../img/b94938b6-fac5-406f-b395-76009e5e1729.jpg) 0 0 no-repeat; transition: transform 0.2s linear; }
 
 .sibePic:hover { transform: translateX(-5px); }
+
+.banner { margin-bottom: 20px; }
+
+/* <!-- 超级特卖 --> */
+.temai { width: 910px; }
+
+.tabnav { margin-top: 20px; display: flex; width: 910px; height: 47px; border-bottom: 5px solid #000; }
+
+.tabnav li { flex: 1; height: 47px; line-height: 47px; text-align: center; }
+
+.tabnav li a { font-size: 16px; }
+
+.tabnav li:hover { border-bottom: 5px solid #e5004f; }
+
+.tabnav li:hover a { font-weight: 800; font: "微软雅黑"; color: #000; }
+
+.tabcontent { width: 910px; margin-top: 10px; }
+
+.tabcontent a { display: inline-block; border: 1px solid #eee; }
+
+.tabcontent .sjcontent { display: flex; }
+
+.tabcontent .sjcontent div { width: 220px; height: 260px; margin: 0 3px; border: 1px solid #eee; }
+
+.tabcontent .sjcontent div p { overflow: hidden; text-align: center; padding: 2px; }
+
+.tabcontent .sjcontent div p a { text-decoration: underline; border: 0; }
+
+.tabcontent .sjcontent div p strong { margin-right: 5px; color: #e5004f; font-size: 14px; }
+
+.tabcontent .sjcontent div p b { font-size: 12px; }
+
+.tabcontent .sjcontent div p s { text-decoration: none; }
+
+.sidebarPic { margin-top: 40px; width: 270px; }
+
+/* <!-- 专柜同款 --> */
+.zgtitle { margin-top: 20px; }
+
+.zgcontent { border: 1px solid #eee; padding: 10px; }
+
+.zglist { width: 815px; }
+
+.zgnav { width: 204px; margin: 0; }
