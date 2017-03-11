@@ -27,7 +27,7 @@ body { color: #666; font: normal 12px/1.5 Verdana, simsun, Sans-Serif; }
 
 a:hover { color: #e5004f; text-decoration: none; }
 
-/* 公共样式 */
+/* 公共样式2 */
 .ytWrap { width: 1190px; }
 
 .clearfix::after { content: ''; display: block; clear: both; }
@@ -60,7 +60,11 @@ a:hover { color: #e5004f; text-decoration: none; }
 
 .animation { font-size: 12px; -webkit-transition: all 0.3s ease-in-out; -webkit-transform: rotate(0deg); }
 
-.allTab .tabNavs li:hover { border-bottom: 3px solid #e5004f; }
+.navtab { display: flex; }
+
+.navtab .toggletab { border-bottom: 3px solid #000; }
+
+.navtab .toggletab:hover { border-bottom: 3px solid #e5004f; }
 
 /* 页头样式 */
 /* 顶部登录toolbar */
@@ -132,6 +136,7 @@ a:hover { color: #e5004f; text-decoration: none; }
 
 .toolRight :not(.rhLine) { padding: 0 3px; }
 
+/* 顶部登录toolbar end*/
 /* logo 搜索栏 */
 .header_logo { margin-top: 20px; }
 
@@ -169,6 +174,7 @@ a:hover { color: #e5004f; text-decoration: none; }
 
 .logo_right .head_cart .trumpet_png { display: inline-block; margin-top: 2px; width: 14px; height: 16px; background: url(./img/yt_ico.png) 0 0 no-repeat; }
 
+/* logo 搜索栏 end*/
 /* 商品导航栏 begin*/
 .header_nav { height: 39px; position: relative; }
 
@@ -294,6 +300,7 @@ a:hover { color: #e5004f; text-decoration: none; }
 /* 分类第一导航的小图标 end*/
 /* 商品导航栏 end*/
 /* <!-- 内容部分 --> */
+/* <!-- 内容部分 --> */
 .blackline { border: 1px solid #000; }
 
 /* <!-- 侧边图片 --> */
@@ -336,11 +343,49 @@ a:hover { color: #e5004f; text-decoration: none; }
 
 .sidebarPic { margin-top: 40px; width: 270px; }
 
-/* <!-- 专柜同款 --> */
+/* <!-- 专柜同款 --> begin*/
 .zgtitle { margin-top: 20px; }
 
 .zgcontent { border: 1px solid #eee; padding: 10px; }
 
-.zglist { width: 815px; }
+.zglist { width: 815px; position: relative; }
 
-.zgnav { width: 204px; margin: 0; }
+.zglist .blackline { width: 800px; height: 0; border: 2px solid #000; position: absolute; z-index: -2; top: 36.5px; }
+
+.zgnav { margin-top: 10px; width: 800px; }
+
+.zgnav .toggletab { width: 100px; height: 30px; border-bottom: 3px solid #000; text-align: center; }
+
+.zgnav .toggletab:hover { border-bottom: 3px solid #e5004f; }
+
+.zgnav .toggletab:hover a { color: #e5004f; }
+
+.tabcontent .tabpane { display: flex; flex-wrap: wrap; padding: 2px 0 2px 0; }
+
+.tabcontent .pinpaicontent { display: none; }
+
+.tabcontent .pinpaicontent img { margin-top: 2px; }
+
+.tabcontent .pinpaicontent img:not(:nth-of-type(3n)) { margin-right: 4px; }
+
+.tabcontent .tuijiancontent div { width: 200px; height: 250px; border: 1px solid #eee; text-align: center; margin-top: 4px; }
+
+.tabcontent .tuijiancontent div:not(:nth-of-type(4n)) { margin-right: 4px; }
+
+.tabcontent .tuijiancontent div a { border: 0px solid #000; text-decoration: underline; }
+
+.tabcontent .tuijiancontent div p:not(:first-child) { padding: 2px 5px 4px; background-color: #eee; }
+
+.tabcontent .tuijiancontent div p strong { margin-left: 5px; }
+
+.tabcontent .tuijiancontent div p strong span { color: #e5004f; }
+
+.tabcontent .tuijiancontent div p b { margin-right: 5px; }
+
+.tabcontent .tuijiancontent div p b s { font-size: 10px; color: #999; }
+
+/* <!-- 专柜同款 --> end*/
+/* <!-- 时尚名品 --> begin*/
+.shishangtitle { margin-top: 20px; }
+
+.shishangtitle div { width: 260px; height: 36px; background: url(./img/floor_all.png) 0 0 no-repeat; }

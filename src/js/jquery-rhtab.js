@@ -10,11 +10,11 @@
 			console.log("调用rhtab插件");
 			//默认设置
 			let defaults = {
-				tabs:`nav_tabs`,
-				tablist:`toogletab`,
+				tabs:`navtab`,
+				tablist:`toggletab`,
 				active:`active`,
-				content:`tab_content`,
-				pane:`tab_pane`,
+				content:`tabcontent`,
+				pane:`tabpane`,
 				selectd:`selected`,
 				type:'mouseenter'//'click'
 			}

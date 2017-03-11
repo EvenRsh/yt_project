@@ -1,0 +1,196 @@
+
+/* <!-- 内容部分 --> */
+
+.blackline{
+	border: 1px solid #000;
+}
+
+
+/* <!-- 侧边图片 --> */
+.sibePic{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	width: 200px;
+	height: 460px;
+	background: url(../img/b94938b6-fac5-406f-b395-76009e5e1729.jpg) 0 0 no-repeat;
+	transition: transform 0.2s linear;
+	&:hover{
+		transform: translateX(-5px);
+	}
+}
+.banner{
+	margin-bottom:  20px;
+}
+/* <!-- 超级特卖 --> */
+
+.temai{
+	width: 910px;
+}
+.tabnav{
+	margin-top:20px;
+	display: flex;
+	width:910px;
+	height: 47px;
+	border-bottom:  5px solid #000;
+	li{
+		flex:1;
+		height: 47px;
+		line-height: 47px;
+		text-align: center ;
+		a{
+			font-size: 16px;
+		}
+		&:hover{
+			border-bottom:  5px solid #e5004f;
+			a{
+				font-weight: 800;
+				font:"微软雅黑";
+				color: #000;
+			}
+		}
+	}       
+}
+.tabcontent{
+	width:910px;
+	margin-top: 10px;
+	a{
+		display: inline-block;
+		border: 1px solid #eee;
+	}
+	.sjcontent{
+		display: flex;
+		div{
+			width:220px;
+			height: 260px;
+			margin: 0 3px;
+			border: 1px solid #eee;
+			p{
+				overflow: hidden;
+				text-align: center;
+				padding: 2px;
+				a{
+					text-decoration: underline;
+					border:0;
+				}
+				strong{
+					margin-right: 5px;
+					color:#e5004f;
+					font-size: 14px;
+				}
+				b{
+					font-size: 12px;
+				}
+				s{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+.sidebarPic{
+	margin-top: 40px;
+	width: 270px;
+}
+/* <!-- 专柜同款 --> begin*/
+.zgtitle{
+	margin-top: 20px;
+}
+.zgcontent{
+	border:1px solid #eee;
+	padding: 10px;
+}
+.zglist{
+	width: 815px;
+	position: relative;
+	.blackline{
+		width:800px;
+		height: 0;
+		border: 2px solid #000;
+		position: absolute;
+		z-index:-2;
+		top: 36.5px;
+	}
+}
+.zgnav{
+	margin-top: 10px;
+	width:800px;
+	.toggletab{
+		width: 100px;
+		height: 30px;
+		border-bottom: 3px solid #000;
+		text-align: center;
+		&:hover{
+			border-bottom: 3px solid #e5004f;
+			a{
+				color: #e5004f;
+			}
+		}
+	}
+}
+.tabcontent{
+	// border: 1px solid #eee;
+	// width: 815px;
+	// height: 517px;
+	.tabpane{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 2px 0 2px 0;
+	}
+	.pinpaicontent{
+		display: none;
+		img{
+			margin-top: 2px;
+			&:not(:nth-of-type(3n)){
+				margin-right: 4px;
+			}
+		}
+	}
+	.tuijiancontent{
+		div{
+			width: 200px;
+			height: 250px;
+			border: 1px solid #eee;
+			text-align: center;
+			margin-top: 4px;
+			&:not(:nth-of-type(4n)){
+				margin-right: 4px;
+			}
+			a{
+				border: 0px solid #000;
+				text-decoration: underline;
+			}
+			p{
+				&:not(:first-child){
+					padding: 2px 5px 4px;
+					background-color: #eee;
+				}
+				strong{
+					margin-left: 5px;
+					span{
+						color: #e5004f;
+					}
+				}
+				b{
+					margin-right: 5px;
+					s{
+						font-size: 10px;
+						color:#999;
+					}
+				}
+			}
+		}
+	}
+}
+/* <!-- 专柜同款 --> end*/
+
+/* <!-- 时尚名品 --> begin*/
+.shishangtitle{
+	margin-top: 20px;
+	div{
+	    width: 260px;
+    	height: 36px;
+		background: url(./img/floor_all.png) 0 0 no-repeat
+	}
+}

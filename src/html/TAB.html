@@ -4,24 +4,26 @@
 	<meta charset="UTF-8">
 	<title>TAB插件</title>
 	<style>
-		.nav_tabs{
-			display: -webkit-inline-flex;
-			display: -moz-inline-flex;
-			display: -ms-inline-flex;
-			display: -o-inline-flex;
-			display: inline-flex;
-		}
 		ul{
 			list-style: none;
 		}
 		li{
 			padding: 0 10px;
-			border: 1px solid #000;
+			/*border: 1px solid #000;*/
+		}
+		.navtab{
+			display: flex;
+		}
+		.toggletab{
+			border-bottom: 3px solid #000;
+		}
+		.toggletab:hover{
+			border-bottom: 3px solid #e5004f;
 		}
 		.active{
 			background-color: #f00;
 		}
-		.tab_pane{
+		.tabpane{
 			width: 100px;
 			height: 20px;
 			border: 1px solid #000;
@@ -34,15 +36,15 @@
 </head>
 <body>
 	<div class="tab">
-		<ul class="nav_tabs">
-			<li class="toogletab">1</li>
-			<li class="toogletab">2</li>
-			<li class="toogletab">3</li>
+		<ul class="navtab">
+			<li class="toggletab">1</li>
+			<li class="toggletab">2</li>
+			<li class="toggletab">3</li>
 		</ul>
-		<div class="tab_content">
-			<div class="tab_pane">1</div>
-			<div class="tab_pane">2</div>
-			<div class="tab_pane">3</div>
+		<div class="tabcontent">
+			<div class="tabpane selected">1</div>
+			<div class="tabpane">2</div>
+			<div class="tabpane">3</div>
 		</div>
 	</div>
 </body>

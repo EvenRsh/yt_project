@@ -2,263 +2,371 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>页头</title>
-	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../assets/jquery-rhcarousel/jquery.rhcarousel.css">
-	<link rel="stylesheet" href="../css/page_header.css">
-	
+    <meta charset="UTF-8">
+    <title>页头</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/jquery-rhcarousel/jquery.rhcarousel.css">
+    <link rel="stylesheet" href="../css/page_header.css">
 </head>
 
 <body>
-	<!-- 头部导航 -->
-	<header>
-		<!-- 顶部登录toolbar -->
-		<div class="toolbar ">
-			<div class="container ytWrap">
-				<div class="row clearfix ">
-					<!-- 左边结构 -->
-					<ul class="toolLeft fleft ">
-						<li class= "index "><a href="index.html" title="银泰首页"><i class="rhCircle "></i><span class="glyphicon glyphicon-home rhIcon" aria-hidden="true"></span>银泰首页</a></li>
-						<li class="rhLine"></li>
-						<li class= "weixin">
-							<div>
-								<a href="#" title="微信"><i class="rhCircle "></i><span class="glyphicon glyphicon-user rhIcon" aria-hidden="true"></span>微信<b class="glyphicon glyphicon-chevron-down animation"></b></a>
-							</div>
-							<div class="weinxinImg  dnone">
-								<img  src="../css/img/wechat.png" alt="微信二维码">
-							</div>
-						</li>
-						<li class="rhLine"></li>
-						<li class="phone ">
-							<div>
-								<a href="#" title="手机银泰"><span class="glyphicon glyphicon-phone rhIcon" aria-hidden="true"></span>手机银泰<b class="glyphicon glyphicon-chevron-down animation"></b></a>
-							</div>
-							<div class="appphoneImg dnone">
-								<img src="../css/img/appphone.png" alt="客户端二维码">
-							</div>
-						</li>
-					</ul>
-					<!-- 右边结构 -->
-					<ul class="toolRight fright ">
-						<li class="ytUser ">
-							<span>Hi，欢迎来到银泰网! &nbsp;</span><a href="html/login.html" class="ytLogin">登录</a><a href="html/register.html" class="ytRegister">注册</a>
-						</li>
-						<li class="ytUser dnone">
-							<a>Hi,<span class="userName">13800138000</span></a><a href="html/login.html" class="ytLogin">登出</a>
-						</li>
-						<li class="rhLine"></li>
-						<li><a href="#">我的订单</a></li>
-						<li class="rhLine"></li>
-						<li>
-							<div class="myYt">
-								<p><a href="#">我的银泰<span class="glyphicon glyphicon-chevron-down animation"></span></a></p>
-								<p><a target="_blank" href="//my.yintai.com/Account/FavoriteList">我的收藏</a></p>
-								<p><a target="_blank" href="//my.yintai.com/Account/BalanceList">我的余额</a></p>
-								<p><a target="_blank" href="//my.yintai.com/Account/CoinList">我的银元</a></p>
-								<p><a target="_blank" href="//my.yintai.com/YTCard/MyCardBind">我的银泰卡</a></p>
-								<p><a target="_blank" href="//my.yintai.com/Account/MyTicketList">我的优惠券</a></p>
-								<p><a target="_blank" href="//my.yintai.com/Account/PointList">我的积分</a></p>
-							</div>
-						</li>
-						<li class="rhLine"></li>
-						<li><a href="#">银泰卡</a></li>
-						<li class="rhLine"></li>
-						<li><a href="#">帮助中心</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- logo、search -->
-		<div class="header_logo">
-			<div class="container ytWrap">
-				<div class="row clearfix">
-					<div class="logo_left fleft">
-						<a class="logo_gif" href="index.html" title="银泰,传递生活美学"></a>
-					</div>
-					<div class="logo_right fright">
-						<!-- search -->
-						<div class="head_search">
-							<p>
-								<input id="search_in" type="text" name="搜索框" placeholder="时尚家居">
-								<span><i class="glyphicon glyphicon-search"></i></span>
-							</p>
-							<p class="search_keyword">
-								<a class="hover" target="_blank" href="http://www.yintai.com/product/list-0.html?N=60832454&amp;sort=1">运动早春新品</a>
-								<a target="_blank" href="http://www.yintai.com/store/store-50003313.html?N=8010050">卡帕运动5折封顶</a>
-								<a target="_blank" href="http://www.yintai.com/product/list-0.html?N=60832869">白里挑一</a>
-								<a class="hover" target="_blank" href="http://www.yintai.com/product/search.aspx?keyword=%E6%9C%B1%E7%82%B3%E4%BB%81%E9%93%9C">朱炳仁铜 满600减100 可累计</a>
-							</p>
-						</div>
-						<!-- mincart -->
-						<div class="head_cart">
-							<p class="mincart">
-								<i class="mincart_gif"></i>购物车<span class="hover ">0</span>件<s class="triangle_png"></s>
-							</p>
-							<p>
-								<span class="trumpet_png"></span><a class="hover" href="#" title="技术升级公告">技术升级公告</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- 商品导航栏 -->
-		<nav class="header_nav">
-			<div class="container ytWrap">
-				<div class="row clearfix">
-					<div class="nav_left fleft">
-						<div class="nav_menu">
-							<div class="all_menu">
-								<a href="#" title="全部分类">全部分类</a>
-							</div>
-							<div id="classification" class="classification">
-								
-							</div>
-						</div>
-					</div>
-					<div class="nav_right fright">
-						<ul class="nav_link fleft">
-							<li><a href="#" title="名品馆">名品馆</a></li>
-							<li><a href="#" title="特卖">特卖</a></li>
-							<li><a href="#" title="海淘馆">海淘馆</a></li>
-							<li><a href="#" title="会员专享">会员专享</a></li>
-						</ul>
-						<div>
-							<a href="#" title="积分商城">积分商城</a><span>|</span><a href="#" title="全部品牌">全部品牌</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<!-- 内容部分 -->
-	<article>
-			<!-- 大幅广告 -->
-		<section>
-			<!-- blackline -->
-			<div class="blackline"></div>
-			<!-- 大幅广告 -->
-			<div class="banner">
-				<div class="container ytWrap prelt">
-					<div class="row">
-						<div id="banner"></div>
-						<!-- 侧边图片 -->
-						<div class="sibePic">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- 超级特卖 -->
-		<section>
-		  <div class="container ytWrap">
-				<div class="row clearfix">
-					<div class="temai fleft">
-						<ul class="tabnav">
-							<li><a href="">超值特卖</a></li>
-							<li><a href="">手机专享</a></li>
-							<li><a href="">品牌活动</a></li>
-						</ul>
-						<div class="tabcontent">
-							<div class="tmcontent dnone">
-								<a href=""><img src="../img/bf0edbe1-a8ca-456a-9aeb-1e82deaddb0e.jpg"></a>
-								<a href=""><img src="../img/bf0edbe1-a8ca-456a-9aeb-1e82deaddb0e.jpg"></a>
-								<a href=""><img src="../img/bf0edbe1-a8ca-456a-9aeb-1e82deaddb0e.jpg"></a>
-								<a href=""><img src="../img/bf0edbe1-a8ca-456a-9aeb-1e82deaddb0e.jpg"></a>
-							</div>
-							<div class="sjcontent ">
-								<div>
-									<p>
-										<a href=""><img src="../img/yintai_9fa849e8-ac7f-477c-b141-12299c221530.jpg"></a>
-									</p>
-									<p>
-										<a href="" alt="曼妮芬旗下兰卓丽无钢圈美背文胸女 前扣聚拢胸罩性感蕾丝边内衣30810600">曼妮芬旗下兰卓丽无钢圈美背文胸...</a>
-									</p>
-									<p> 
-										<strong>银泰价 : <span>￥189</span></strong><b>参考价 ：<s>￥269</s></b>
-
-									</p>
-								</div>
-								<div>
-									<p>
-										<a href=""><img src="../img/yintai_9fa849e8-ac7f-477c-b141-12299c221530.jpg"></a>
-									</p>
-									<p>
-										<a href="" alt="曼妮芬旗下兰卓丽无钢圈美背文胸女 前扣聚拢胸罩性感蕾丝边内衣30810600">曼妮芬旗下兰卓丽无钢圈美背文胸...</a>
-									</p>
-									<p> 
-										<strong>银泰价 : <span>￥189</span></strong><b>参考价 ：<s>￥269</s></b>
-
-									</p>
-								</div>
-								<div>
-									<p>
-										<a href=""><img src="../img/yintai_9fa849e8-ac7f-477c-b141-12299c221530.jpg"></a>
-									</p>
-									<p>
-										<a href="" alt="曼妮芬旗下兰卓丽无钢圈美背文胸女 前扣聚拢胸罩性感蕾丝边内衣30810600">曼妮芬旗下兰卓丽无钢圈美背文胸...</a>
-									</p>
-									<p> 
-										<strong>银泰价 : <span>￥189</span></strong><b>参考价 ：<s>￥269</s></b>
-
-									</p>
-								</div>
-								<div>
-									<p>
-										<a href=""><img src="../img/yintai_9fa849e8-ac7f-477c-b141-12299c221530.jpg"></a>
-									</p>
-									<p>
-										<a href="" alt="曼妮芬旗下兰卓丽无钢圈美背文胸女 前扣聚拢胸罩性感蕾丝边内衣30810600">曼妮芬旗下兰卓丽无钢圈美背文胸...</a>
-									</p>
-									<p> 
-										<strong>银泰价 : <span>￥189</span></strong><b>参考价 ：<s>￥269</s></b>
-
-									</p>
-								</div>
-							</div>
-							<div class="ppcontent dnone">
-								<a href=""><img src="../img/84663838-e81b-4016-b1fd-632f5f11a2aa.jpg"></a>
-								<a href=""><img src="../img/84663838-e81b-4016-b1fd-632f5f11a2aa.jpg"></a>
-								<a href=""><img src="../img/84663838-e81b-4016-b1fd-632f5f11a2aa.jpg"></a>
-								<a href=""><img src="../img/84663838-e81b-4016-b1fd-632f5f11a2aa.jpg"></a>
-							</div>
-						</div>
-					</div>
-					<div class="sidebarPic fright">
-						<img src="../img/9bd38e7b-514d-4980-8eca-b96f5ac19b2e.jpg">
-					</div>
-				</div>
-			</div>  
-		</section>
-		<!-- 专柜同款 -->
-		<section>
-			<div class="container ytWrap">
-				<div class="row ">
-					<header class="zgtitle">
-						<img src="../css/img/floor_tk.png">
-					</header>
-					<div class="zgcontent clearfix">
-						<div class="zgpic fleft">	
-								<img src="../img/02442fb8-ad6f-4523-af93-f450cc29e74e.jpg">
-						</div>
-						<div class="zglist fright">	
-								<div class="allTab">
-									<ul class="tabNavs zgnav">
-										<li><a href="">热门品牌</a></li>
-										<li><a href="">本周推荐</a></li>
-									</ul>
-								</div>
-								<div class="tabcontent">
-									
-								</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</article>
+    <!-- 头部导航 -->
+    <header>
+        <!-- 顶部登录toolbar -->
+        <div class="toolbar ">
+            <div class="container ytWrap">
+                <div class="row clearfix ">
+                    <!-- 左边结构 -->
+                    <ul class="toolLeft fleft ">
+                        <li class="index "><a href="index.html" title="银泰首页"><i class="rhCircle "></i><span class="glyphicon glyphicon-home rhIcon" aria-hidden="true"></span>银泰首页</a></li>
+                        <li class="rhLine"></li>
+                        <li class="weixin">
+                            <div>
+                                <a href="#" title="微信"><i class="rhCircle "></i><span class="glyphicon glyphicon-user rhIcon" aria-hidden="true"></span>微信<b class="glyphicon glyphicon-chevron-down animation"></b></a>
+                            </div>
+                            <div class="weinxinImg  dnone">
+                                <img src="../css/img/wechat.png" alt="微信二维码">
+                            </div>
+                        </li>
+                        <li class="rhLine"></li>
+                        <li class="phone ">
+                            <div>
+                                <a href="#" title="手机银泰"><span class="glyphicon glyphicon-phone rhIcon" aria-hidden="true"></span>手机银泰<b class="glyphicon glyphicon-chevron-down animation"></b></a>
+                            </div>
+                            <div class="appphoneImg dnone">
+                                <img src="../css/img/appphone.png" alt="客户端二维码">
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 右边结构 -->
+                    <ul class="toolRight fright ">
+                        <li class="ytUser ">
+                            <span>Hi，欢迎来到银泰网! &nbsp;</span><a href="html/login.html" class="ytLogin">登录</a><a href="html/register.html" class="ytRegister">注册</a>
+                        </li>
+                        <li class="ytUser dnone">
+                            <a>Hi,<span class="userName">13800138000</span></a><a href="html/login.html" class="ytLogin">登出</a>
+                        </li>
+                        <li class="rhLine"></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li class="rhLine"></li>
+                        <li>
+                            <div class="myYt">
+                                <p><a href="#">我的银泰<span class="glyphicon glyphicon-chevron-down animation"></span></a></p>
+                                <p><a target="_blank" href="//my.yintai.com/Account/FavoriteList">我的收藏</a></p>
+                                <p><a target="_blank" href="//my.yintai.com/Account/BalanceList">我的余额</a></p>
+                                <p><a target="_blank" href="//my.yintai.com/Account/CoinList">我的银元</a></p>
+                                <p><a target="_blank" href="//my.yintai.com/YTCard/MyCardBind">我的银泰卡</a></p>
+                                <p><a target="_blank" href="//my.yintai.com/Account/MyTicketList">我的优惠券</a></p>
+                                <p><a target="_blank" href="//my.yintai.com/Account/PointList">我的积分</a></p>
+                            </div>
+                        </li>
+                        <li class="rhLine"></li>
+                        <li><a href="#">银泰卡</a></li>
+                        <li class="rhLine"></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- logo、search -->
+        <div class="header_logo">
+            <div class="container ytWrap">
+                <div class="row clearfix">
+                    <div class="logo_left fleft">
+                        <a class="logo_gif" href="index.html" title="银泰,传递生活美学"></a>
+                    </div>
+                    <div class="logo_right fright">
+                        <!-- search -->
+                        <div class="head_search">
+                            <p>
+                                <input id="search_in" type="text" name="搜索框" placeholder="时尚家居">
+                                <span><i class="glyphicon glyphicon-search"></i></span>
+                            </p>
+                            <p class="search_keyword">
+                                <a class="hover" target="_blank" href="http://www.yintai.com/product/list-0.html?N=60832454&amp;sort=1">运动早春新品</a>
+                                <a target="_blank" href="http://www.yintai.com/store/store-50003313.html?N=8010050">卡帕运动5折封顶</a>
+                                <a target="_blank" href="http://www.yintai.com/product/list-0.html?N=60832869">白里挑一</a>
+                                <a class="hover" target="_blank" href="http://www.yintai.com/product/search.aspx?keyword=%E6%9C%B1%E7%82%B3%E4%BB%81%E9%93%9C">朱炳仁铜 满600减100 可累计</a>
+                            </p>
+                        </div>
+                        <!-- mincart -->
+                        <div class="head_cart">
+                            <p class="mincart">
+                                <i class="mincart_gif"></i>购物车<span class="hover ">0</span>件
+                                <s class="triangle_png"></s>
+                            </p>
+                            <p>
+                                <span class="trumpet_png"></span><a class="hover" href="#" title="技术升级公告">技术升级公告</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品导航栏 -->
+        <nav class="header_nav">
+            <div class="container ytWrap">
+                <div class="row clearfix">
+                    <div class="nav_left fleft">
+                        <div class="nav_menu">
+                            <div class="all_menu">
+                                <a href="#" title="全部分类">全部分类</a>
+                            </div>
+                            <div id="classification" class="classification">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav_right fright">
+                        <ul class="nav_link fleft">
+                            <li><a href="#" title="名品馆">名品馆</a></li>
+                            <li><a href="#" title="特卖">特卖</a></li>
+                            <li><a href="#" title="海淘馆">海淘馆</a></li>
+                            <li><a href="#" title="会员专享">会员专享</a></li>
+                        </ul>
+                        <div>
+                            <a href="#" title="积分商城">积分商城</a><span>|</span><a href="#" title="全部品牌">全部品牌</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 内容部分 -->
+    <article>
+        <!-- 大幅广告 -->
+        <section>
+            <!-- blackline -->
+            <div class="blackline"></div>
+            <!-- 大幅广告 -->
+            <div class="banner">
+                <div class="container ytWrap prelt">
+                    <div class="row">
+                        <div id="banner"></div>
+                        <!-- 侧边图片 -->
+                        <div class="sibePic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 超级特卖 -->
+        <section>
+            <div class="container ytWrap">
+                <div class="row clearfix">
+                    <div class="temai fleft">
+                        <ul class="tabnav">
+                            <li><a href="javascript:(0)">超值特卖</a></li>
+                            <li><a href="javascript:(0)">手机专享</a></li>
+                            <li><a href="javascript:(0)">品牌活动</a></li>
+                        </ul>
+                        <div class="tabcontent">
+                            <div class="tmcontent dnone">
+                                <a href="javascript:(0)"><img src="../img/bf0edbe1-a8ca-456a-9aeb-1e82deaddb0e.jpg"></a>
+                                <a href="javascript:(0)"><img src="../img/bf0edbe1-a8ca-456a-9aeb-1e82deaddb0e.jpg"></a>
+                                <a href="javascript:(0)"><img src="../img/bf0edbe1-a8ca-456a-9aeb-1e82deaddb0e.jpg"></a>
+                                <a href="javascript:(0)"><img src="../img/bf0edbe1-a8ca-456a-9aeb-1e82deaddb0e.jpg"></a>
+                            </div>
+                            <div class="sjcontent ">
+                                <div>
+                                    <p>
+                                        <a href="javascript:(0)"><img src="../img/yintai_9fa849e8-ac7f-477c-b141-12299c221530.jpg"></a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:(0)" alt="曼妮芬旗下兰卓丽无钢圈美背文胸女 前扣聚拢胸罩性感蕾丝边内衣30810600">曼妮芬旗下兰卓丽无钢圈美背文胸...</a>
+                                    </p>
+                                    <p>
+                                        <strong>银泰价 : <span>￥189</span></strong><b>参考价 ：<s>￥269</s></b>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <a href="javascript:(0)"><img src="../img/yintai_9fa849e8-ac7f-477c-b141-12299c221530.jpg"></a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:(0)" alt="曼妮芬旗下兰卓丽无钢圈美背文胸女 前扣聚拢胸罩性感蕾丝边内衣30810600">曼妮芬旗下兰卓丽无钢圈美背文胸...</a>
+                                    </p>
+                                    <p>
+                                        <strong>银泰价 : <span>￥189</span></strong><b>参考价 ：<s>￥269</s></b>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <a href="javascript:(0)"><img src="../img/yintai_9fa849e8-ac7f-477c-b141-12299c221530.jpg"></a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:(0)" alt="曼妮芬旗下兰卓丽无钢圈美背文胸女 前扣聚拢胸罩性感蕾丝边内衣30810600">曼妮芬旗下兰卓丽无钢圈美背文胸...</a>
+                                    </p>
+                                    <p>
+                                        <strong>银泰价 : <span>￥189</span></strong><b>参考价 ：<s>￥269</s></b>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <a href="javascript:(0)"><img src="../img/yintai_9fa849e8-ac7f-477c-b141-12299c221530.jpg"></a>
+                                    </p>
+                                    <p>
+                                        <a href="javascript:(0)" alt="曼妮芬旗下兰卓丽无钢圈美背文胸女 前扣聚拢胸罩性感蕾丝边内衣30810600">曼妮芬旗下兰卓丽无钢圈美背文胸...</a>
+                                    </p>
+                                    <p>
+                                        <strong>银泰价 : <span>￥189</span></strong><b>参考价 ：<s>￥269</s></b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ppcontent dnone">
+                                <a href="javascript:(0)"><img src="../img/84663838-e81b-4016-b1fd-632f5f11a2aa.jpg"></a>
+                                <a href="javascript:(0)"><img src="../img/84663838-e81b-4016-b1fd-632f5f11a2aa.jpg"></a>
+                                <a href="javascript:(0)"><img src="../img/84663838-e81b-4016-b1fd-632f5f11a2aa.jpg"></a>
+                                <a href="javascript:(0)"><img src="../img/84663838-e81b-4016-b1fd-632f5f11a2aa.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarPic fright">
+                        <img src="../img/9bd38e7b-514d-4980-8eca-b96f5ac19b2e.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 专柜同款 -->
+        <section>
+            <div class="container ytWrap">
+                <div class="row ">
+                    <header class="zgtitle">
+                        <img src="../css/img/floor_tk.png">
+                    </header>
+                    <div class="zgcontent clearfix">
+                        <div class="zgpic fleft">
+                            <img src="../img/02442fb8-ad6f-4523-af93-f450cc29e74e.jpg">
+                        </div>
+                        <div class="zglist fright">
+                            <div class="blackline"></div>
+                            <div class="tab">
+                                <ul class="navtab zgnav">
+                                    <li class="toggletab"><a href="javascript:(0)">热门品牌</a></li>
+                                    <li class="toggletab"><a href="javascript:(0)">本周推荐</a></li>
+                                </ul>
+                                <div class="tabcontent">
+                                    <div class="tabpane pinpaicontent ">
+                                        <img src="../img/c41f70c9-4d96-4519-b067-f483a2b76369.jpg">
+                                        <img src="../img/c93b8da5-9280-4d22-8c99-a9d6bedbaf75.jpg">
+                                        <img src="../img/d07afb26-33ac-45cb-9960-1462d720ad0a.jpg">
+                                        <img src="../img/a920edc4-fb07-4407-a440-a563b3e0c01c.jpg">
+                                        <img src="../img/66bc23ea-e92e-4327-87cf-a9b21fe14098.jpg">
+                                        <img src="../img/53b4cdb9-28fd-411b-812c-77f95fb20df0.jpg">
+                                    </div>
+                                    <div class="tabpane tuijiancontent ">
+                                        <div>
+                                            <p>
+                                                <a href="javascript:(0)"><img src="../img/yintai_e8aa4342-4d56-45d7-b301-e198e51c9f92.jpg"></a>
+                                            </p>
+                                            <p>
+                                                <a href="javascript:(0)" alt="ARMATEN阿迈蒂尼品牌儿童装秋款男童连帽卫衣运动休闲衫33C1616">ARMATEN阿迈蒂尼品牌儿童装秋</a>
+                                            </p>
+                                            <p class="clearfix">
+                                                <strong class="fleft"><span>￥60</span></strong><b class="fright"><s>参考价 ：￥498</s></b>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <a href="javascript:(0)"><img src="../img/yintai_e8aa4342-4d56-45d7-b301-e198e51c9f92.jpg"></a>
+                                            </p>
+                                            <p>
+                                                <a href="javascript:(0)" alt="ARMATEN阿迈蒂尼品牌儿童装秋款男童连帽卫衣运动休闲衫33C1616">ARMATEN阿迈蒂尼品牌儿童装秋</a>
+                                            </p>
+                                            <p class="clearfix">
+                                                <strong class="fleft"><span>￥60</span></strong><b class="fright"><s>参考价 ：￥498</s></b>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <a href="javascript:(0)"><img src="../img/yintai_e8aa4342-4d56-45d7-b301-e198e51c9f92.jpg"></a>
+                                            </p>
+                                            <p>
+                                                <a href="javascript:(0)" alt="ARMATEN阿迈蒂尼品牌儿童装秋款男童连帽卫衣运动休闲衫33C1616">ARMATEN阿迈蒂尼品牌儿童装秋</a>
+                                            </p>
+                                            <p class="clearfix">
+                                                <strong class="fleft"><span>￥60</span></strong><b class="fright"><s>参考价 ：￥498</s></b>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <a href="javascript:(0)"><img src="../img/yintai_e8aa4342-4d56-45d7-b301-e198e51c9f92.jpg"></a>
+                                            </p>
+                                            <p>
+                                                <a href="javascript:(0)" alt="ARMATEN阿迈蒂尼品牌儿童装秋款男童连帽卫衣运动休闲衫33C1616">ARMATEN阿迈蒂尼品牌儿童装秋</a>
+                                            </p>
+                                            <p class="clearfix">
+                                                <strong class="fleft"><span>￥60</span></strong><b class="fright"><s>参考价 ：￥498</s></b>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <a href="javascript:(0)"><img src="../img/yintai_e8aa4342-4d56-45d7-b301-e198e51c9f92.jpg"></a>
+                                            </p>
+                                            <p>
+                                                <a href="javascript:(0)" alt="ARMATEN阿迈蒂尼品牌儿童装秋款男童连帽卫衣运动休闲衫33C1616">ARMATEN阿迈蒂尼品牌儿童装秋</a>
+                                            </p>
+                                            <p class="clearfix">
+                                                <strong class="fleft"><span>￥60</span></strong><b class="fright"><s>参考价 ：￥498</s></b>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <a href="javascript:(0)"><img src="../img/yintai_e8aa4342-4d56-45d7-b301-e198e51c9f92.jpg"></a>
+                                            </p>
+                                            <p>
+                                                <a href="javascript:(0)" alt="ARMATEN阿迈蒂尼品牌儿童装秋款男童连帽卫衣运动休闲衫33C1616">ARMATEN阿迈蒂尼品牌儿童装秋</a>
+                                            </p>
+                                            <p class="clearfix">
+                                                <strong class="fleft"><span>￥60</span></strong><b class="fright"><s>参考价 ：￥498</s></b>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <a href="javascript:(0)"><img src="../img/yintai_e8aa4342-4d56-45d7-b301-e198e51c9f92.jpg"></a>
+                                            </p>
+                                            <p>
+                                                <a href="javascript:(0)" alt="ARMATEN阿迈蒂尼品牌儿童装秋款男童连帽卫衣运动休闲衫33C1616">ARMATEN阿迈蒂尼品牌儿童装秋</a>
+                                            </p>
+                                            <p class="clearfix">
+                                                <strong class="fleft"><span>￥60</span></strong><b class="fright"><s>参考价 ：￥498</s></b>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <a href="javascript:(0)"><img src="../img/yintai_e8aa4342-4d56-45d7-b301-e198e51c9f92.jpg"></a>
+                                            </p>
+                                            <p>
+                                                <a href="javascript:(0)" alt="ARMATEN阿迈蒂尼品牌儿童装秋款男童连帽卫衣运动休闲衫33C1616">ARMATEN阿迈蒂尼品牌儿童装秋</a>
+                                            </p>
+                                            <p class="clearfix">
+                                                <strong class="fleft"><span>￥60</span></strong><b class="fright"><s>参考价 ：￥498</s></b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 时尚名品 -->
+        <section>
+        	<div class="container ytWrap">
+        		<div class="row">
+        			<header class="shishangtitle">
+                        <div></div>
+                    </header>
+                    <div class="shishangcontent clearfix">
+                    	
+                    </div>
+        		</div>
+        	</div>
+        </section>
+    </article>
 </body>
-	<script src="../assets/jQuery/jquery-3.1.1.js"></script>
-	<script src="../js/require.js" data-main="../js/page_header.js"></script>
+<script src="../assets/jQuery/jquery-3.1.1.js"></script>
+<script src="../js/require.js" data-main="../js/page_header.js">
+</script>
+
 </html>
